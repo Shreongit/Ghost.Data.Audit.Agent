@@ -1,128 +1,237 @@
-# Ghost Data Still Exists — deletion audit agent
+<div align="center">
 
-This runnable Python solution investigates deletion requests using only the participant-facing files under `dataset/`. It resolves current and historical identities at each `audit_at`, links evidence to resources, reconstructs point-in-time state, applies `deletion_rules.csv`, and emits the required CSV.
+# Ghost Data Audit Agent
 
-## Architecture
+### Proving that "deleted" really means deleted
+
+**A source-first Python agent that audits whether a person's personal data is truly gone across databases, logs, search indexes, exports, support tickets, analytics and backups, and tells you exactly what to fix if it is not.**
+
+![Python](https://img.shields.io/badge/Python-3.10%2B-3776AB?logo=python&logoColor=white)
+![Approach](https://img.shields.io/badge/Approach-Deterministic%20%2B%20LLM-6f42c1)
+![Evidence](https://img.shields.io/badge/Evidence-SQL%20%7C%20JSON%20%7C%20Logs%20%7C%20PDF%20%7C%20PNG-blue)
+![Tests](https://img.shields.io/badge/Tests-49%20passing-brightgreen)
+![Event](https://img.shields.io/badge/HackerRank-Orchestrate%20Oct%202026-00ea64)
+![License](https://img.shields.io/badge/License-All%20rights%20reserved-lightgrey)
+
+**Current release:** `v1.0.0` (HackerRank Orchestrate submission)
+
+[Overview](#overview) · [Results](#results) · [How it works](#how-it-works) · [Quick start](#quick-start) · [Evaluation](#evaluation) · [Design decisions](#design-decisions) · [Limitations](#limitations) · [Roadmap](#roadmap) · [Author](#author)
+
+</div>
+
+---
+
+## Overview
+
+Northstar Shop (a fictional company in the challenge) lost **$2.4 million** after a customer whose deletion request showed **"Complete"** in every dashboard came back as a "ghost": their email was still registered, and their data still lived in replicas, search indexes, support attachments, analytics exports, logs and backups. A sync job had even re-created data the primary service had already deleted.
+
+This project is the **deletion audit agent** that would have caught it. For each deletion request it:
+
+1. decides whether deletion was actually requested (`COMPLETE`, `INCOMPLETE` or `NOT_APPLICABLE`);
+2. resolves the person's **current and historical identifiers** (emails, phones, hashes, user ids);
+3. reconstructs what really exists **at the audit time**, treating workflow statuses as claims, not proof;
+4. applies the company deletion policy (delete, redact, anonymize, **retain**, keep an account tombstone);
+5. finds **active data flows and restore paths** that can bring deleted data back;
+6. outputs an **ordered list** of findings, remediation actions and verification checks as machine-readable JSON.
+
+> Built for the [HackerRank Orchestrate October 2026](https://www.hackerrank.com/contests/hackerrank-orchestrate-october26/challenges/ghost-data-still-exists) challenge **"Ghost Data Still Exists"**. All people, companies and records in the dataset are fictional.
+
+---
+
+## Why this is a hard problem
+
+| Challenge | What makes it tricky |
+|---|---|
+| Identity changes | The request email may be an *old* email; historical evidence only shows old identifiers. |
+| Claims vs proof | `reported_status = COMPLETE` and `SUCCESS` log lines are not evidence that data is gone. |
+| Time | Only evidence available at or before `audit_at` may be used; later deletes or re-syncs change the answer. |
+| Records with no name on them | Many resource ids (for example an account id in an activity log) carry no email at all and must be **linked** to a person through indirect evidence. |
+| Policy | Some data must be kept (security audit logs, legal holds); some must be redacted or anonymized, not deleted. |
+| Messy evidence | SQL replicas, JSON exports, six log dialects, PDFs and screenshots. |
+| Exact output | The grader compares step order, systems, resources, operations and evidence ids. |
+
+---
+
+## Results
+
+Measured on the 32 public sample cases with known answers and on the full 518-case run.
+
+| Metric | Result |
+|---|---|
+| Deletion status accuracy (sample) | **32 / 32** |
+| Step-level F1 (sample) | **91.67 %** |
+| Exact step sequence (sample) | **18 / 32** |
+| Full run | **518 rows**, 0 invariant errors, no empty plans, **byte-identical** across runs |
+| Held-out resource linking (account) | 83.9 % precision / 81.3 % recall |
+| Held-out resource linking (analytics) | 81.8 % precision / 69.2 % recall |
+| Unit tests | **49 passing** |
+| Live LLM run (Groq) | 99 calls, ~90k input / ~30k output tokens, **≈ $0.06** |
+
+The sample numbers are partly in-sample because link weights were calibrated on the same 32 cases. **Held-out numbers are reported honestly** in [`code/evaluation/evaluation_report.md`](code/evaluation/evaluation_report.md), with every miss listed in [`code/linking/heldout_link_misses.md`](code/linking/heldout_link_misses.md).
+
+---
+
+## How it works
 
 ```text
-dataset/* ──► parsers + cached PDF/OCR/VLM text ──► provenance evidence graph
-                                                        │
-request ──► multilingual intent gate ──► cutoff identity aliases
-                                                        │
-                       graph walk ──► state replay ──► condition-aware policy
-                                                        │
-                  optional structured LLM hints ────────┤
-                                                        ▼
-                 deterministic findings/remediation/verification
-                          ──► pure orderer ──► contract validator ──► output.csv
+                     ┌─────────────────────────────────────────────┐
+ dataset/*.csv  ───► │ Loaders: requests · identities · audit log  │
+ evidence/**    ───► │ · activity · rules · evidence manifest      │
+                     └──────────────────────┬──────────────────────┘
+                                            ▼
+        ┌───────────────────────────────────────────────────────────────┐
+        │ Evidence ingestion: SQL (SQLite) · JSON · 6 log dialects ·     │
+        │ text · PDF · PNG (Tesseract OCR + optional vision model)       │
+        └───────────────────────────────┬───────────────────────────────┘
+                                        ▼
+                     ┌──────────────────────────────────────┐
+  request text ────► │ Intent gate (multilingual) ──► NOT_APPLICABLE → []
+                     └──────────────────┬───────────────────┘
+                                        ▼
+                     ┌──────────────────────────────────────┐
+                     │ Identity resolver (current + historical│
+                     │ emails, phones, hashes, user_id)       │
+                     └──────────────────┬───────────────────┘
+                                        ▼
+        ┌───────────────────────────────────────────────────────────────┐
+        │ Linker: evidence graph + trace-id joins + time-anchored       │
+        │ scoring + global one-to-one assignment across all requests    │
+        └───────────────────────────────┬───────────────────────────────┘
+                                        ▼
+        State at audit_at ─► Category classifier ─► Policy engine (deletion_rules.csv)
+                                        ▼
+        Planner ─► Orderer ─► Serializer ─► Validator ─► output.csv
+                                        ▲
+        Optional LLM/VLM layer (Groq / xAI): reads images, investigates
+        ambiguous links, classifies edge cases; every answer is checked
+        against the evidence before it is accepted.
 ```
 
-The deterministic pipeline is the default and works offline. Resource links preserve evidence provenance and are globally checked for conflicting owners. Log events are grouped by trace/request/session IDs, including JSON logs with quoted keys; OCR/PDF facts use resource-local context to avoid linking unrelated records on the same page. Low-confidence activity-window plus probe candidates are recorded but not treated as ownership proof. See `code/linking/PATTERNS.md` for the sample evidence audit and `weights.json` for frozen link weights.
+**Key ideas**
 
-An optional bounded tool agent can inspect unresolved links with read-only evidence search, trace-group, activity-window, SELECT-only SQLite, alias-set, and resource-fact tools. Every proposed link must pass a deterministic verifier against cutoff-valid cited evidence. Model JSON is schema-checked; intent rationales and category citations must be found in the request/evidence text. Models cannot directly write the final step list.
+- **Evidence graph.** Every fact keeps its source id (`file_id`, `activity_id`, `audit_id`) and timestamp, so each finding is explainable.
+- **Time-anchored linking.** The deletion worker's events sit in a narrow, type-specific time band around each request's `reported_at`. Combined with status-to-result patterns and evidence links, requests are matched to resources **jointly across all 550 requests**, so a resource can belong to only one person.
+- **Deterministic core, LLM as a checked assistant.** The planner never lets a model write the final steps; models propose facts with citations and code verifies them.
+- **Reproducible.** Same input → identical bytes; LLM calls are cached; keys come only from environment variables.
 
-## Setup
+---
 
-Windows PowerShell:
+## Output format
 
-```powershell
-py -3 -m venv .venv
-.venv\Scripts\python.exe -m pip install -r code\requirements.txt
-winget install --id UB-Mannheim.TesseractOCR -e
+One row per case, sorted by `case_id`:
+
+```csv
+case_id,deletion_status,steps_json
+case_000,NOT_APPLICABLE,[]
 ```
 
-macOS: `brew install tesseract`, then create the venv and install `code/requirements.txt`.
+`steps_json` is an ordered JSON array. Example step:
 
-Debian/Ubuntu: `sudo apt-get install tesseract-ocr`, then create the venv and install `code/requirements.txt`.
-
-If Tesseract is installed somewhere nonstandard, set `TESSERACT_CMD` to its executable. PNG OCR uses pytesseract and native Tesseract; PDF extraction uses pdfplumber with pypdf fallback. Text extractions are cached under `code/.cache/extractions/` by source SHA-256.
-
-Optional xAI provider setup (keep the key in the environment; never add it to a file):
-
-```powershell
-$env:LLM_PROVIDER = 'xai'
-$env:XAI_API_KEY = '<your xAI API key>'
-$env:LLM_MODEL_FAST = '<model id from your xAI console>'
-$env:LLM_MODEL_STRONG = '<model id from your xAI console>'
-$env:LLM_INPUT_USD_PER_MILLION = '<console input rate>'
-$env:LLM_OUTPUT_USD_PER_MILLION = '<console output rate>'
+```json
+{
+  "step_no": 1,
+  "phase": "FINDING",
+  "system_id": "account_service",
+  "resource_id": "account_005",
+  "operation": "REPORT_REMAINING_RECORD",
+  "state": "PRESENT",
+  "evidence_id": "evidence_01"
+}
 ```
 
-The provider uses the OpenAI Python SDK at `https://api.x.ai/v1`, tries JSON Schema output first, and falls back to JSON mode with local schema validation and a repair retry when constrained output is unavailable. It sends images only when the opt-in LLM path is enabled.
+Phases run **FINDING → REMEDIATION → VERIFICATION**. Proposed (future) steps carry an empty `evidence_id`.
 
-Optional Groq provider setup uses model IDs available to the configured API key (query `https://api.groq.com/openai/v1/models` first):
+---
 
-```powershell
-$env:LLM_PROVIDER = 'groq'
-$env:GROQ_API_KEY = '<your Groq API key>'
-$env:LLM_MODEL_FAST = '<listed model id>'
-$env:LLM_MODEL_STRONG = '<listed model id>'
+## Quick start
+
+**Requirements:** Python 3.10+, optionally [Tesseract OCR](https://github.com/UB-Mannheim/tesseract/wiki) for screenshots.
+
+```bash
+git clone https://github.com/ifshreyas/ghost-data-audit-agent.git
+cd ghost-data-audit-agent
+
+python -m venv .venv
+# Windows:  .venv\Scripts\activate      macOS/Linux:  source .venv/bin/activate
+pip install -r code/requirements.txt
 ```
 
-The current provider caps concurrent SDK requests at two, backs off on HTTP 429, and caches successful text and structured calls. PNGs are sent only to a listed image-capable model; this path compares VLM facts with the cached Tesseract transcript.
+Place the challenge files in `dataset/` (not included in this repository), then:
 
-## Run
+```bash
+# Full run, deterministic mode (no API key needed)
+python code/main.py --no-llm
 
-Run all requests using the offline deterministic pipeline:
+# Full run with the optional LLM/VLM layer
+export LLM_PROVIDER=groq          # or xai
+export GROQ_API_KEY=...           # never commit keys
+python code/main.py
 
-```powershell
-.venv\Scripts\python.exe code\main.py --no-llm
+# Evaluate against the public samples
+python code/main.py --input dataset/sample_deletion_requests.csv --output sample_predictions.csv --no-llm
+python code/evaluation/main.py --predictions sample_predictions.csv
+
+# Explain how one case was decided
+python code/main.py --no-llm --trace-case case_09
+
+# Run the tests
+python -m unittest discover -s code/tests
 ```
 
-To enable Groq or xAI after setting the matching environment variables above, use `--llm`; the bounded investigator defaults to 25 ambiguous cases.
+> Check `python code/main.py --help` for the exact flags in your version.
 
-Run only a small set or trace evidence-graph paths:
+---
 
-```powershell
-.venv\Scripts\python.exe code\main.py --no-llm --cases case_01,case_07 --trace-case case_01,case_07 --output trace.csv --verbose
-```
+## Evaluation
 
-Evaluate public samples and run unit tests:
+The `code/evaluation/` folder contains:
 
-```powershell
-.venv\Scripts\python.exe code\main.py --no-llm --input dataset\sample_deletion_requests.csv --output sample_predictions.csv
-.venv\Scripts\python.exe code\evaluation\main.py --predictions sample_predictions.csv --write-report
-.venv\Scripts\python.exe -m unittest discover -s code\tests -v
-```
+- **`evaluation_report.md`**: status accuracy, step precision/recall/F1, per-field accuracy, sequence accuracy, held-out linking accuracy, ablations, custom test cases, failures found and fixes made.
+- **`usage_report.md`**: model providers and models, call counts, input/output tokens, average tokens per request, estimated cost.
+- **`main.py`**: the evaluation harness (also runs invariants on the full 518-case output: valid JSON, consecutive steps, phase order, valid evidence ids not after `audit_at`).
 
-Full-dataset invariants (there are no gold answers for these 518 requests):
+---
 
-```powershell
-.venv\Scripts\python.exe code\evaluation\main.py --predictions output.csv
-```
+## Design decisions
 
-The output is UTF-8 without BOM, sorted numerically by `case_id`. Repeated offline runs are deterministic. Use `--refresh-cache` to clear extraction and model caches; use `--trace-case ids` to print aliases, matched evidence facts, and graph paths.
+1. **Removed a tempting shortcut.** An early version assumed user `N` owns `account_00N`. It scored well on the first samples but would silently fail on most hidden cases, so it was deleted and replaced by real evidence linking.
+2. **Honest evaluation.** Link weights are calibrated on samples; the report separates in-sample from held-out numbers.
+3. **Safe LLM use.** Models never emit the final plan. Output is schema-checked, citations must exist and be valid at `audit_at`, and live results are kept only if accuracy does not regress.
+4. **Policy first.** Retention rules (security audit logs, legal holds, backups) are respected: the agent blocks restores and redacts tombstones instead of deleting what must be kept.
 
-## Optional structured LLM/VLM
+---
 
-Only use `--llm` when an authorized provider account and API key are configured in environment variables. Supported `LLM_PROVIDER` values are `openai`, `anthropic`, and `gemini`; set the provider key (`OPENAI_API_KEY`, `ANTHROPIC_API_KEY`, or `GEMINI_API_KEY`), `LLM_MODEL_FAST`, and (for tool-based link investigation) `LLM_MODEL_STRONG`. The tool agent checks at most 25 unresolved cases by default and at most five tool steps per case; override with `--link-agent-max-cases`. For a hard spend guard, set both `LLM_INPUT_USD_PER_MILLION` and `LLM_OUTPUT_USD_PER_MILLION` to the rates for the selected model, then pass `--budget-usd`:
+## Limitations
 
-```powershell
-$env:LLM_PROVIDER = 'openai'
-$env:LLM_MODEL_FAST = '<your-model-id>'
-$env:LLM_MODEL_STRONG = '<your-strong-model-id>'
-$env:OPENAI_API_KEY = '<read from your secret manager>'
-$env:LLM_INPUT_USD_PER_MILLION = '<provider rate>'
-$env:LLM_OUTPUT_USD_PER_MILLION = '<provider rate>'
-.venv\Scripts\python.exe code\main.py --llm --budget-usd 1.00
-```
+- Linking people to resources that carry no identifier is the main source of errors (see held-out numbers).
+- Exact step ordering matches the reference in 18 of 32 sample cases.
+- In the live run the LLM layer cross-checked OCR and examined ambiguous links but did not change the final answers; the deterministic pipeline produces them.
+- Built and tuned on a synthetic dataset; real systems need real connectors and access controls.
 
-Never paste credentials into source files, logs, prompts, or the archive. Structured calls use temperature zero, a prompt/input/schema hash cache under `code/.cache/llm/`, schema validation with one repair retry, bounded retries, and token/cost accounting in `code/.cache/usage.json`. Groq was evaluated live using model IDs and prices returned from its authenticated `/models` endpoint. The fast vision model was `qwen/qwen3.8-27b`; the strong structured model was `openai/gpt-oss-120b`.
+---
 
-## Evaluation and known limits
+## Roadmap
 
-`code/evaluation/evaluation_report.md` contains public-sample metrics, first differing steps with cause labels, operation/category metrics, custom cases, cumulative OOF linker ablations, source-ID grep results, and full-run invariants. `code/linking/heldout_link_misses.md` lists every held-out account and analytics miss with competing candidates and timing/result signals. OOF offsets are refitted on 31 public cases per fold; `offsets.json` is the all-public-sample production calibration. No account IDs are inferred from user-number suffixes. Per-case OOF prediction JSON is diagnostic-only and excluded from `code.zip`.
+- [ ] Raise held-out linking accuracy above 90 % for accounts and analytics
+- [ ] Improve exact-sequence accuracy with a per-case ordering diff report
+- [ ] Add more custom adversarial cases (decoy users, re-enabled sync flows, late evidence)
+- [ ] Optional web UI to explore a case's evidence graph
+- [ ] Pluggable connectors for real data stores
 
-The latest reproduced sample evaluation reports 32/32 status accuracy, 91.67% step F1, and 18/32 exact sequences; the requested 92% F1 and 20 exact sequence targets remain unmet. Account and analytics OOF linkage targets remain below 90%; 395 full-run resource assignments are marked ambiguous. Two authorized full-run plans use a low-confidence catalog-link fallback, listed in the report. The live Groq sample matched the deterministic baseline and the live results passed the non-regression gate. See the usage report for 99 successful inference completions, tokens, costs, 11 PNG comparisons, and rate-limit handling.
+---
 
-PDF support uses `pdfplumber` with `pypdf` fallback. Image OCR requires the Python packages in `code/requirements.txt` and native Tesseract; on Windows install Tesseract with `winget install --id UB-Mannheim.TesseractOCR -e`. The default executable path is `C:\Program Files\Tesseract-OCR\tesseract.exe`; set `TESSERACT_CMD` if it is installed elsewhere. `--refresh-cache` rebuilds OCR/PDF extraction from evidence files.
+## Tech stack
 
-## Package
+Python · SQLite · `csv` / `json` / `re` / `hashlib` · Tesseract OCR · OpenAI-compatible SDK (Groq, xAI) · `unittest`
 
-Build `code.zip` with the intended `code/` paths while excluding datasets, caches, virtual environments, and bytecode:
+---
 
-```powershell
-.venv\Scripts\python.exe code\package.py
-```
+## Author
 
-Submit `code.zip`, root `output.csv`, and `log.txt` separately.
+**Shreyas Pathak**: B.Tech CSE, PSIT Kanpur · [GitHub @ifshreyas](https://github.com/ifshreyas) · [LinkedIn](https://linkedin.com/in/shreyaspathakk)
+
+---
+
+## License
+
+All rights reserved. The challenge dataset belongs to its organizers and is not included in this repository.
