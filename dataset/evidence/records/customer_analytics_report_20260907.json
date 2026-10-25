@@ -1,0 +1,53 @@
+{
+  "captured_at": "2026-09-07T09:45:00Z",
+  "source": "analytics_identity_store",
+  "collection": "customer_analytics_reports",
+  "records": [
+    {
+      "resource_id": "analytics_901",
+      "user_id": null,
+      "email": null,
+      "phone": null,
+      "email_hash": null,
+      "reporting_window": "last_90_days",
+      "metrics": {
+        "sessions_30d": 11,
+        "products_viewed_30d": 24,
+        "orders_completed_90d": 2,
+        "revenue_90d_usd": 146.8
+      },
+      "recent_activity": [
+        {
+          "event": "product_viewed",
+          "product": "Travel backpack"
+        },
+        {
+          "event": "purchase_completed",
+          "product": "Travel backpack",
+          "quantity": 1
+        }
+      ]
+    },
+    {
+      "resource_id": "analytics_824",
+      "user_id": "user_824",
+      "email": "dahl.freja@icloud.com",
+      "phone": "+46 70 226 32 84",
+      "email_hash": "d61fb631b92c3bac651984c5cca965640b4a854f1619c2be08e8e2751ed4257b",
+      "reporting_window": "last_90_days",
+      "metrics": {
+        "sessions_30d": 6,
+        "products_viewed_30d": 9,
+        "orders_completed_90d": 1,
+        "revenue_90d_usd": 54.95
+      },
+      "recent_activity": [
+        {
+          "event": "purchase_completed",
+          "product": "Smart desk lamp",
+          "quantity": 1
+        }
+      ]
+    }
+  ]
+}

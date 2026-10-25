@@ -1,0 +1,5 @@
+pypdf==6.21.2
+pdfplumber==0.11.10
+pytesseract==0.3.13
+Pillow==13.0.0
+openai==2.54.0

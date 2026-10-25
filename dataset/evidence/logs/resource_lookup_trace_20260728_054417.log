@@ -1,0 +1,46 @@
+2026-07-28T02:49:32Z level=INFO service=readback_collector event=export_started target_count=22 mode=point_in_time
+2026-07-28T02:49:32Z level=DEBUG service=search_service trace_id=rb-024932-001 event=index_query_started resource_id=search_5261 lookup_key=OBI.ADAEZE@ICLOUD.COM
+2026-07-28T02:49:32Z level=INFO service=search_service trace_id=rb-024932-001 event=index_query_completed resource_id=search_5261 result=hit total_hits=1 index=customer_directory_v3 email=OBI.ADAEZE@ICLOUD.COM customer_reference=null
+2026-07-28T02:51:36Z level=DEBUG service=support_platform trace_id=rb-025136-002 event=support_ticket_read_started resource_id=support_2322 lookup_key=menon.arjun@gmail.com
+2026-07-28T02:51:36Z level=INFO service=support_platform trace_id=rb-025136-002 event=support_ticket_read_completed resource_id=support_2322 customer_reference=null requester_name=null requester_email=menon.arjun@gmail.com requester_phone=null
+2026-07-28T02:52:12Z level=DEBUG service=account_service trace_id=rb-025212-003 event=profile_lookup_started resource_id=account_3064 lookup_key=n.farouk26@yahoo.com
+2026-07-28T02:52:12Z level=INFO service=account_service trace_id=rb-025212-003 event=profile_lookup_completed resource_id=account_3064 rows=1 http_status=200 customer_reference=null email=n.farouk26@yahoo.com phone=null
+2026-07-28T02:53:27Z level=DEBUG service=account_service trace_id=rb-025327-004 event=profile_lookup_started resource_id=account_5284 lookup_key=abena-frimpong@proton.me
+2026-07-28T02:53:27Z level=INFO service=account_service trace_id=rb-025327-004 event=profile_lookup_completed resource_id=account_5284 rows=0 http_status=404
+2026-07-28T02:57:10Z level=DEBUG service=analytics_platform trace_id=rb-025710-005 event=analytics_profile_read_started resource_id=analytics_6980 lookup_key=null
+2026-07-28T02:57:10Z level=INFO service=analytics_platform trace_id=rb-025710-005 event=analytics_profile_read_completed resource_id=analytics_6980 customer_reference=null email=null phone=null email_hash=null audience_cohort=home_lifestyle
+2026-07-28T03:36:54Z level=DEBUG service=analytics_platform trace_id=rb-033654-006 event=analytics_profile_read_started resource_id=analytics_6402 lookup_key=null
+2026-07-28T03:36:54Z level=INFO service=analytics_platform trace_id=rb-033654-006 event=analytics_profile_read_completed resource_id=analytics_6402 customer_reference=null email=null phone=null email_hash=null audience_cohort=home_lifestyle
+2026-07-28T03:38:41Z level=DEBUG service=export_service trace_id=rb-033841-007 event=export_metadata_read_started resource_id=export_4102 lookup_key=stshabalala9283@fastmail.com
+2026-07-28T03:38:41Z level=INFO service=export_service trace_id=rb-033841-007 event=export_metadata_read_completed resource_id=export_4102 available=true owner_email=stshabalala9283@fastmail.com object_key=exports/export_4102/customer_data.zip
+2026-07-28T03:41:20Z level=DEBUG service=search_service trace_id=rb-034120-008 event=index_query_started resource_id=search_2126 lookup_key=yuki.k7202@zoho.com
+2026-07-28T03:41:20Z level=INFO service=search_service trace_id=rb-034120-008 event=index_query_completed resource_id=search_2126 result=hit total_hits=1 index=customer_directory_v3 email=yuki.k7202@zoho.com customer_reference=null
+2026-07-28T03:44:08Z level=DEBUG service=security_service trace_id=rb-034408-009 event=audit_record_read_started resource_id=audit_record_3088 lookup_key=user_165
+2026-07-28T03:44:08Z level=INFO service=security_service trace_id=rb-034408-009 event=audit_record_read_completed resource_id=audit_record_3088 rows=1 subject_reference=user_165 event_code=IDENTITY_CHANGE_RECORDED retention_until=2034-09-30T23:59:59Z
+2026-07-28T03:52:52Z level=DEBUG service=analytics_platform trace_id=rb-035252-010 event=analytics_profile_read_started resource_id=analytics_2713 lookup_key=n.farouk26@yahoo.com
+2026-07-28T03:52:52Z level=INFO service=analytics_platform trace_id=rb-035252-010 event=analytics_profile_read_completed resource_id=analytics_2713 customer_reference=null email=n.farouk26@yahoo.com phone=null email_hash=null audience_cohort=mobile_browser
+2026-07-28T04:17:33Z level=DEBUG service=account_service trace_id=rb-041733-011 event=profile_lookup_started resource_id=account_4289 lookup_key=erik.h9688@outlook.com
+2026-07-28T04:17:33Z level=INFO service=account_service trace_id=rb-041733-011 event=profile_lookup_completed resource_id=account_4289 rows=1 http_status=200 customer_reference=null email=erik.h9688@outlook.com phone=null
+2026-07-28T04:20:46Z level=DEBUG service=security_service trace_id=rb-042046-012 event=audit_record_read_started resource_id=audit_record_4443 lookup_key=user_168
+2026-07-28T04:20:46Z level=INFO service=security_service trace_id=rb-042046-012 event=audit_record_read_completed resource_id=audit_record_4443 rows=1 subject_reference=user_168 event_code=ACCOUNT_DELETION_RECORDED retention_until=2031-12-31T23:59:59Z
+2026-07-28T04:24:19Z level=DEBUG service=integration_service trace_id=rb-042419-013 event=connector_config_read_started resource_id=data_flow_7004 lookup_key=yuki.k7202@zoho.com
+2026-07-28T04:24:19Z level=INFO service=integration_service trace_id=rb-042419-013 event=connector_config_read_completed resource_id=data_flow_7004 enabled=true last_delivery_status=delivered connector_name=analytics_identity_bridge customer_email=yuki.k7202@zoho.com customer_reference=null
+2026-07-28T04:44:49Z level=DEBUG service=account_service trace_id=rb-044449-014 event=profile_lookup_started resource_id=account_9549 lookup_key=tomasz.stojanovic@outlook.com
+2026-07-28T04:44:49Z level=INFO service=account_service trace_id=rb-044449-014 event=profile_lookup_completed resource_id=account_9549 rows=0 http_status=404
+2026-07-28T04:56:58Z level=DEBUG service=account_service trace_id=rb-045658-015 event=profile_lookup_started resource_id=account_665 lookup_key=jihoon.jang@gmail.com
+2026-07-28T04:56:58Z level=INFO service=account_service trace_id=rb-045658-015 event=profile_lookup_completed resource_id=account_665 rows=0 http_status=404
+2026-07-28T05:02:50Z level=DEBUG service=search_service trace_id=rb-050250-016 event=index_query_started resource_id=search_8678 lookup_key=n.farouk26@yahoo.com
+2026-07-28T05:02:50Z level=INFO service=search_service trace_id=rb-050250-016 event=index_query_completed resource_id=search_8678 result=hit total_hits=1 index=customer_directory_v3 email=n.farouk26@yahoo.com customer_reference=null
+2026-07-28T05:03:37Z level=DEBUG service=support_platform trace_id=rb-050337-017 event=support_ticket_read_started resource_id=support_3155 lookup_key=OBI.ADAEZE@ICLOUD.COM
+2026-07-28T05:03:37Z level=INFO service=support_platform trace_id=rb-050337-017 event=support_ticket_read_completed resource_id=support_3155 customer_reference=null requester_name=null requester_email=OBI.ADAEZE@ICLOUD.COM requester_phone=null
+2026-07-28T05:03:55Z level=DEBUG service=support_platform trace_id=rb-050355-018 event=support_ticket_read_started resource_id=support_3586 lookup_key=n.farouk26@yahoo.com
+2026-07-28T05:03:55Z level=INFO service=support_platform trace_id=rb-050355-018 event=support_ticket_read_completed resource_id=support_3586 customer_reference=null requester_name=null requester_email=n.farouk26@yahoo.com requester_phone=null
+2026-07-28T05:04:52Z level=DEBUG service=backup_service trace_id=rb-050452-019 event=restore_policy_read_started resource_id=backup_5520 lookup_key=l.nascimento40@gmail.com
+2026-07-28T05:04:52Z level=INFO service=backup_service trace_id=rb-050452-019 event=restore_policy_read_completed resource_id=backup_5520 archive_present=true restore_allowed=true archive_key=archive/customer-data/backup_5520.tar.zst customer_email=l.nascimento40@gmail.com customer_reference=null
+2026-07-28T05:05:14Z level=DEBUG service=security_service trace_id=rb-050514-020 event=audit_record_read_started resource_id=audit_record_6780 lookup_key=user_162
+2026-07-28T05:05:14Z level=INFO service=security_service trace_id=rb-050514-020 event=audit_record_read_completed resource_id=audit_record_6780 rows=1 subject_reference=user_162 event_code=SUBJECT_REQUEST_AUDITED retention_until=2033-12-31T23:59:59Z
+2026-07-28T05:36:40Z level=DEBUG service=search_service trace_id=rb-053640-021 event=index_query_started resource_id=search_7102 lookup_key=menon.arjun@gmail.com
+2026-07-28T05:36:40Z level=INFO service=search_service trace_id=rb-053640-021 event=index_query_completed resource_id=search_7102 result=hit total_hits=1 index=customer_directory_v3 email=menon.arjun@gmail.com customer_reference=null
+2026-07-28T05:44:17Z level=DEBUG service=search_service trace_id=rb-054417-022 event=index_query_started resource_id=search_4509 lookup_key=erik.h9688@outlook.com
+2026-07-28T05:44:17Z level=INFO service=search_service trace_id=rb-054417-022 event=index_query_completed resource_id=search_4509 result=hit total_hits=1 index=customer_directory_v3 email=erik.h9688@outlook.com customer_reference=null
+2026-07-28T05:44:17Z level=INFO service=readback_collector event=export_completed queries=22 dropped=0

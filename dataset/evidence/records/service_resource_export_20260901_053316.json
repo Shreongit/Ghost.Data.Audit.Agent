@@ -1,0 +1,305 @@
+{
+  "exported_at": "2026-09-01T05:33:16Z",
+  "region": "global",
+  "service_exports": {
+    "account_service": {
+      "profile_lookups": [
+        {
+          "observed_at": "2026-09-01T05:06:02Z",
+          "profile": {
+            "customer_reference": null,
+            "email": "t.lima5881@yahoo.com",
+            "email_hash": null,
+            "full_name": null,
+            "phone": null
+          },
+          "resource_id": "account_4421",
+          "status_code": 200
+        },
+        {
+          "observed_at": "2026-09-01T04:31:43Z",
+          "profile": null,
+          "resource_id": "account_6813",
+          "status_code": 404
+        }
+      ]
+    },
+    "analytics_platform": {
+      "profiles": [
+        {
+          "audience_cohort": "returning_customer",
+          "customer_reference": null,
+          "email": "andres-alvarez@proton.me",
+          "email_hash": null,
+          "observed_at": "2026-09-01T02:46:10Z",
+          "phone": null,
+          "resource_id": "analytics_1316"
+        },
+        {
+          "audience_cohort": "returning_customer",
+          "customer_reference": null,
+          "email": "chioma-eze@gmail.com",
+          "email_hash": null,
+          "observed_at": "2026-09-01T03:47:46Z",
+          "phone": null,
+          "resource_id": "analytics_6105"
+        },
+        {
+          "audience_cohort": "mobile_browser",
+          "customer_reference": null,
+          "email": null,
+          "email_hash": null,
+          "observed_at": "2026-09-01T04:13:46Z",
+          "phone": null,
+          "resource_id": "analytics_9103"
+        }
+      ]
+    },
+    "backup_service": {
+      "restore_entries": [
+        {
+          "archive_key": "archive/customer-data/backup_7804.tar.zst",
+          "customer_email": "i.horvat72@gmail.com",
+          "customer_reference": null,
+          "observed_at": "2026-09-01T04:49:22Z",
+          "resource_id": "backup_7804",
+          "restore_allowed": true
+        }
+      ]
+    },
+    "export_service": {
+      "exports": [
+        {
+          "customer_reference": null,
+          "object_key": "exports/export_8827/customer_data.zip",
+          "observed_at": "2026-09-01T05:02:19Z",
+          "owner_email": "smorgan9115@fastmail.com",
+          "owner_phone": null,
+          "resource_id": "export_8827"
+        }
+      ]
+    },
+    "integration_service": {
+      "connectors": [
+        {
+          "connector_name": "support_profile_sync",
+          "customer_email": "t.lima5881@yahoo.com",
+          "customer_reference": null,
+          "enabled": true,
+          "last_delivery_status": "delivered",
+          "observed_at": "2026-09-01T03:12:34Z",
+          "resource_id": "data_flow_047"
+        },
+        {
+          "connector_name": "analytics_identity_bridge",
+          "customer_email": "maja.eriksen86@gmail.com",
+          "customer_reference": null,
+          "enabled": true,
+          "last_delivery_status": "delivered",
+          "observed_at": "2026-09-01T03:43:18Z",
+          "resource_id": "data_flow_3165"
+        }
+      ]
+    },
+    "search_service": {
+      "index_queries": [
+        {
+          "hits": {
+            "documents": [
+              {
+                "customer_reference": null,
+                "display_name": null,
+                "email": "nasser.mariam88@gmail.com",
+                "email_hash": null,
+                "phone": null,
+                "resource_id": "search_018"
+              }
+            ],
+            "total": 1
+          },
+          "observed_at": "2026-09-01T04:45:42Z",
+          "query": "nasser.mariam88@gmail.com",
+          "resource_id": "search_018"
+        },
+        {
+          "hits": {
+            "documents": [
+              {
+                "customer_reference": null,
+                "display_name": null,
+                "email": "t.lima5881@yahoo.com",
+                "email_hash": null,
+                "phone": null,
+                "resource_id": "search_1310"
+              }
+            ],
+            "total": 1
+          },
+          "observed_at": "2026-09-01T05:08:28Z",
+          "query": "t.lima5881@yahoo.com",
+          "resource_id": "search_1310"
+        },
+        {
+          "hits": {
+            "documents": [
+              {
+                "customer_reference": null,
+                "display_name": null,
+                "email": "eaddo6629@gmail.com",
+                "email_hash": null,
+                "phone": null,
+                "resource_id": "search_4586"
+              }
+            ],
+            "total": 1
+          },
+          "observed_at": "2026-09-01T05:33:16Z",
+          "query": "eaddo6629@gmail.com",
+          "resource_id": "search_4586"
+        },
+        {
+          "hits": {
+            "documents": [
+              {
+                "customer_reference": null,
+                "display_name": null,
+                "email": "smorgan9115@fastmail.com",
+                "email_hash": null,
+                "phone": null,
+                "resource_id": "search_5672"
+              }
+            ],
+            "total": 1
+          },
+          "observed_at": "2026-09-01T03:05:19Z",
+          "query": "smorgan9115@fastmail.com",
+          "resource_id": "search_5672"
+        },
+        {
+          "hits": {
+            "documents": [
+              {
+                "customer_reference": null,
+                "display_name": null,
+                "email": "mehta.neel82@icloud.com",
+                "email_hash": null,
+                "phone": null,
+                "resource_id": "search_7631"
+              }
+            ],
+            "total": 1
+          },
+          "observed_at": "2026-09-01T02:59:37Z",
+          "query": "mehta.neel82@icloud.com",
+          "resource_id": "search_7631"
+        },
+        {
+          "hits": {
+            "documents": [
+              {
+                "customer_reference": null,
+                "display_name": null,
+                "email": "andres-alvarez@proton.me",
+                "email_hash": null,
+                "phone": null,
+                "resource_id": "search_7807"
+              }
+            ],
+            "total": 1
+          },
+          "observed_at": "2026-09-01T05:12:30Z",
+          "query": "andres-alvarez@proton.me",
+          "resource_id": "search_7807"
+        },
+        {
+          "hits": {
+            "documents": [
+              {
+                "customer_reference": null,
+                "display_name": null,
+                "email": "chioma-eze@gmail.com",
+                "email_hash": null,
+                "phone": null,
+                "resource_id": "search_8561"
+              }
+            ],
+            "total": 1
+          },
+          "observed_at": "2026-09-01T04:44:40Z",
+          "query": "chioma-eze@gmail.com",
+          "resource_id": "search_8561"
+        }
+      ]
+    },
+    "security_service": {
+      "audit_records": [
+        {
+          "event_code": "SUBJECT_REQUEST_AUDITED",
+          "observed_at": "2026-09-01T03:39:53Z",
+          "resource_id": "audit_record_8778",
+          "retention_until": "2033-12-31T23:59:59Z",
+          "subject_reference": "user_95"
+        }
+      ]
+    },
+    "support_platform": {
+      "tickets": [
+        {
+          "customer_reference": null,
+          "message_excerpt": "Customer contacted support about account access.",
+          "observed_at": "2026-09-01T04:10:02Z",
+          "requester_email": "nasser.mariam88@gmail.com",
+          "requester_name": null,
+          "requester_phone": null,
+          "resource_id": "support_1630"
+        },
+        {
+          "customer_reference": null,
+          "message_excerpt": "Customer supplied contact details for a delivery query.",
+          "observed_at": "2026-09-01T05:26:52Z",
+          "requester_email": "t.lima5881@yahoo.com",
+          "requester_name": null,
+          "requester_phone": null,
+          "resource_id": "support_1824"
+        },
+        {
+          "customer_reference": null,
+          "message_excerpt": "Customer contacted support about account access.",
+          "observed_at": "2026-09-01T03:15:20Z",
+          "requester_email": "eaddo6629@gmail.com",
+          "requester_name": null,
+          "requester_phone": null,
+          "resource_id": "support_345"
+        },
+        {
+          "customer_reference": null,
+          "message_excerpt": "Customer contacted support about account access.",
+          "observed_at": "2026-09-01T03:30:27Z",
+          "requester_email": "andres-alvarez@proton.me",
+          "requester_name": null,
+          "requester_phone": null,
+          "resource_id": "support_5750"
+        },
+        {
+          "customer_reference": null,
+          "message_excerpt": "Customer asked support to correct delivery details.",
+          "observed_at": "2026-09-01T04:13:52Z",
+          "requester_email": "andres-alvarez@proton.me",
+          "requester_name": null,
+          "requester_phone": null,
+          "resource_id": "support_7311"
+        },
+        {
+          "customer_reference": null,
+          "message_excerpt": "Customer contacted support about account access.",
+          "observed_at": "2026-09-01T03:57:56Z",
+          "requester_email": "mehta.neel82@icloud.com",
+          "requester_name": null,
+          "requester_phone": null,
+          "resource_id": "support_7691"
+        }
+      ]
+    }
+  },
+  "source": "records_assurance_gateway"
+}

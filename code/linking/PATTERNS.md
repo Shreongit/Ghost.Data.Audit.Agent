@@ -1,0 +1,134 @@
+# Resource-link patterns from public sample evidence
+
+This report uses only the participant-visible sample requests, sample outputs, identities, activities, and evidence. The sample answers are used only to measure linker recall; their resource IDs are not present in linker code or prediction rules. The row-level trace is retained in `sample_resource_trace.tsv` for audit.
+
+Gold resource links traced: **111**.
+- direct record or trace: **76**.
+- same file only: **11**.
+- window activity only: **13**.
+- no visible connection: **11**.
+
+## Connection patterns
+
+1. **Same record / SQL row:** resource ID and email, hash, phone, or stable `user_id` occur in one parsed evidence fact. Strongest normal path for JSON and relational evidence.
+2. **Trace-group join:** a log lookup key is on a start event and the resource/result is on a completion event sharing a trace, request, correlation, session, or span identifier. JSON-with-quoted-keys is parsed before grouping. The grouped fact carries the original evidence file ID and event time.
+3. **Explicit subject reference:** a resource-bearing security or audit row identifies the resolved stable `user_id` in its own evidence fact.
+4. **Resource observed without subject:** inventory, delete activity, or a probe may establish state for a resource but cannot identify its owner on its own. Activity-window and probe conjunctions remain low-confidence unless an identity-bearing evidence path supports assignment.
+5. **Whole-file coincidence:** finding a resource and an alias somewhere in one artifact is insufficient when they occur in distinct unrelated records or distant screenshot panels. OCR/PDF extraction now creates resource-local line windows to reduce these false links.
+6. **No recoverable connection:** some gold resource IDs do not occur in cutoff-valid participant evidence linked to the request alias. These are counted as recall misses. The planner does not invent account suffixes or claim that a workflow `SUCCESS` proves absence.
+
+## Per-resource audit table
+
+| Case | Resource | Category | Direct linked evidence | Same-file alias/resource | Activity-window refs | Gold citation |
+|---|---|---|---|---|---|---|
+| case_01 | account_001 |  |  |  | activity_3342 | evidence_54 |
+| case_02 | account_002 |  |  |  |  | evidence_54 |
+| case_03 | account_7566 | USER_PROFILE | evidence_94 | evidence_94 | activity_3851 | evidence_94 |
+| case_03 | analytics_9406 | ANALYTICS_PROFILE |  | evidence_94 | activity_3852 | evidence_94 |
+| case_03 | audit_record_2016 | SECURITY_AUDIT_LOG | evidence_94 | evidence_94 |  | evidence_94 |
+| case_04 | account_004 |  |  |  |  | evidence_54 |
+| case_04 | analytics_901 | ANALYTICS_PROFILE |  |  | activity_3463 | evidence_56 |
+| case_05 | account_005 | USER_PROFILE | evidence_54 | evidence_54 |  | evidence_54 |
+| case_06 | account_006 |  |  |  | activity_3545 |  |
+| case_06 | search_001 | SEARCH_INDEX_ENTRY | evidence_57 | evidence_57 |  | evidence_57 |
+| case_07 | account_007 |  |  |  | activity_3590 |  |
+| case_07 | support_001 | SUPPORT_MESSAGE | evidence_58 | evidence_58 |  | evidence_58 |
+| case_08 | account_008 |  |  |  |  |  |
+| case_08 | export_001 | USER_EXPORT | evidence_59 | evidence_59 |  | evidence_59 |
+| case_09 | account_3960 |  |  |  | activity_3703 |  |
+| case_09 | audit_record_4902 |  |  |  |  |  |
+| case_09 | backup_4978 | BACKUP_ARCHIVE | evidence_93 | evidence_93 |  | evidence_93 |
+| case_10 | account_010 |  |  |  |  |  |
+| case_10 | support_002 | SECONDARY_IDENTIFIER | evidence_61 | evidence_61 |  | evidence_61 |
+| case_11 | account_4248 | USER_PROFILE | evidence_03 | evidence_03 | activity_3801 |  |
+| case_11 | analytics_2034 | ANALYTICS_PROFILE | evidence_03 | evidence_03 |  | evidence_03 |
+| case_11 | audit_record_9394 | SECURITY_AUDIT_LOG | evidence_03 | evidence_03 |  |  |
+| case_11 | data_flow_9522 | DATA_FLOW | evidence_03 | evidence_03 |  | evidence_03 |
+| case_11 | search_052 | SEARCH_INDEX_ENTRY | evidence_03 | evidence_03 |  | evidence_03 |
+| case_11 | support_864 | SUPPORT_MESSAGE | evidence_03 | evidence_03 |  | evidence_03 |
+| case_12 | account_9797 | USER_PROFILE | evidence_01 | evidence_01 | activity_3432 |  |
+| case_12 | analytics_9914 | ANALYTICS_PROFILE | evidence_01 | evidence_01 |  | evidence_01 |
+| case_12 | audit_record_2945 | SECURITY_AUDIT_LOG | evidence_01 | evidence_01 |  |  |
+| case_13 | account_9335 | USER_PROFILE | evidence_03 | evidence_03 | activity_3739 |  |
+| case_13 | audit_record_4816 | SECURITY_AUDIT_LOG | evidence_03 | evidence_03 |  |  |
+| case_13 | search_1308 | SEARCH_INDEX_ENTRY | evidence_03 | evidence_03 |  | evidence_03 |
+| case_13 | support_4218 | SUPPORT_ATTACHMENT | evidence_03 | evidence_03 |  | evidence_03 |
+| case_14 | account_3677 | USER_PROFILE | evidence_03 | evidence_03 | activity_3686 |  |
+| case_14 | audit_record_987 | SECURITY_AUDIT_LOG | evidence_03 | evidence_03 |  |  |
+| case_14 | backup_3870 | BACKUP_ARCHIVE | evidence_03 | evidence_03 |  | evidence_03 |
+| case_15 | account_4745 | USER_PROFILE | evidence_01 | evidence_01 | activity_3382 |  |
+| case_15 | audit_record_1596 | SECURITY_AUDIT_LOG | evidence_01 | evidence_01 |  |  |
+| case_15 | data_flow_9846 | DATA_FLOW | evidence_01 | evidence_01 |  | evidence_01 |
+| case_16 | account_994 | USER_PROFILE | evidence_05 | evidence_05 | activity_3571 | evidence_05 |
+| case_16 | audit_record_9528 | SECURITY_AUDIT_LOG | evidence_05 | evidence_05 |  |  |
+| case_16 | search_1007 | SEARCH_INDEX_ENTRY | evidence_05 | evidence_05 |  | evidence_05 |
+| case_17 | account_4092 | USER_PROFILE | evidence_01 | evidence_01 | activity_3383 |  |
+| case_17 | audit_record_1797 | SECURITY_AUDIT_LOG | evidence_01 | evidence_01 |  |  |
+| case_17 | backup_3245 | BACKUP_ARCHIVE | evidence_01 | evidence_01 |  | evidence_01 |
+| case_18 | account_5521 |  |  |  | activity_3732 |  |
+| case_18 | analytics_037 | ANALYTICS_PROFILE | evidence_94 | evidence_94 |  | evidence_94 |
+| case_18 | audit_record_6645 |  |  |  |  |  |
+| case_18 | data_flow_4890 | DATA_FLOW | evidence_94 | evidence_94 |  | evidence_94 |
+| case_18 | search_4013 | SEARCH_INDEX_ENTRY | evidence_94 | evidence_94 |  | evidence_94 |
+| case_18 | support_5569 | SUPPORT_MESSAGE | evidence_94 | evidence_94 |  | evidence_94 |
+| case_19 | account_9102 | USER_PROFILE | evidence_01 | evidence_01 | activity_3323 |  |
+| case_19 | audit_record_6793 | SECURITY_AUDIT_LOG | evidence_01 | evidence_01 |  |  |
+| case_19 | search_6083 | SEARCH_INDEX_ENTRY | evidence_01 | evidence_01 |  | evidence_01 |
+| case_19 | support_9553 | SUPPORT_MESSAGE | evidence_01 | evidence_01 |  | evidence_01 |
+| case_20 | account_5037 |  |  |  | activity_3734 |  |
+| case_20 | audit_record_5569 |  |  |  |  |  |
+| case_20 | data_flow_1770 | DATA_FLOW | evidence_94 | evidence_94 |  | evidence_94 |
+| case_20 | search_4262 | SEARCH_INDEX_ENTRY | evidence_94 | evidence_94 |  | evidence_94 |
+| case_21 | account_6440 | USER_PROFILE |  | evidence_92 | activity_3661 | evidence_92 |
+| case_21 | analytics_5335 | ANALYTICS_PROFILE |  | evidence_92 | activity_3665 | evidence_92 |
+| case_21 | audit_record_3737 | SECURITY_AUDIT_LOG | evidence_92 | evidence_92 |  | evidence_92 |
+| case_22 | account_4990 |  |  |  | activity_3573 |  |
+| case_22 | analytics_4440 | ANALYTICS_PROFILE | evidence_05 | evidence_05 |  | evidence_05 |
+| case_22 | audit_record_3482 | SECURITY_AUDIT_LOG | evidence_05 | evidence_05 |  |  |
+| case_22 | search_8911 | SEARCH_INDEX_ENTRY | evidence_05 | evidence_05 |  | evidence_05 |
+| case_23 | account_410 |  |  |  | activity_3662 |  |
+| case_23 | audit_record_4128 |  |  |  |  |  |
+| case_23 | export_7364 | USER_EXPORT | evidence_92 | evidence_92 |  | evidence_92 |
+| case_23 | search_898 | SEARCH_INDEX_ENTRY | evidence_92 | evidence_92 |  | evidence_92 |
+| case_24 | account_5334 | USER_PROFILE | evidence_92 | evidence_92 | activity_3599 | evidence_92 |
+| case_24 | audit_record_7095 |  |  |  |  |  |
+| case_24 | search_5577 | SEARCH_INDEX_ENTRY | evidence_92 | evidence_92 |  | evidence_92 |
+| case_25 | account_3136 | USER_PROFILE |  | evidence_92 | activity_3597 | evidence_92 |
+| case_25 | analytics_1895 | ANALYTICS_PROFILE |  | evidence_92 | activity_3602 | evidence_92 |
+| case_25 | audit_record_451 | SECURITY_AUDIT_LOG | evidence_92 | evidence_92 |  | evidence_92 |
+| case_26 | account_5684 | USER_PROFILE |  | evidence_92 | activity_3600 | evidence_92 |
+| case_26 | analytics_4566 | ANALYTICS_PROFILE |  | evidence_92 | activity_3603 | evidence_92 |
+| case_26 | audit_record_5416 | SECURITY_AUDIT_LOG | evidence_92 | evidence_92 |  | evidence_92 |
+| case_26 | backup_3120 | BACKUP_ARCHIVE | evidence_92 | evidence_92 | activity_3607 | evidence_92 |
+| case_26 | data_flow_6244 | DATA_FLOW | evidence_92 | evidence_92 | activity_3606 | evidence_92 |
+| case_26 | support_4715 | SUPPORT_MESSAGE | evidence_92 | evidence_92 | activity_3605 | evidence_92 |
+| case_27 | account_3866 | USER_PROFILE |  | evidence_92 | activity_3530 | evidence_92 |
+| case_27 | analytics_4574 | ANALYTICS_PROFILE |  | evidence_92 | activity_3533 | evidence_92 |
+| case_27 | audit_record_3830 | SECURITY_AUDIT_LOG | evidence_92 | evidence_92 |  | evidence_92 |
+| case_27 | backup_5970 | BACKUP_ARCHIVE | evidence_92 | evidence_92 | activity_3540 | evidence_92 |
+| case_27 | data_flow_2295 | DATA_FLOW | evidence_92 | evidence_92 | activity_3537 | evidence_92 |
+| case_27 | support_4707 | SUPPORT_MESSAGE | evidence_92 | evidence_92 | activity_3536 | evidence_92 |
+| case_28 | account_5482 | USER_PROFILE |  | evidence_92 | activity_3529 | evidence_92 |
+| case_28 | analytics_6077 | ANALYTICS_PROFILE |  | evidence_92 | activity_3534 | evidence_92 |
+| case_28 | audit_record_9265 | SECURITY_AUDIT_LOG | evidence_92 | evidence_92 |  | evidence_92 |
+| case_28 | backup_838 | BACKUP_ARCHIVE | evidence_92 | evidence_92 | activity_3539 | evidence_92 |
+| case_28 | data_flow_2337 | DATA_FLOW | evidence_92 | evidence_92 | activity_3538 | evidence_92 |
+| case_28 | support_2351 | SUPPORT_MESSAGE | evidence_92 | evidence_92 | activity_3535 | evidence_92 |
+| case_29 | account_7012 |  |  |  | activity_3532 |  |
+| case_29 | analytics_5208 | ANALYTICS_PROFILE | evidence_92 | evidence_92 |  | evidence_92 |
+| case_29 | audit_record_3954 |  |  |  |  |  |
+| case_29 | data_flow_3827 | DATA_FLOW | evidence_92 | evidence_92 |  | evidence_92 |
+| case_29 | search_1993 | SEARCH_INDEX_ENTRY | evidence_92 | evidence_92 |  | evidence_92 |
+| case_29 | support_5281 | SUPPORT_MESSAGE | evidence_92 | evidence_92 |  | evidence_92 |
+| case_30 | account_4163 |  |  |  | activity_3465 |  |
+| case_30 | analytics_3697 | ANALYTICS_PROFILE | evidence_92 | evidence_92 |  | evidence_92 |
+| case_30 | audit_record_1707 |  |  |  |  |  |
+| case_30 | data_flow_8524 | DATA_FLOW | evidence_92 | evidence_92 |  | evidence_92 |
+| case_30 | search_9359 | SEARCH_INDEX_ENTRY | evidence_92 | evidence_92 |  | evidence_92 |
+| case_30 | support_6477 | SUPPORT_MESSAGE | evidence_92 | evidence_92 |  | evidence_92 |
+| case_31 | account_4857 |  |  |  | activity_3682 | evidence_51 |
+| case_31 | audit_record_6909 | SECURITY_AUDIT_LOG | evidence_51 | evidence_51 |  | evidence_51 |
+| case_31 | tombstone_440 | ACCOUNT_TOMBSTONE | evidence_51 | evidence_51 | activity_3687 | evidence_51 |
+| case_32 | account_8858 |  |  |  | activity_3685 |  |
+| case_32 | audit_record_7068 | SECURITY_AUDIT_LOG | evidence_51 | evidence_51 |  |  |
+| case_32 | tombstone_9178 | ACCOUNT_TOMBSTONE | evidence_51 | evidence_51 |  | evidence_51 |

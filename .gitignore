@@ -1,0 +1,7 @@
+.env
+.venv/
+__pycache__/
+*.py[cod]
+code/.cache/
+code.zip
+sample_predictions.csv

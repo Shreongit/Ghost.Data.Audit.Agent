@@ -1,0 +1,167 @@
+{
+  "exported_at": "2026-10-01T12:00:00Z",
+  "origin": "security_audit_service",
+  "record_count": 20,
+  "records": [
+    {
+      "recorded_at": "2026-10-01T12:00:00Z",
+      "system": "account_service",
+      "resource_id": "account_1733",
+      "record_type": "USER_PROFILE",
+      "result": "FOUND",
+      "subject_reference": "haruka-kato@gmail.com"
+    },
+    {
+      "recorded_at": "2026-10-01T12:00:00Z",
+      "system": "account_service",
+      "resource_id": "account_2176",
+      "record_type": "USER_PROFILE",
+      "result": "FOUND",
+      "subject_reference": "ieriksen5151@fastmail.com"
+    },
+    {
+      "recorded_at": "2026-10-01T12:00:00Z",
+      "system": "account_service",
+      "resource_id": "account_228",
+      "record_type": "USER_PROFILE",
+      "result": "FOUND",
+      "subject_reference": "omar.nasser@gmail.com"
+    },
+    {
+      "recorded_at": "2026-10-01T12:00:00Z",
+      "system": "account_service",
+      "resource_id": "account_2461",
+      "record_type": "USER_PROFILE",
+      "result": "FOUND",
+      "subject_reference": "elena.h3070@zoho.com"
+    },
+    {
+      "recorded_at": "2026-10-01T12:00:00Z",
+      "system": "account_service",
+      "resource_id": "account_5605",
+      "record_type": "USER_PROFILE",
+      "result": "FOUND",
+      "subject_reference": "aditi.mehta@outlook.com"
+    },
+    {
+      "recorded_at": "2026-10-01T12:00:00Z",
+      "system": "account_service",
+      "resource_id": "account_5835",
+      "record_type": "USER_PROFILE",
+      "result": "FOUND",
+      "subject_reference": "mlim7637@gmail.com"
+    },
+    {
+      "recorded_at": "2026-10-01T12:00:00Z",
+      "system": "account_service",
+      "resource_id": "account_6486",
+      "record_type": "USER_PROFILE",
+      "result": "FOUND",
+      "subject_reference": "morgan.amelia@icloud.com"
+    },
+    {
+      "recorded_at": "2026-10-01T12:00:00Z",
+      "system": "account_service",
+      "resource_id": "account_7452",
+      "record_type": "USER_PROFILE",
+      "result": "FOUND",
+      "subject_reference": "l.alvarez94@yahoo.com"
+    },
+    {
+      "recorded_at": "2026-10-01T12:00:00Z",
+      "system": "account_service",
+      "resource_id": "account_7821",
+      "record_type": "USER_PROFILE",
+      "result": "FOUND",
+      "subject_reference": "gabriel.l5556@outlook.com"
+    },
+    {
+      "recorded_at": "2026-10-01T12:00:00Z",
+      "system": "account_service",
+      "resource_id": "account_9321",
+      "record_type": "USER_PROFILE",
+      "result": "FOUND",
+      "subject_reference": "leonie-rousseau@proton.me"
+    },
+    {
+      "recorded_at": "2026-10-01T12:00:00Z",
+      "system": "security_service",
+      "resource_id": "audit_record_1414",
+      "record_type": "SECURITY_AUDIT_LOG",
+      "result": "FOUND",
+      "subject_reference": "user_537"
+    },
+    {
+      "recorded_at": "2026-10-01T12:00:00Z",
+      "system": "security_service",
+      "resource_id": "audit_record_1485",
+      "record_type": "SECURITY_AUDIT_LOG",
+      "result": "FOUND",
+      "subject_reference": "user_536"
+    },
+    {
+      "recorded_at": "2026-10-01T12:00:00Z",
+      "system": "security_service",
+      "resource_id": "audit_record_5109",
+      "record_type": "SECURITY_AUDIT_LOG",
+      "result": "FOUND",
+      "subject_reference": "user_535"
+    },
+    {
+      "recorded_at": "2026-10-01T12:00:00Z",
+      "system": "security_service",
+      "resource_id": "audit_record_5623",
+      "record_type": "SECURITY_AUDIT_LOG",
+      "result": "FOUND",
+      "subject_reference": "user_534"
+    },
+    {
+      "recorded_at": "2026-10-01T12:00:00Z",
+      "system": "security_service",
+      "resource_id": "audit_record_6742",
+      "record_type": "SECURITY_AUDIT_LOG",
+      "result": "FOUND",
+      "subject_reference": "user_533"
+    },
+    {
+      "recorded_at": "2026-10-01T12:00:00Z",
+      "system": "security_service",
+      "resource_id": "audit_record_7626",
+      "record_type": "SECURITY_AUDIT_LOG",
+      "result": "FOUND",
+      "subject_reference": "user_531"
+    },
+    {
+      "recorded_at": "2026-10-01T12:00:00Z",
+      "system": "security_service",
+      "resource_id": "audit_record_7744",
+      "record_type": "SECURITY_AUDIT_LOG",
+      "result": "FOUND",
+      "subject_reference": "user_539"
+    },
+    {
+      "recorded_at": "2026-10-01T12:00:00Z",
+      "system": "security_service",
+      "resource_id": "audit_record_7894",
+      "record_type": "SECURITY_AUDIT_LOG",
+      "result": "FOUND",
+      "subject_reference": "user_538"
+    },
+    {
+      "recorded_at": "2026-10-01T12:00:00Z",
+      "system": "security_service",
+      "resource_id": "audit_record_9239",
+      "record_type": "SECURITY_AUDIT_LOG",
+      "result": "FOUND",
+      "subject_reference": "user_532"
+    },
+    {
+      "recorded_at": "2026-10-01T12:00:00Z",
+      "system": "security_service",
+      "resource_id": "audit_record_9993",
+      "record_type": "SECURITY_AUDIT_LOG",
+      "result": "FOUND",
+      "subject_reference": "user_540"
+    }
+  ]
+}

@@ -1,0 +1,60 @@
+2026-06-23T02:45:15Z level=INFO service=readback_collector event=export_started target_count=29 mode=point_in_time
+2026-06-23T02:45:15Z level=DEBUG service=analytics_platform trace_id=rb-024515-001 event=analytics_profile_read_started resource_id=analytics_1964 lookup_key=null
+2026-06-23T02:45:15Z level=INFO service=analytics_platform trace_id=rb-024515-001 event=analytics_profile_read_completed resource_id=analytics_1964 customer_reference=null email=null phone=null email_hash=null audience_cohort=mobile_browser
+2026-06-23T02:47:51Z level=DEBUG service=account_service trace_id=rb-024751-002 event=profile_lookup_started resource_id=account_2838 lookup_key=daniel-parker@proton.me
+2026-06-23T02:47:51Z level=INFO service=account_service trace_id=rb-024751-002 event=profile_lookup_completed resource_id=account_2838 rows=0 http_status=404
+2026-06-23T02:48:26Z level=DEBUG service=security_service trace_id=rb-024826-003 event=audit_record_read_started resource_id=audit_record_8350 lookup_key=user_231
+2026-06-23T02:48:26Z level=INFO service=security_service trace_id=rb-024826-003 event=audit_record_read_completed resource_id=audit_record_8350 rows=1 subject_reference=user_231 event_code=SUBJECT_REQUEST_AUDITED retention_until=2033-12-31T23:59:59Z
+2026-06-23T02:59:55Z level=DEBUG service=search_service trace_id=rb-025955-004 event=index_query_started resource_id=search_5659 lookup_key=oskar.n737097@zoho.com
+2026-06-23T02:59:55Z level=INFO service=search_service trace_id=rb-025955-004 event=index_query_completed resource_id=search_5659 result=hit total_hits=1 index=customer_directory_v3 email=oskar.n737097@zoho.com customer_reference=null
+2026-06-23T03:00:12Z level=DEBUG service=backup_service trace_id=rb-030012-005 event=restore_policy_read_started resource_id=backup_2775 lookup_key=user_233
+2026-06-23T03:00:12Z level=INFO service=backup_service trace_id=rb-030012-005 event=restore_policy_read_completed resource_id=backup_2775 archive_present=true restore_allowed=false archive_key=archive/customer-data/backup_2775.tar.zst customer_email=null customer_reference=user_233
+2026-06-23T03:00:52Z level=DEBUG service=integration_service trace_id=rb-030052-006 event=connector_config_read_started resource_id=data_flow_4475 lookup_key=pavel.nowak98@gmail.com
+2026-06-23T03:00:52Z level=INFO service=integration_service trace_id=rb-030052-006 event=connector_config_read_completed resource_id=data_flow_4475 enabled=true last_delivery_status=delivered connector_name=analytics_identity_bridge customer_email=pavel.nowak98@gmail.com customer_reference=null
+2026-06-23T03:12:04Z level=DEBUG service=support_platform trace_id=rb-031204-007 event=support_ticket_read_started resource_id=support_9670 lookup_key=user_231
+2026-06-23T03:12:04Z level=INFO service=support_platform trace_id=rb-031204-007 event=support_ticket_read_completed resource_id=support_9670 customer_reference=user_231 requester_name=null requester_email=null requester_phone=null
+2026-06-23T03:15:07Z level=DEBUG service=search_service trace_id=rb-031507-008 event=index_query_started resource_id=search_2433 lookup_key=p.kapoor94@yahoo.com
+2026-06-23T03:15:07Z level=INFO service=search_service trace_id=rb-031507-008 event=index_query_completed resource_id=search_2433 result=hit total_hits=1 index=customer_directory_v3 email=p.kapoor94@yahoo.com customer_reference=null
+2026-06-23T03:28:05Z level=DEBUG service=account_service trace_id=rb-032805-009 event=profile_lookup_started resource_id=account_886 lookup_key=haeun.h9856@outlook.com
+2026-06-23T03:28:05Z level=INFO service=account_service trace_id=rb-032805-009 event=profile_lookup_completed resource_id=account_886 rows=0 http_status=404
+2026-06-23T03:30:57Z level=DEBUG service=analytics_platform trace_id=rb-033057-010 event=analytics_profile_read_started resource_id=analytics_6723 lookup_key=null
+2026-06-23T03:30:57Z level=INFO service=analytics_platform trace_id=rb-033057-010 event=analytics_profile_read_completed resource_id=analytics_6723 customer_reference=null email=null phone=null email_hash=null audience_cohort=home_lifestyle
+2026-06-23T03:44:28Z level=DEBUG service=account_service trace_id=rb-034428-011 event=profile_lookup_started resource_id=account_2788 lookup_key=p.kapoor94@yahoo.com
+2026-06-23T03:44:28Z level=INFO service=account_service trace_id=rb-034428-011 event=profile_lookup_completed resource_id=account_2788 rows=1 http_status=200 customer_reference=null email=p.kapoor94@yahoo.com phone=null
+2026-06-23T03:53:59Z level=DEBUG service=security_service trace_id=rb-035359-012 event=audit_record_read_started resource_id=audit_record_4940 lookup_key=user_237
+2026-06-23T03:53:59Z level=INFO service=security_service trace_id=rb-035359-012 event=audit_record_read_completed resource_id=audit_record_4940 rows=1 subject_reference=user_237 event_code=ACCOUNT_DELETION_RECORDED retention_until=2031-12-31T23:59:59Z
+2026-06-23T03:55:37Z level=DEBUG service=search_service trace_id=rb-035537-013 event=index_query_started resource_id=search_5385 lookup_key=larissa.carvalho@outlook.com
+2026-06-23T03:55:37Z level=INFO service=search_service trace_id=rb-035537-013 event=index_query_completed resource_id=search_5385 result=hit total_hits=1 index=customer_directory_v3 email=larissa.carvalho@outlook.com customer_reference=null
+2026-06-23T03:56:07Z level=DEBUG service=integration_service trace_id=rb-035607-014 event=connector_config_read_started resource_id=data_flow_7352 lookup_key=larissa.carvalho@outlook.com
+2026-06-23T03:56:07Z level=INFO service=integration_service trace_id=rb-035607-014 event=connector_config_read_completed resource_id=data_flow_7352 enabled=true last_delivery_status=delivered connector_name=customer_events_connector customer_email=larissa.carvalho@outlook.com customer_reference=null
+2026-06-23T03:58:14Z level=DEBUG service=security_service trace_id=rb-035814-015 event=audit_record_read_started resource_id=audit_record_6797 lookup_key=user_236
+2026-06-23T03:58:14Z level=INFO service=security_service trace_id=rb-035814-015 event=audit_record_read_completed resource_id=audit_record_6797 rows=1 subject_reference=user_236 event_code=PRIVACY_REQUEST_ACCEPTED retention_until=2032-06-30T23:59:59Z
+2026-06-23T04:07:22Z level=DEBUG service=search_service trace_id=rb-040722-016 event=index_query_started resource_id=search_9335 lookup_key=ifournier945196@fastmail.com
+2026-06-23T04:07:22Z level=INFO service=search_service trace_id=rb-040722-016 event=index_query_completed resource_id=search_9335 result=hit total_hits=1 index=customer_directory_v3 email=ifournier945196@fastmail.com customer_reference=null
+2026-06-23T04:17:27Z level=DEBUG service=account_service trace_id=rb-041727-017 event=profile_lookup_started resource_id=account_5264 lookup_key=mandla-masuku@gmail.com
+2026-06-23T04:17:27Z level=INFO service=account_service trace_id=rb-041727-017 event=profile_lookup_completed resource_id=account_5264 rows=0 http_status=404
+2026-06-23T04:18:02Z level=DEBUG service=analytics_platform trace_id=rb-041802-018 event=analytics_profile_read_started resource_id=analytics_8565 lookup_key=null
+2026-06-23T04:18:02Z level=INFO service=analytics_platform trace_id=rb-041802-018 event=analytics_profile_read_completed resource_id=analytics_8565 customer_reference=null email=null phone=null email_hash=null audience_cohort=returning_customer
+2026-06-23T04:32:55Z level=DEBUG service=export_service trace_id=rb-043255-019 event=export_metadata_read_started resource_id=export_5242 lookup_key=ifournier945196@fastmail.com
+2026-06-23T04:32:55Z level=INFO service=export_service trace_id=rb-043255-019 event=export_metadata_read_completed resource_id=export_5242 available=true owner_email=ifournier945196@fastmail.com object_key=exports/export_5242/customer_data.zip
+2026-06-23T04:42:25Z level=DEBUG service=search_service trace_id=rb-044225-020 event=index_query_started resource_id=search_2615 lookup_key=kmori1937@gmail.com
+2026-06-23T04:42:25Z level=INFO service=search_service trace_id=rb-044225-020 event=index_query_completed resource_id=search_2615 result=hit total_hits=1 index=customer_directory_v3 email=kmori1937@gmail.com customer_reference=null
+2026-06-23T05:06:03Z level=DEBUG service=support_platform trace_id=rb-050603-021 event=support_ticket_read_started resource_id=support_9391 lookup_key=user_233
+2026-06-23T05:06:03Z level=INFO service=support_platform trace_id=rb-050603-021 event=support_ticket_read_completed resource_id=support_9391 customer_reference=user_233 requester_name=null requester_email=null requester_phone=null
+2026-06-23T05:10:14Z level=DEBUG service=search_service trace_id=rb-051014-022 event=index_query_started resource_id=search_2904 lookup_key=pavel.nowak98@gmail.com
+2026-06-23T05:10:14Z level=INFO service=search_service trace_id=rb-051014-022 event=index_query_completed resource_id=search_2904 result=hit total_hits=1 index=customer_directory_v3 email=pavel.nowak98@gmail.com customer_reference=null
+2026-06-23T05:12:38Z level=DEBUG service=support_platform trace_id=rb-051238-023 event=support_ticket_read_started resource_id=support_1254 lookup_key=kmori1937@gmail.com
+2026-06-23T05:12:38Z level=INFO service=support_platform trace_id=rb-051238-023 event=support_ticket_read_completed resource_id=support_1254 customer_reference=null requester_name=null requester_email=kmori1937@gmail.com requester_phone=null
+2026-06-23T05:15:38Z level=DEBUG service=integration_service trace_id=rb-051538-024 event=connector_config_read_started resource_id=data_flow_4568 lookup_key=oskar.n737097@zoho.com
+2026-06-23T05:15:38Z level=INFO service=integration_service trace_id=rb-051538-024 event=connector_config_read_completed resource_id=data_flow_4568 enabled=true last_delivery_status=delivered connector_name=customer_events_connector customer_email=oskar.n737097@zoho.com customer_reference=null
+2026-06-23T05:15:55Z level=DEBUG service=integration_service trace_id=rb-051555-025 event=connector_config_read_started resource_id=data_flow_6754 lookup_key=user_231
+2026-06-23T05:15:55Z level=INFO service=integration_service trace_id=rb-051555-025 event=connector_config_read_completed resource_id=data_flow_6754 enabled=false last_delivery_status=stopped connector_name=support_profile_sync customer_email=null customer_reference=user_231
+2026-06-23T05:19:09Z level=DEBUG service=security_service trace_id=rb-051909-026 event=audit_record_read_started resource_id=audit_record_7103 lookup_key=user_233
+2026-06-23T05:19:09Z level=INFO service=security_service trace_id=rb-051909-026 event=audit_record_read_completed resource_id=audit_record_7103 rows=1 subject_reference=user_233 event_code=PRIVACY_REQUEST_ACCEPTED retention_until=2032-06-30T23:59:59Z
+2026-06-23T05:28:47Z level=DEBUG service=account_service trace_id=rb-052847-027 event=profile_lookup_started resource_id=account_945 lookup_key=romero.valeria94@icloud.com
+2026-06-23T05:28:47Z level=INFO service=account_service trace_id=rb-052847-027 event=profile_lookup_completed resource_id=account_945 rows=0 http_status=404
+2026-06-23T05:35:07Z level=DEBUG service=backup_service trace_id=rb-053507-028 event=restore_policy_read_started resource_id=backup_8162 lookup_key=user_231
+2026-06-23T05:35:07Z level=INFO service=backup_service trace_id=rb-053507-028 event=restore_policy_read_completed resource_id=backup_8162 archive_present=true restore_allowed=false archive_key=archive/customer-data/backup_8162.tar.zst customer_email=null customer_reference=user_231
+2026-06-23T05:37:26Z level=DEBUG service=integration_service trace_id=rb-053726-029 event=connector_config_read_started resource_id=data_flow_593 lookup_key=user_233
+2026-06-23T05:37:26Z level=INFO service=integration_service trace_id=rb-053726-029 event=connector_config_read_completed resource_id=data_flow_593 enabled=false last_delivery_status=stopped connector_name=customer_events_connector customer_email=null customer_reference=user_233
+2026-06-23T05:37:26Z level=INFO service=readback_collector event=export_completed queries=29 dropped=0

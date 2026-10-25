@@ -1,0 +1,296 @@
+{
+  "exported_at": "2026-03-20T07:23:49Z",
+  "region": "global",
+  "service_exports": {
+    "account_service": {
+      "profile_lookups": [
+        {
+          "observed_at": "2026-03-20T06:07:21Z",
+          "profile": null,
+          "resource_id": "account_2420",
+          "status_code": 404
+        },
+        {
+          "observed_at": "2026-03-20T06:29:58Z",
+          "profile": null,
+          "resource_id": "account_2696",
+          "status_code": 404
+        },
+        {
+          "observed_at": "2026-03-20T07:23:49Z",
+          "profile": {
+            "customer_reference": null,
+            "email": "y.nakamura42@yahoo.com",
+            "email_hash": null,
+            "full_name": null,
+            "phone": null
+          },
+          "resource_id": "account_4204",
+          "status_code": 200
+        },
+        {
+          "observed_at": "2026-03-20T05:29:33Z",
+          "profile": null,
+          "resource_id": "account_6006",
+          "status_code": 404
+        },
+        {
+          "observed_at": "2026-03-20T06:08:40Z",
+          "profile": null,
+          "resource_id": "account_8461",
+          "status_code": 404
+        }
+      ]
+    },
+    "analytics_platform": {
+      "profiles": [
+        {
+          "audience_cohort": "general_shopper",
+          "customer_reference": null,
+          "email": null,
+          "email_hash": null,
+          "observed_at": "2026-03-20T07:17:46Z",
+          "phone": null,
+          "resource_id": "analytics_3845"
+        },
+        {
+          "audience_cohort": "returning_customer",
+          "customer_reference": null,
+          "email": null,
+          "email_hash": null,
+          "observed_at": "2026-03-20T07:20:28Z",
+          "phone": null,
+          "resource_id": "analytics_6249"
+        },
+        {
+          "audience_cohort": "general_shopper",
+          "customer_reference": null,
+          "email": null,
+          "email_hash": null,
+          "observed_at": "2026-03-20T06:22:15Z",
+          "phone": null,
+          "resource_id": "analytics_8091"
+        },
+        {
+          "audience_cohort": "mobile_browser",
+          "customer_reference": null,
+          "email": "noor-darwish83@gmail.com",
+          "email_hash": null,
+          "observed_at": "2026-03-20T06:51:40Z",
+          "phone": null,
+          "resource_id": "analytics_891"
+        }
+      ]
+    },
+    "export_service": {
+      "exports": [
+        {
+          "customer_reference": null,
+          "object_key": "exports/export_9343/customer_data.zip",
+          "observed_at": "2026-03-20T07:07:10Z",
+          "owner_email": "anair9899@fastmail.com",
+          "owner_phone": null,
+          "resource_id": "export_9343"
+        }
+      ]
+    },
+    "integration_service": {
+      "connectors": [
+        {
+          "connector_name": "search_profile_indexer",
+          "customer_email": "sipho.mthembu@outlook.com",
+          "customer_reference": null,
+          "enabled": true,
+          "last_delivery_status": "delivered",
+          "observed_at": "2026-03-20T07:23:11Z",
+          "resource_id": "data_flow_2107"
+        },
+        {
+          "connector_name": "customer_events_connector",
+          "customer_email": "noor-darwish83@gmail.com",
+          "customer_reference": null,
+          "enabled": true,
+          "last_delivery_status": "delivered",
+          "observed_at": "2026-03-20T07:11:49Z",
+          "resource_id": "data_flow_7718"
+        }
+      ]
+    },
+    "search_service": {
+      "index_queries": [
+        {
+          "hits": {
+            "documents": [
+              {
+                "customer_reference": null,
+                "display_name": null,
+                "email": "y.nakamura42@yahoo.com",
+                "email_hash": null,
+                "phone": null,
+                "resource_id": "search_1449"
+              }
+            ],
+            "total": 1
+          },
+          "observed_at": "2026-03-20T07:22:51Z",
+          "query": "y.nakamura42@yahoo.com",
+          "resource_id": "search_1449"
+        },
+        {
+          "hits": {
+            "documents": [
+              {
+                "customer_reference": null,
+                "display_name": null,
+                "email": "sipho.mthembu@outlook.com",
+                "email_hash": null,
+                "phone": null,
+                "resource_id": "search_2625"
+              }
+            ],
+            "total": 1
+          },
+          "observed_at": "2026-03-20T04:48:41Z",
+          "query": "sipho.mthembu@outlook.com",
+          "resource_id": "search_2625"
+        },
+        {
+          "hits": {
+            "documents": [
+              {
+                "customer_reference": null,
+                "display_name": null,
+                "email": "aokeke238584@gmail.com",
+                "email_hash": null,
+                "phone": null,
+                "resource_id": "search_2635"
+              }
+            ],
+            "total": 1
+          },
+          "observed_at": "2026-03-20T06:47:25Z",
+          "query": "aokeke238584@gmail.com",
+          "resource_id": "search_2635"
+        },
+        {
+          "hits": {
+            "documents": [
+              {
+                "customer_reference": null,
+                "display_name": null,
+                "email": "anair9899@fastmail.com",
+                "email_hash": null,
+                "phone": null,
+                "resource_id": "search_3844"
+              }
+            ],
+            "total": 1
+          },
+          "observed_at": "2026-03-20T04:53:49Z",
+          "query": "anair9899@fastmail.com",
+          "resource_id": "search_3844"
+        },
+        {
+          "hits": {
+            "documents": [
+              {
+                "customer_reference": null,
+                "display_name": null,
+                "email": "lucas-almeida@proton.me",
+                "email_hash": null,
+                "phone": null,
+                "resource_id": "search_7427"
+              }
+            ],
+            "total": 1
+          },
+          "observed_at": "2026-03-20T05:46:08Z",
+          "query": "lucas-almeida@proton.me",
+          "resource_id": "search_7427"
+        },
+        {
+          "hits": {
+            "documents": [
+              {
+                "customer_reference": null,
+                "display_name": null,
+                "email": "noor-darwish83@gmail.com",
+                "email_hash": null,
+                "phone": null,
+                "resource_id": "search_9072"
+              }
+            ],
+            "total": 1
+          },
+          "observed_at": "2026-03-20T06:27:53Z",
+          "query": "noor-darwish83@gmail.com",
+          "resource_id": "search_9072"
+        }
+      ]
+    },
+    "security_service": {
+      "audit_records": [
+        {
+          "event_code": "IDENTITY_CHANGE_RECORDED",
+          "observed_at": "2026-03-20T04:56:54Z",
+          "resource_id": "audit_record_1474",
+          "retention_until": "2034-09-30T23:59:59Z",
+          "subject_reference": "user_422"
+        },
+        {
+          "event_code": "IDENTITY_CHANGE_RECORDED",
+          "observed_at": "2026-03-20T07:16:21Z",
+          "resource_id": "audit_record_5292",
+          "retention_until": "2034-09-30T23:59:59Z",
+          "subject_reference": "user_428"
+        },
+        {
+          "event_code": "IDENTITY_CHANGE_RECORDED",
+          "observed_at": "2026-03-20T05:28:57Z",
+          "resource_id": "audit_record_8082",
+          "retention_until": "2034-09-30T23:59:59Z",
+          "subject_reference": "user_421"
+        },
+        {
+          "event_code": "SUBJECT_REQUEST_AUDITED",
+          "observed_at": "2026-03-20T04:57:38Z",
+          "resource_id": "audit_record_999",
+          "retention_until": "2033-12-31T23:59:59Z",
+          "subject_reference": "user_425"
+        }
+      ]
+    },
+    "support_platform": {
+      "tickets": [
+        {
+          "customer_reference": null,
+          "message_excerpt": "Customer supplied contact details for a delivery query.",
+          "observed_at": "2026-03-20T06:51:14Z",
+          "requester_email": "noor-darwish83@gmail.com",
+          "requester_name": null,
+          "requester_phone": null,
+          "resource_id": "support_1662"
+        },
+        {
+          "customer_reference": null,
+          "message_excerpt": "Customer contacted support about account access.",
+          "observed_at": "2026-03-20T07:23:27Z",
+          "requester_email": "lucas-almeida@proton.me",
+          "requester_name": null,
+          "requester_phone": null,
+          "resource_id": "support_3615"
+        },
+        {
+          "customer_reference": null,
+          "message_excerpt": "Customer asked support to correct delivery details.",
+          "observed_at": "2026-03-20T06:07:32Z",
+          "requester_email": "aokeke238584@gmail.com",
+          "requester_name": null,
+          "requester_phone": null,
+          "resource_id": "support_9212"
+        }
+      ]
+    }
+  },
+  "source": "records_assurance_gateway"
+}

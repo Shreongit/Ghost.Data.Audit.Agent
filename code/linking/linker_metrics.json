@@ -1,0 +1,623 @@
+{
+  "ambiguous_resources": 1,
+  "direct": {
+    "gold": 111,
+    "precision": 0.9620253164556962,
+    "predicted": 79,
+    "recall": 0.6846846846846847,
+    "tp": 76
+  },
+  "global_assignment": {
+    "gold": 111,
+    "precision": 0.9743589743589743,
+    "predicted": 78,
+    "recall": 0.6846846846846847,
+    "tp": 76
+  },
+  "out_of_fold": {
+    "cumulative_ablation": {
+      "S1": {
+        "account": {
+          "f1": 0.3492063492063492,
+          "gold": 32,
+          "precision": 0.3548387096774194,
+          "predicted": 31,
+          "recall": 0.34375,
+          "tp": 11
+        },
+        "analytics": {
+          "f1": 0.24242424242424246,
+          "gold": 13,
+          "precision": 0.2,
+          "predicted": 20,
+          "recall": 0.3076923076923077,
+          "tp": 4
+        },
+        "audit": {
+          "f1": 0.0,
+          "gold": 24,
+          "precision": 0.0,
+          "predicted": 0,
+          "recall": 0.0,
+          "tp": 0
+        },
+        "backup": {
+          "f1": 0.25,
+          "gold": 6,
+          "precision": 0.2,
+          "predicted": 10,
+          "recall": 0.3333333333333333,
+          "tp": 2
+        },
+        "data": {
+          "f1": 0.10526315789473685,
+          "gold": 9,
+          "precision": 0.1,
+          "predicted": 10,
+          "recall": 0.1111111111111111,
+          "tp": 1
+        },
+        "export": {
+          "f1": 0.5714285714285715,
+          "gold": 2,
+          "precision": 0.4,
+          "predicted": 5,
+          "recall": 1.0,
+          "tp": 2
+        },
+        "search": {
+          "f1": 0.3529411764705882,
+          "gold": 12,
+          "precision": 0.2727272727272727,
+          "predicted": 22,
+          "recall": 0.5,
+          "tp": 6
+        },
+        "support": {
+          "f1": 0.24242424242424246,
+          "gold": 11,
+          "precision": 0.18181818181818182,
+          "predicted": 22,
+          "recall": 0.36363636363636365,
+          "tp": 4
+        },
+        "tombstone": {
+          "f1": 0.0,
+          "gold": 2,
+          "precision": 0.0,
+          "predicted": 9,
+          "recall": 0.0,
+          "tp": 0
+        }
+      },
+      "S1+S2": {
+        "account": {
+          "f1": 0.6031746031746031,
+          "gold": 32,
+          "precision": 0.6129032258064516,
+          "predicted": 31,
+          "recall": 0.59375,
+          "tp": 19
+        },
+        "analytics": {
+          "f1": 0.24242424242424246,
+          "gold": 13,
+          "precision": 0.2,
+          "predicted": 20,
+          "recall": 0.3076923076923077,
+          "tp": 4
+        },
+        "audit": {
+          "f1": 0.0,
+          "gold": 24,
+          "precision": 0.0,
+          "predicted": 0,
+          "recall": 0.0,
+          "tp": 0
+        },
+        "backup": {
+          "f1": 0.25,
+          "gold": 6,
+          "precision": 0.2,
+          "predicted": 10,
+          "recall": 0.3333333333333333,
+          "tp": 2
+        },
+        "data": {
+          "f1": 0.10526315789473685,
+          "gold": 9,
+          "precision": 0.1,
+          "predicted": 10,
+          "recall": 0.1111111111111111,
+          "tp": 1
+        },
+        "export": {
+          "f1": 0.5714285714285715,
+          "gold": 2,
+          "precision": 0.4,
+          "predicted": 5,
+          "recall": 1.0,
+          "tp": 2
+        },
+        "search": {
+          "f1": 0.29411764705882354,
+          "gold": 12,
+          "precision": 0.22727272727272727,
+          "predicted": 22,
+          "recall": 0.4166666666666667,
+          "tp": 5
+        },
+        "support": {
+          "f1": 0.24242424242424246,
+          "gold": 11,
+          "precision": 0.18181818181818182,
+          "predicted": 22,
+          "recall": 0.36363636363636365,
+          "tp": 4
+        },
+        "tombstone": {
+          "f1": 0.0,
+          "gold": 2,
+          "precision": 0.0,
+          "predicted": 9,
+          "recall": 0.0,
+          "tp": 0
+        }
+      },
+      "S1+S2+S3": {
+        "account": {
+          "f1": 0.7301587301587302,
+          "gold": 32,
+          "precision": 0.7419354838709677,
+          "predicted": 31,
+          "recall": 0.71875,
+          "tp": 23
+        },
+        "analytics": {
+          "f1": 0.3636363636363637,
+          "gold": 13,
+          "precision": 0.3,
+          "predicted": 20,
+          "recall": 0.46153846153846156,
+          "tp": 6
+        },
+        "audit": {
+          "f1": 0.0,
+          "gold": 24,
+          "precision": 0.0,
+          "predicted": 0,
+          "recall": 0.0,
+          "tp": 0
+        },
+        "backup": {
+          "f1": 0.25,
+          "gold": 6,
+          "precision": 0.2,
+          "predicted": 10,
+          "recall": 0.3333333333333333,
+          "tp": 2
+        },
+        "data": {
+          "f1": 0.2105263157894737,
+          "gold": 9,
+          "precision": 0.2,
+          "predicted": 10,
+          "recall": 0.2222222222222222,
+          "tp": 2
+        },
+        "export": {
+          "f1": 0.5714285714285715,
+          "gold": 2,
+          "precision": 0.4,
+          "predicted": 5,
+          "recall": 1.0,
+          "tp": 2
+        },
+        "search": {
+          "f1": 0.4117647058823529,
+          "gold": 12,
+          "precision": 0.3181818181818182,
+          "predicted": 22,
+          "recall": 0.5833333333333334,
+          "tp": 7
+        },
+        "support": {
+          "f1": 0.3636363636363636,
+          "gold": 11,
+          "precision": 0.2727272727272727,
+          "predicted": 22,
+          "recall": 0.5454545454545454,
+          "tp": 6
+        },
+        "tombstone": {
+          "f1": 0.0,
+          "gold": 2,
+          "precision": 0.0,
+          "predicted": 9,
+          "recall": 0.0,
+          "tp": 0
+        }
+      },
+      "S1+S2+S3+S4": {
+        "account": {
+          "f1": 0.7936507936507936,
+          "gold": 32,
+          "precision": 0.8064516129032258,
+          "predicted": 31,
+          "recall": 0.78125,
+          "tp": 25
+        },
+        "analytics": {
+          "f1": 0.6470588235294118,
+          "gold": 13,
+          "precision": 0.5238095238095238,
+          "predicted": 21,
+          "recall": 0.8461538461538461,
+          "tp": 11
+        },
+        "audit": {
+          "f1": 0.8292682926829268,
+          "gold": 24,
+          "precision": 1.0,
+          "predicted": 17,
+          "recall": 0.7083333333333334,
+          "tp": 17
+        },
+        "backup": {
+          "f1": 0.6666666666666666,
+          "gold": 6,
+          "precision": 0.5,
+          "predicted": 12,
+          "recall": 1.0,
+          "tp": 6
+        },
+        "data": {
+          "f1": 0.8181818181818181,
+          "gold": 9,
+          "precision": 0.6923076923076923,
+          "predicted": 13,
+          "recall": 1.0,
+          "tp": 9
+        },
+        "export": {
+          "f1": 0.5714285714285715,
+          "gold": 2,
+          "precision": 0.4,
+          "predicted": 5,
+          "recall": 1.0,
+          "tp": 2
+        },
+        "object": {
+          "f1": 0.0,
+          "gold": 0,
+          "precision": 0.0,
+          "predicted": 1,
+          "recall": 0.0,
+          "tp": 0
+        },
+        "search": {
+          "f1": 0.6857142857142856,
+          "gold": 12,
+          "precision": 0.5217391304347826,
+          "predicted": 23,
+          "recall": 1.0,
+          "tp": 12
+        },
+        "support": {
+          "f1": 0.6470588235294118,
+          "gold": 11,
+          "precision": 0.4782608695652174,
+          "predicted": 23,
+          "recall": 1.0,
+          "tp": 11
+        },
+        "tombstone": {
+          "f1": 0.33333333333333337,
+          "gold": 2,
+          "precision": 0.2,
+          "predicted": 10,
+          "recall": 1.0,
+          "tp": 2
+        }
+      },
+      "S1+S2+S3+S4+global": {
+        "account": {
+          "f1": 0.8253968253968254,
+          "gold": 32,
+          "precision": 0.8387096774193549,
+          "predicted": 31,
+          "recall": 0.8125,
+          "tp": 26
+        },
+        "analytics": {
+          "f1": 0.7500000000000001,
+          "gold": 13,
+          "precision": 0.8181818181818182,
+          "predicted": 11,
+          "recall": 0.6923076923076923,
+          "tp": 9
+        },
+        "audit": {
+          "f1": 0.8292682926829268,
+          "gold": 24,
+          "precision": 1.0,
+          "predicted": 17,
+          "recall": 0.7083333333333334,
+          "tp": 17
+        },
+        "backup": {
+          "f1": 1.0,
+          "gold": 6,
+          "precision": 1.0,
+          "predicted": 6,
+          "recall": 1.0,
+          "tp": 6
+        },
+        "data": {
+          "f1": 1.0,
+          "gold": 9,
+          "precision": 1.0,
+          "predicted": 9,
+          "recall": 1.0,
+          "tp": 9
+        },
+        "export": {
+          "f1": 1.0,
+          "gold": 2,
+          "precision": 1.0,
+          "predicted": 2,
+          "recall": 1.0,
+          "tp": 2
+        },
+        "object": {
+          "f1": 0.0,
+          "gold": 0,
+          "precision": 0.0,
+          "predicted": 1,
+          "recall": 0.0,
+          "tp": 0
+        },
+        "search": {
+          "f1": 0.923076923076923,
+          "gold": 12,
+          "precision": 0.8571428571428571,
+          "predicted": 14,
+          "recall": 1.0,
+          "tp": 12
+        },
+        "support": {
+          "f1": 1.0,
+          "gold": 11,
+          "precision": 1.0,
+          "predicted": 11,
+          "recall": 1.0,
+          "tp": 11
+        },
+        "tombstone": {
+          "f1": 0.8,
+          "gold": 2,
+          "precision": 0.6666666666666666,
+          "predicted": 3,
+          "recall": 1.0,
+          "tp": 2
+        }
+      }
+    },
+    "per_type": {
+      "account": {
+        "gold": 32,
+        "precision": 0.8387096774193549,
+        "predicted": 31,
+        "recall": 0.8125,
+        "tp": 26
+      },
+      "analytics": {
+        "gold": 13,
+        "precision": 0.8181818181818182,
+        "predicted": 11,
+        "recall": 0.6923076923076923,
+        "tp": 9
+      },
+      "audit": {
+        "gold": 24,
+        "precision": 1.0,
+        "predicted": 17,
+        "recall": 0.7083333333333334,
+        "tp": 17
+      },
+      "backup": {
+        "gold": 6,
+        "precision": 1.0,
+        "predicted": 6,
+        "recall": 1.0,
+        "tp": 6
+      },
+      "data": {
+        "gold": 9,
+        "precision": 1.0,
+        "predicted": 9,
+        "recall": 1.0,
+        "tp": 9
+      },
+      "export": {
+        "gold": 2,
+        "precision": 1.0,
+        "predicted": 2,
+        "recall": 1.0,
+        "tp": 2
+      },
+      "object": {
+        "gold": 0,
+        "precision": 0.0,
+        "predicted": 1,
+        "recall": 0.0,
+        "tp": 0
+      },
+      "search": {
+        "gold": 12,
+        "precision": 0.8571428571428571,
+        "predicted": 14,
+        "recall": 1.0,
+        "tp": 12
+      },
+      "support": {
+        "gold": 11,
+        "precision": 1.0,
+        "predicted": 11,
+        "recall": 1.0,
+        "tp": 11
+      },
+      "tombstone": {
+        "gold": 2,
+        "precision": 0.6666666666666666,
+        "predicted": 3,
+        "recall": 1.0,
+        "tp": 2
+      }
+    },
+    "protocol": "leave-one-case-out; offsets fit on 31 other public sample cases"
+  },
+  "per_type": {
+    "account": {
+      "gold": 32,
+      "precision": 1.0,
+      "predicted": 11,
+      "recall": 0.34375,
+      "tp": 11
+    },
+    "analytics": {
+      "gold": 13,
+      "precision": 1.0,
+      "predicted": 6,
+      "recall": 0.46153846153846156,
+      "tp": 6
+    },
+    "audit": {
+      "gold": 24,
+      "precision": 1.0,
+      "predicted": 17,
+      "recall": 0.7083333333333334,
+      "tp": 17
+    },
+    "backup": {
+      "gold": 6,
+      "precision": 1.0,
+      "predicted": 6,
+      "recall": 1.0,
+      "tp": 6
+    },
+    "export": {
+      "gold": 2,
+      "precision": 1.0,
+      "predicted": 2,
+      "recall": 1.0,
+      "tp": 2
+    },
+    "flow": {
+      "gold": 9,
+      "precision": 1.0,
+      "predicted": 9,
+      "recall": 1.0,
+      "tp": 9
+    },
+    "search": {
+      "gold": 12,
+      "precision": 1.0,
+      "predicted": 12,
+      "recall": 1.0,
+      "tp": 12
+    },
+    "support": {
+      "gold": 11,
+      "precision": 1.0,
+      "predicted": 11,
+      "recall": 1.0,
+      "tp": 11
+    },
+    "tombstone": {
+      "gold": 2,
+      "precision": 1.0,
+      "predicted": 2,
+      "recall": 1.0,
+      "tp": 2
+    }
+  },
+  "selected_threshold": 0.98,
+  "signal_ablation": {
+    "identity_link_activity": {
+      "gold": 111,
+      "precision": 0.987012987012987,
+      "predicted": 77,
+      "recall": 0.6846846846846847,
+      "tp": 76
+    },
+    "same_record_identity_resource": {
+      "gold": 111,
+      "precision": 0.88,
+      "predicted": 25,
+      "recall": 0.1981981981981982,
+      "tp": 22
+    },
+    "subject_reference_user_id": {
+      "gold": 111,
+      "precision": 0.9772727272727273,
+      "predicted": 44,
+      "recall": 0.38738738738738737,
+      "tp": 43
+    },
+    "trace_group_identity_resource": {
+      "gold": 111,
+      "precision": 0.9642857142857143,
+      "predicted": 56,
+      "recall": 0.4864864864864865,
+      "tp": 54
+    }
+  },
+  "threshold_grid": [
+    {
+      "f1": 0.8,
+      "gold": 111,
+      "precision": 0.9620253164556962,
+      "predicted": 79,
+      "recall": 0.6846846846846847,
+      "threshold": 0.9,
+      "tp": 76
+    },
+    {
+      "f1": 0.8,
+      "gold": 111,
+      "precision": 0.9620253164556962,
+      "predicted": 79,
+      "recall": 0.6846846846846847,
+      "threshold": 0.95,
+      "tp": 76
+    },
+    {
+      "f1": 0.8,
+      "gold": 111,
+      "precision": 0.9620253164556962,
+      "predicted": 79,
+      "recall": 0.6846846846846847,
+      "threshold": 0.97,
+      "tp": 76
+    },
+    {
+      "f1": 0.8,
+      "gold": 111,
+      "precision": 0.9620253164556962,
+      "predicted": 79,
+      "recall": 0.6846846846846847,
+      "threshold": 0.98,
+      "tp": 76
+    },
+    {
+      "f1": 0.3283582089552239,
+      "gold": 111,
+      "precision": 0.9565217391304348,
+      "predicted": 23,
+      "recall": 0.1981981981981982,
+      "threshold": 0.99,
+      "tp": 22
+    }
+  ]
+}

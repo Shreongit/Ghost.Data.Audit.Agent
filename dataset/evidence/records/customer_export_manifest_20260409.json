@@ -1,0 +1,375 @@
+{
+  "exported_at": "2026-04-09T12:00:00Z",
+  "origin": "customer_export_service",
+  "record_count": 46,
+  "records": [
+    {
+      "recorded_at": "2026-04-03T12:00:00Z",
+      "system": "account_service",
+      "resource_id": "account_7618",
+      "record_type": "USER_PROFILE",
+      "result": "FOUND",
+      "subject_reference": "dnakamura7301@gmail.com"
+    },
+    {
+      "recorded_at": "2026-04-09T09:00:00Z",
+      "system": "search_service",
+      "resource_id": "search_9606",
+      "record_type": "SEARCH_INDEX_ENTRY",
+      "result": "FOUND",
+      "subject_reference": "camila.almeida.jr@outlook.com"
+    },
+    {
+      "recorded_at": "2026-04-09T12:00:00Z",
+      "system": "account_service",
+      "resource_id": "account_1718",
+      "record_type": "USER_PROFILE",
+      "result": "NOT_FOUND",
+      "subject_reference": "camila.almeida@outlook.com"
+    },
+    {
+      "recorded_at": "2026-04-09T12:00:00Z",
+      "system": "account_service",
+      "resource_id": "account_3206",
+      "record_type": "USER_PROFILE",
+      "result": "NOT_FOUND",
+      "subject_reference": "sibusiso-mthembu@gmail.com"
+    },
+    {
+      "recorded_at": "2026-04-09T12:00:00Z",
+      "system": "account_service",
+      "resource_id": "account_3978",
+      "record_type": "USER_PROFILE",
+      "result": "NOT_FOUND",
+      "subject_reference": "y.okeke4489@gmail.com"
+    },
+    {
+      "recorded_at": "2026-04-09T12:00:00Z",
+      "system": "account_service",
+      "resource_id": "account_4441",
+      "record_type": "USER_PROFILE",
+      "result": "NOT_FOUND",
+      "subject_reference": "LDAHL9787@FASTMAIL.COM"
+    },
+    {
+      "recorded_at": "2026-04-09T12:00:00Z",
+      "system": "account_service",
+      "resource_id": "account_4446",
+      "record_type": "USER_PROFILE",
+      "result": "FOUND",
+      "subject_reference": "yuna.y5220@outlook.com"
+    },
+    {
+      "recorded_at": "2026-04-09T12:00:00Z",
+      "system": "account_service",
+      "resource_id": "account_4844",
+      "record_type": "USER_PROFILE",
+      "result": "NOT_FOUND",
+      "subject_reference": "katarina.v7706@zoho.com"
+    },
+    {
+      "recorded_at": "2026-04-09T12:00:00Z",
+      "system": "account_service",
+      "resource_id": "account_5043",
+      "record_type": "USER_PROFILE",
+      "result": "NOT_FOUND",
+      "subject_reference": "mathis-girard@proton.me"
+    },
+    {
+      "recorded_at": "2026-04-09T12:00:00Z",
+      "system": "account_service",
+      "resource_id": "account_7618",
+      "record_type": "USER_PROFILE",
+      "result": "NOT_FOUND",
+      "subject_reference": "dnakamura7301@gmail.com"
+    },
+    {
+      "recorded_at": "2026-04-09T12:00:00Z",
+      "system": "account_service",
+      "resource_id": "account_807",
+      "record_type": "USER_PROFILE",
+      "result": "NOT_FOUND",
+      "subject_reference": "yasmine.darwish@gmail.com"
+    },
+    {
+      "recorded_at": "2026-04-09T12:00:00Z",
+      "system": "account_service",
+      "resource_id": "account_8186",
+      "record_type": "USER_PROFILE",
+      "result": "NOT_FOUND",
+      "subject_reference": "agyeman.adwoa@gmail.com"
+    },
+    {
+      "recorded_at": "2026-04-09T12:00:00Z",
+      "system": "analytics_platform",
+      "resource_id": "analytics_2784",
+      "record_type": "ANALYTICS_PROFILE",
+      "result": "IDENTIFIABLE",
+      "subject_reference": "agyeman.adwoa@gmail.com"
+    },
+    {
+      "recorded_at": "2026-04-09T12:00:00Z",
+      "system": "analytics_platform",
+      "resource_id": "analytics_4328",
+      "record_type": "ANALYTICS_PROFILE",
+      "result": "ANONYMIZED",
+      "subject_reference": ""
+    },
+    {
+      "recorded_at": "2026-04-09T12:00:00Z",
+      "system": "analytics_platform",
+      "resource_id": "analytics_4420",
+      "record_type": "ANALYTICS_PROFILE",
+      "result": "IDENTIFIABLE",
+      "subject_reference": "yasmine.darwish@gmail.com"
+    },
+    {
+      "recorded_at": "2026-04-09T12:00:00Z",
+      "system": "analytics_platform",
+      "resource_id": "analytics_448",
+      "record_type": "ANALYTICS_PROFILE",
+      "result": "ANONYMIZED",
+      "subject_reference": ""
+    },
+    {
+      "recorded_at": "2026-04-09T12:00:00Z",
+      "system": "analytics_platform",
+      "resource_id": "analytics_5354",
+      "record_type": "ANALYTICS_PROFILE",
+      "result": "IDENTIFIABLE",
+      "subject_reference": "sibusiso-mthembu@gmail.com"
+    },
+    {
+      "recorded_at": "2026-04-09T12:00:00Z",
+      "system": "analytics_platform",
+      "resource_id": "analytics_9702",
+      "record_type": "ANALYTICS_PROFILE",
+      "result": "ANONYMIZED",
+      "subject_reference": ""
+    },
+    {
+      "recorded_at": "2026-04-09T12:00:00Z",
+      "system": "backup_service",
+      "resource_id": "backup_1668",
+      "record_type": "BACKUP_ARCHIVE",
+      "result": "ACTIVE",
+      "subject_reference": "y.okeke4489@gmail.com"
+    },
+    {
+      "recorded_at": "2026-04-09T12:00:00Z",
+      "system": "backup_service",
+      "resource_id": "backup_5165",
+      "record_type": "BACKUP_ARCHIVE",
+      "result": "BLOCKED",
+      "subject_reference": "user_388"
+    },
+    {
+      "recorded_at": "2026-04-09T12:00:00Z",
+      "system": "export_service",
+      "resource_id": "export_9989",
+      "record_type": "USER_EXPORT",
+      "result": "FOUND",
+      "subject_reference": "LDAHL9787@FASTMAIL.COM"
+    },
+    {
+      "recorded_at": "2026-04-09T12:00:00Z",
+      "system": "integration_service",
+      "resource_id": "data_flow_3250",
+      "record_type": "DATA_FLOW",
+      "result": "ACTIVE",
+      "subject_reference": "agyeman.adwoa@gmail.com"
+    },
+    {
+      "recorded_at": "2026-04-09T12:00:00Z",
+      "system": "integration_service",
+      "resource_id": "data_flow_3913",
+      "record_type": "DATA_FLOW",
+      "result": "ACTIVE",
+      "subject_reference": "katarina.v7706@zoho.com"
+    },
+    {
+      "recorded_at": "2026-04-09T12:00:00Z",
+      "system": "integration_service",
+      "resource_id": "data_flow_5737",
+      "record_type": "DATA_FLOW",
+      "result": "DISABLED",
+      "subject_reference": "user_388"
+    },
+    {
+      "recorded_at": "2026-04-09T12:00:00Z",
+      "system": "integration_service",
+      "resource_id": "data_flow_7623",
+      "record_type": "DATA_FLOW",
+      "result": "ACTIVE",
+      "subject_reference": "yasmine.darwish@gmail.com"
+    },
+    {
+      "recorded_at": "2026-04-09T12:00:00Z",
+      "system": "legal_service",
+      "resource_id": "legal_hold_8049",
+      "record_type": "LEGAL_HOLD_RECORD",
+      "result": "FOUND",
+      "subject_reference": "user_388"
+    },
+    {
+      "recorded_at": "2026-04-09T12:00:00Z",
+      "system": "search_service",
+      "resource_id": "search_182",
+      "record_type": "SEARCH_INDEX_ENTRY",
+      "result": "FOUND",
+      "subject_reference": "agyeman.adwoa@gmail.com"
+    },
+    {
+      "recorded_at": "2026-04-09T12:00:00Z",
+      "system": "search_service",
+      "resource_id": "search_2794",
+      "record_type": "SEARCH_INDEX_ENTRY",
+      "result": "FOUND",
+      "subject_reference": "sibusiso-mthembu@gmail.com"
+    },
+    {
+      "recorded_at": "2026-04-09T12:00:00Z",
+      "system": "search_service",
+      "resource_id": "search_3355",
+      "record_type": "SEARCH_INDEX_ENTRY",
+      "result": "FOUND",
+      "subject_reference": "katarina.v7706@zoho.com"
+    },
+    {
+      "recorded_at": "2026-04-09T12:00:00Z",
+      "system": "search_service",
+      "resource_id": "search_3630",
+      "record_type": "SEARCH_INDEX_ENTRY",
+      "result": "FOUND",
+      "subject_reference": "yasmine.darwish@gmail.com"
+    },
+    {
+      "recorded_at": "2026-04-09T12:00:00Z",
+      "system": "search_service",
+      "resource_id": "search_7562",
+      "record_type": "SEARCH_INDEX_ENTRY",
+      "result": "FOUND",
+      "subject_reference": "LDAHL9787@FASTMAIL.COM"
+    },
+    {
+      "recorded_at": "2026-04-09T12:00:00Z",
+      "system": "search_service",
+      "resource_id": "search_9470",
+      "record_type": "SEARCH_INDEX_ENTRY",
+      "result": "FOUND",
+      "subject_reference": "yuna.y5220@outlook.com"
+    },
+    {
+      "recorded_at": "2026-04-09T12:00:00Z",
+      "system": "security_service",
+      "resource_id": "audit_record_101",
+      "record_type": "SECURITY_AUDIT_LOG",
+      "result": "FOUND",
+      "subject_reference": "user_388"
+    },
+    {
+      "recorded_at": "2026-04-09T12:00:00Z",
+      "system": "security_service",
+      "resource_id": "audit_record_2342",
+      "record_type": "SECURITY_AUDIT_LOG",
+      "result": "FOUND",
+      "subject_reference": "user_382"
+    },
+    {
+      "recorded_at": "2026-04-09T12:00:00Z",
+      "system": "security_service",
+      "resource_id": "audit_record_2536",
+      "record_type": "SECURITY_AUDIT_LOG",
+      "result": "FOUND",
+      "subject_reference": "user_385"
+    },
+    {
+      "recorded_at": "2026-04-09T12:00:00Z",
+      "system": "security_service",
+      "resource_id": "audit_record_3007",
+      "record_type": "SECURITY_AUDIT_LOG",
+      "result": "FOUND",
+      "subject_reference": "user_383"
+    },
+    {
+      "recorded_at": "2026-04-09T12:00:00Z",
+      "system": "security_service",
+      "resource_id": "audit_record_5007",
+      "record_type": "SECURITY_AUDIT_LOG",
+      "result": "FOUND",
+      "subject_reference": "user_389"
+    },
+    {
+      "recorded_at": "2026-04-09T12:00:00Z",
+      "system": "security_service",
+      "resource_id": "audit_record_7510",
+      "record_type": "SECURITY_AUDIT_LOG",
+      "result": "FOUND",
+      "subject_reference": "user_390"
+    },
+    {
+      "recorded_at": "2026-04-09T12:00:00Z",
+      "system": "security_service",
+      "resource_id": "audit_record_8245",
+      "record_type": "SECURITY_AUDIT_LOG",
+      "result": "FOUND",
+      "subject_reference": "user_384"
+    },
+    {
+      "recorded_at": "2026-04-09T12:00:00Z",
+      "system": "security_service",
+      "resource_id": "audit_record_8683",
+      "record_type": "SECURITY_AUDIT_LOG",
+      "result": "FOUND",
+      "subject_reference": "user_386"
+    },
+    {
+      "recorded_at": "2026-04-09T12:00:00Z",
+      "system": "security_service",
+      "resource_id": "audit_record_9005",
+      "record_type": "SECURITY_AUDIT_LOG",
+      "result": "FOUND",
+      "subject_reference": "user_387"
+    },
+    {
+      "recorded_at": "2026-04-09T12:00:00Z",
+      "system": "security_service",
+      "resource_id": "audit_record_989",
+      "record_type": "SECURITY_AUDIT_LOG",
+      "result": "FOUND",
+      "subject_reference": "user_381"
+    },
+    {
+      "recorded_at": "2026-04-09T12:00:00Z",
+      "system": "support_platform",
+      "resource_id": "support_1693",
+      "record_type": "SUPPORT_MESSAGE",
+      "result": "IDENTIFIABLE",
+      "subject_reference": "yasmine.darwish@gmail.com"
+    },
+    {
+      "recorded_at": "2026-04-09T12:00:00Z",
+      "system": "support_platform",
+      "resource_id": "support_5720",
+      "record_type": "SUPPORT_MESSAGE",
+      "result": "REDACTED",
+      "subject_reference": "user_388"
+    },
+    {
+      "recorded_at": "2026-04-09T12:00:00Z",
+      "system": "support_platform",
+      "resource_id": "support_8378",
+      "record_type": "SUPPORT_MESSAGE",
+      "result": "IDENTIFIABLE",
+      "subject_reference": "agyeman.adwoa@gmail.com"
+    },
+    {
+      "recorded_at": "2026-04-11T12:00:00Z",
+      "system": "account_service",
+      "resource_id": "account_5043",
+      "record_type": "USER_PROFILE",
+      "result": "FOUND",
+      "subject_reference": "mathis-girard@proton.me"
+    }
+  ]
+}

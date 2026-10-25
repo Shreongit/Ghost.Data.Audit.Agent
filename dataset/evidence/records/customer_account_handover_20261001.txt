@@ -1,0 +1,46 @@
+CUSTOMER PLATFORM - SHIFT HANDOVER
+Snapshot: 2026-10-01T12:00:00Z
+
+Account and downstream checks completed during the shift:
+
+- 2026-10-01T12:00:00Z | account_service | account_146 | USER_PROFILE | NOT_FOUND | e.lindberg18@yahoo.com
+- 2026-10-01T12:00:00Z | account_service | account_1810 | USER_PROFILE | NOT_FOUND | CHOI.JIHOON94@GMAIL.COM
+- 2026-10-01T12:00:00Z | account_service | account_2381 | USER_PROFILE | NOT_FOUND | SIPHO.MOKOENA@GMAIL.COM
+- 2026-10-01T12:00:00Z | account_service | account_3677 | USER_PROFILE | NOT_FOUND | y.tanaka32@gmail.com
+- 2026-10-01T12:00:00Z | account_service | account_4051 | USER_PROFILE | NOT_FOUND | lucas-souza95@gmail.com
+- 2026-10-01T12:00:00Z | account_service | account_4248 | USER_PROFILE | NOT_FOUND | novak.tomasz@icloud.com
+- 2026-10-01T12:00:00Z | account_service | account_4337 | USER_PROFILE | NOT_FOUND | asingh1489@gmail.com
+- 2026-10-01T12:00:00Z | account_service | account_5193 | USER_PROFILE | NOT_FOUND | abena.o189491@zoho.com
+- 2026-10-01T12:00:00Z | account_service | account_5823 | USER_PROFILE | NOT_FOUND | aadebayo3975@fastmail.com
+- 2026-10-01T12:00:00Z | account_service | account_9335 | USER_PROFILE | NOT_FOUND | noor-khalil@proton.me
+- 2026-10-01T12:00:00Z | analytics_platform | analytics_2034 | ANALYTICS_PROFILE | IDENTIFIABLE | novak.tomasz@icloud.com
+- 2026-10-01T12:00:00Z | analytics_platform | analytics_6830 | ANALYTICS_PROFILE | ANONYMIZED | no direct identifier
+- 2026-10-01T12:00:00Z | analytics_platform | analytics_9447 | ANALYTICS_PROFILE | ANONYMIZED | no direct identifier
+- 2026-10-01T12:00:00Z | backup_service | backup_3870 | BACKUP_ARCHIVE | ACTIVE | y.tanaka32@gmail.com
+- 2026-10-01T12:00:00Z | backup_service | backup_706 | BACKUP_ARCHIVE | BLOCKED | user_39
+- 2026-10-01T12:00:00Z | export_service | export_7689 | USER_EXPORT | FOUND | aadebayo3975@fastmail.com
+- 2026-10-01T12:00:00Z | integration_service | data_flow_2528 | DATA_FLOW | ACTIVE | abena.o189491@zoho.com
+- 2026-10-01T12:00:00Z | integration_service | data_flow_2901 | DATA_FLOW | DISABLED | user_39
+- 2026-10-01T12:00:00Z | integration_service | data_flow_7495 | DATA_FLOW | ACTIVE | SIPHO.MOKOENA@GMAIL.COM
+- 2026-10-01T12:00:00Z | integration_service | data_flow_9522 | DATA_FLOW | ACTIVE | novak.tomasz@icloud.com
+- 2026-10-01T12:00:00Z | search_service | search_052 | SEARCH_INDEX_ENTRY | FOUND | novak.tomasz@icloud.com
+- 2026-10-01T12:00:00Z | search_service | search_1308 | SEARCH_INDEX_ENTRY | FOUND | noor-khalil@proton.me
+- 2026-10-01T12:00:00Z | search_service | search_1934 | SEARCH_INDEX_ENTRY | FOUND | abena.o189491@zoho.com
+- 2026-10-01T12:00:00Z | search_service | search_3200 | SEARCH_INDEX_ENTRY | FOUND | CHOI.JIHOON94@GMAIL.COM
+- 2026-10-01T12:00:00Z | search_service | search_5575 | SEARCH_INDEX_ENTRY | FOUND | aadebayo3975@fastmail.com
+- 2026-10-01T12:00:00Z | search_service | search_7078 | SEARCH_INDEX_ENTRY | FOUND | asingh1489@gmail.com
+- 2026-10-01T12:00:00Z | security_service | audit_record_2019 | SECURITY_AUDIT_LOG | FOUND | user_35
+- 2026-10-01T12:00:00Z | security_service | audit_record_2966 | SECURITY_AUDIT_LOG | FOUND | user_34
+- 2026-10-01T12:00:00Z | security_service | audit_record_4816 | SECURITY_AUDIT_LOG | FOUND | user_33
+- 2026-10-01T12:00:00Z | security_service | audit_record_5307 | SECURITY_AUDIT_LOG | FOUND | user_31
+- 2026-10-01T12:00:00Z | security_service | audit_record_633 | SECURITY_AUDIT_LOG | FOUND | user_36
+- 2026-10-01T12:00:00Z | security_service | audit_record_6760 | SECURITY_AUDIT_LOG | FOUND | user_40
+- 2026-10-01T12:00:00Z | security_service | audit_record_7814 | SECURITY_AUDIT_LOG | FOUND | user_39
+- 2026-10-01T12:00:00Z | security_service | audit_record_8349 | SECURITY_AUDIT_LOG | FOUND | user_38
+- 2026-10-01T12:00:00Z | security_service | audit_record_9394 | SECURITY_AUDIT_LOG | FOUND | user_32
+- 2026-10-01T12:00:00Z | security_service | audit_record_987 | SECURITY_AUDIT_LOG | FOUND | user_37
+- 2026-10-01T12:00:00Z | support_platform | support_2667 | SUPPORT_MESSAGE | REDACTED | user_39
+- 2026-10-01T12:00:00Z | support_platform | support_4218 | SUPPORT_ATTACHMENT | FOUND | noor-khalil@proton.me
+- 2026-10-01T12:00:00Z | support_platform | support_4887 | SUPPORT_MESSAGE | IDENTIFIABLE | CHOI.JIHOON94@GMAIL.COM
+- 2026-10-01T12:00:00Z | support_platform | support_7769 | SUPPORT_MESSAGE | IDENTIFIABLE | asingh1489@gmail.com
+- 2026-10-01T12:00:00Z | support_platform | support_864 | SUPPORT_MESSAGE | IDENTIFIABLE | novak.tomasz@icloud.com

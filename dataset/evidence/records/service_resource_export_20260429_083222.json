@@ -1,0 +1,314 @@
+{
+  "exported_at": "2026-04-29T08:32:22Z",
+  "region": "global",
+  "service_exports": {
+    "account_service": {
+      "profile_lookups": [
+        {
+          "observed_at": "2026-04-29T07:42:28Z",
+          "profile": null,
+          "resource_id": "account_1949",
+          "status_code": 404
+        },
+        {
+          "observed_at": "2026-04-29T06:48:58Z",
+          "profile": null,
+          "resource_id": "account_5059",
+          "status_code": 404
+        },
+        {
+          "observed_at": "2026-04-29T05:53:44Z",
+          "profile": null,
+          "resource_id": "account_5214",
+          "status_code": 404
+        },
+        {
+          "observed_at": "2026-04-29T05:56:53Z",
+          "profile": null,
+          "resource_id": "account_8834",
+          "status_code": 404
+        }
+      ]
+    },
+    "analytics_platform": {
+      "profiles": [
+        {
+          "audience_cohort": "home_lifestyle",
+          "customer_reference": null,
+          "email": null,
+          "email_hash": null,
+          "observed_at": "2026-04-29T06:18:18Z",
+          "phone": null,
+          "resource_id": "analytics_1072"
+        },
+        {
+          "audience_cohort": "home_lifestyle",
+          "customer_reference": null,
+          "email": null,
+          "email_hash": null,
+          "observed_at": "2026-04-29T07:55:27Z",
+          "phone": null,
+          "resource_id": "analytics_3990"
+        },
+        {
+          "audience_cohort": "general_shopper",
+          "customer_reference": null,
+          "email": null,
+          "email_hash": null,
+          "observed_at": "2026-04-29T08:32:22Z",
+          "phone": null,
+          "resource_id": "analytics_4751"
+        },
+        {
+          "audience_cohort": "mobile_browser",
+          "customer_reference": null,
+          "email": null,
+          "email_hash": null,
+          "observed_at": "2026-04-29T07:53:10Z",
+          "phone": null,
+          "resource_id": "analytics_7102"
+        },
+        {
+          "audience_cohort": "returning_customer",
+          "customer_reference": null,
+          "email": "iobi4703@fastmail.com",
+          "email_hash": null,
+          "observed_at": "2026-04-29T06:14:29Z",
+          "phone": null,
+          "resource_id": "analytics_9196"
+        }
+      ]
+    },
+    "backup_service": {
+      "restore_entries": [
+        {
+          "archive_key": "archive/customer-data/backup_024.tar.zst",
+          "customer_email": null,
+          "customer_reference": "user_349",
+          "observed_at": "2026-04-29T07:17:59Z",
+          "resource_id": "backup_024",
+          "restore_allowed": false
+        }
+      ]
+    },
+    "export_service": {
+      "exports": [
+        {
+          "customer_reference": null,
+          "object_key": "exports/export_4871/customer_data.zip",
+          "observed_at": "2026-04-29T06:17:56Z",
+          "owner_email": "iobi4703@fastmail.com",
+          "owner_phone": null,
+          "resource_id": "export_4871"
+        }
+      ]
+    },
+    "integration_service": {
+      "connectors": [
+        {
+          "connector_name": "search_profile_indexer",
+          "customer_email": "yaw.f2622@zoho.com",
+          "customer_reference": null,
+          "enabled": true,
+          "last_delivery_status": "delivered",
+          "observed_at": "2026-04-29T05:55:41Z",
+          "resource_id": "data_flow_3178"
+        },
+        {
+          "connector_name": "search_profile_indexer",
+          "customer_email": null,
+          "customer_reference": "user_349",
+          "enabled": false,
+          "last_delivery_status": "stopped",
+          "observed_at": "2026-04-29T06:29:15Z",
+          "resource_id": "data_flow_4323"
+        },
+        {
+          "connector_name": "support_profile_sync",
+          "customer_email": "chloe.mercier90@outlook.com",
+          "customer_reference": null,
+          "enabled": true,
+          "last_delivery_status": "delivered",
+          "observed_at": "2026-04-29T06:40:36Z",
+          "resource_id": "data_flow_5544"
+        },
+        {
+          "connector_name": "search_profile_indexer",
+          "customer_email": "zanele.tshabalala@gmail.com",
+          "customer_reference": null,
+          "enabled": true,
+          "last_delivery_status": "delivered",
+          "observed_at": "2026-04-29T05:58:22Z",
+          "resource_id": "data_flow_9775"
+        }
+      ]
+    },
+    "search_service": {
+      "index_queries": [
+        {
+          "hits": {
+            "documents": [
+              {
+                "customer_reference": null,
+                "display_name": null,
+                "email": "yaw.f2622@zoho.com",
+                "email_hash": null,
+                "phone": null,
+                "resource_id": "search_3944"
+              }
+            ],
+            "total": 1
+          },
+          "observed_at": "2026-04-29T07:03:14Z",
+          "query": "yaw.f2622@zoho.com",
+          "resource_id": "search_3944"
+        },
+        {
+          "hits": {
+            "documents": [
+              {
+                "customer_reference": null,
+                "display_name": null,
+                "email": "chloe.mercier90@outlook.com",
+                "email_hash": null,
+                "phone": null,
+                "resource_id": "search_5267"
+              }
+            ],
+            "total": 1
+          },
+          "observed_at": "2026-04-29T08:11:53Z",
+          "query": "chloe.mercier90@outlook.com",
+          "resource_id": "search_5267"
+        },
+        {
+          "hits": {
+            "documents": [
+              {
+                "customer_reference": null,
+                "display_name": null,
+                "email": "jang.doyun@gmail.com",
+                "email_hash": null,
+                "phone": null,
+                "resource_id": "search_5685"
+              }
+            ],
+            "total": 1
+          },
+          "observed_at": "2026-04-29T06:43:37Z",
+          "query": "jang.doyun@gmail.com",
+          "resource_id": "search_5685"
+        },
+        {
+          "hits": {
+            "documents": [
+              {
+                "customer_reference": null,
+                "display_name": null,
+                "email": "iobi4703@fastmail.com",
+                "email_hash": null,
+                "phone": null,
+                "resource_id": "search_6170"
+              }
+            ],
+            "total": 1
+          },
+          "observed_at": "2026-04-29T07:59:37Z",
+          "query": "iobi4703@fastmail.com",
+          "resource_id": "search_6170"
+        },
+        {
+          "hits": {
+            "documents": [
+              {
+                "customer_reference": null,
+                "display_name": null,
+                "email": "zayd-farouk@proton.me",
+                "email_hash": null,
+                "phone": null,
+                "resource_id": "search_8185"
+              }
+            ],
+            "total": 1
+          },
+          "observed_at": "2026-04-29T07:51:48Z",
+          "query": "zayd-farouk@proton.me",
+          "resource_id": "search_8185"
+        }
+      ]
+    },
+    "security_service": {
+      "audit_records": [
+        {
+          "event_code": "ACCOUNT_DELETION_RECORDED",
+          "observed_at": "2026-04-29T07:50:23Z",
+          "resource_id": "audit_record_1700",
+          "retention_until": "2031-12-31T23:59:59Z",
+          "subject_reference": "user_344"
+        },
+        {
+          "event_code": "ACCOUNT_DELETION_RECORDED",
+          "observed_at": "2026-04-29T08:15:11Z",
+          "resource_id": "audit_record_454",
+          "retention_until": "2031-12-31T23:59:59Z",
+          "subject_reference": "user_343"
+        },
+        {
+          "event_code": "PRIVACY_REQUEST_ACCEPTED",
+          "observed_at": "2026-04-29T08:27:54Z",
+          "resource_id": "audit_record_8787",
+          "retention_until": "2032-06-30T23:59:59Z",
+          "subject_reference": "user_349"
+        },
+        {
+          "event_code": "ACCOUNT_DELETION_RECORDED",
+          "observed_at": "2026-04-29T08:01:21Z",
+          "resource_id": "audit_record_9233",
+          "retention_until": "2031-12-31T23:59:59Z",
+          "subject_reference": "user_341"
+        }
+      ]
+    },
+    "support_platform": {
+      "tickets": [
+        {
+          "customer_reference": null,
+          "message_excerpt": "Customer followed up about an order update.",
+          "observed_at": "2026-04-29T07:38:08Z",
+          "requester_email": "iobi4703@fastmail.com",
+          "requester_name": null,
+          "requester_phone": null,
+          "resource_id": "support_2897"
+        },
+        {
+          "customer_reference": null,
+          "message_excerpt": "Customer followed up about an order update.",
+          "observed_at": "2026-04-29T06:20:30Z",
+          "requester_email": "jang.doyun@gmail.com",
+          "requester_name": null,
+          "requester_phone": null,
+          "resource_id": "support_3980"
+        },
+        {
+          "customer_reference": "user_349",
+          "message_excerpt": "Customer contacted support about account access.",
+          "observed_at": "2026-04-29T08:06:22Z",
+          "requester_email": null,
+          "requester_name": null,
+          "requester_phone": null,
+          "resource_id": "support_7137"
+        },
+        {
+          "customer_reference": null,
+          "message_excerpt": "Customer contacted support about account access.",
+          "observed_at": "2026-04-29T06:53:16Z",
+          "requester_email": "zayd-farouk@proton.me",
+          "requester_name": null,
+          "requester_phone": null,
+          "resource_id": "support_9474"
+        }
+      ]
+    }
+  },
+  "source": "records_assurance_gateway"
+}

@@ -1,0 +1,461 @@
+{
+  "exported_at": "2026-07-25T15:00:00Z",
+  "source": "records_assurance_service",
+  "snapshots": [
+    {
+      "captured_at": "2026-07-23T12:00:00Z",
+      "data_store": "account_service",
+      "collection": "customer_profiles",
+      "records": [
+        {
+          "resource_id": "account_8423",
+          "customer_reference": "user_175",
+          "full_name": "Zofia Popescu",
+          "email": "z.popescu54@yahoo.com",
+          "phone": "+48 618 418 387",
+          "account_status": "ACTIVE",
+          "signup_channel": "paid_social"
+        }
+      ]
+    },
+    {
+      "captured_at": "2026-07-23T12:00:00Z",
+      "data_store": "analytics_platform",
+      "collection": "customer_analytics_reports",
+      "records": [
+        {
+          "resource_id": "analytics_6000",
+          "user_id": "user_171",
+          "email": "javier-rodriguez@gmail.com",
+          "phone": "+34 631 741 917",
+          "email_hash": "5548cacf327953ff0b4520de368857d59b3c885fe4abc13969a4310098f9cede",
+          "reporting_window": "last_90_days",
+          "metrics": {
+            "sessions_30d": 8,
+            "products_viewed_30d": 21,
+            "orders_completed_90d": 0,
+            "revenue_90d_usd": 0.0
+          },
+          "recent_activity": [
+            {
+              "event": "product_viewed",
+              "product": "Noise-cancelling headphones"
+            }
+          ]
+        },
+        {
+          "resource_id": "analytics_9505",
+          "user_id": null,
+          "email": null,
+          "phone": null,
+          "email_hash": null,
+          "reporting_window": "last_90_days",
+          "metrics": {
+            "sessions_30d": 3,
+            "products_viewed_30d": 23,
+            "orders_completed_90d": 0,
+            "revenue_90d_usd": 0.0
+          },
+          "recent_activity": [
+            {
+              "event": "product_viewed",
+              "product": "Running shoes"
+            },
+            {
+              "event": "added_to_cart",
+              "product": "Running shoes"
+            }
+          ]
+        },
+        {
+          "resource_id": "analytics_2414",
+          "user_id": null,
+          "email": null,
+          "phone": null,
+          "email_hash": null,
+          "reporting_window": "last_90_days",
+          "metrics": {
+            "sessions_30d": 4,
+            "products_viewed_30d": 31,
+            "orders_completed_90d": 4,
+            "revenue_90d_usd": 253.48
+          },
+          "recent_activity": [
+            {
+              "event": "product_viewed",
+              "product": "Cotton bedsheet set"
+            },
+            {
+              "event": "added_to_cart",
+              "product": "Cotton bedsheet set"
+            },
+            {
+              "event": "purchase_completed",
+              "product": "Cotton bedsheet set",
+              "quantity": 1
+            }
+          ]
+        },
+        {
+          "resource_id": "analytics_1391",
+          "user_id": "user_178",
+          "email": "aasante4311@fastmail.com",
+          "phone": "+233 24 638 0551",
+          "email_hash": "bbdf73e045932f95e2aea643c5c86186db3133d6ecc8fc7b3bbb9abeb06e70f7",
+          "reporting_window": "last_90_days",
+          "metrics": {
+            "sessions_30d": 7,
+            "products_viewed_30d": 31,
+            "orders_completed_90d": 1,
+            "revenue_90d_usd": 93.88
+          },
+          "recent_activity": [
+            {
+              "event": "product_viewed",
+              "product": "Stainless steel water bottle"
+            },
+            {
+              "event": "added_to_cart",
+              "product": "Stainless steel water bottle"
+            },
+            {
+              "event": "purchase_completed",
+              "product": "Stainless steel water bottle",
+              "quantity": 2
+            }
+          ]
+        },
+        {
+          "resource_id": "analytics_1522",
+          "user_id": "user_180",
+          "email": "ren.watanabe@gmail.com",
+          "phone": "+81 90 7271 9766",
+          "email_hash": "730d698f25a13b9c890515eaa5f553cb78a31c9d7adcfa4791d1d609b2d5a0b7",
+          "reporting_window": "last_90_days",
+          "metrics": {
+            "sessions_30d": 12,
+            "products_viewed_30d": 7,
+            "orders_completed_90d": 2,
+            "revenue_90d_usd": 167.42
+          },
+          "recent_activity": [
+            {
+              "event": "product_viewed",
+              "product": "Ceramic coffee set"
+            },
+            {
+              "event": "added_to_cart",
+              "product": "Ceramic coffee set"
+            },
+            {
+              "event": "purchase_completed",
+              "product": "Ceramic coffee set",
+              "quantity": 1
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "captured_at": "2026-07-23T12:00:00Z",
+      "data_store": "backup_service",
+      "collection": "backup_catalog",
+      "records": [
+        {
+          "resource_id": "backup_549",
+          "archive_path": "s3://customer-backups/weekly/segment-05.tar.zst",
+          "subject_reference": "user_173",
+          "restore_allowed": false,
+          "encryption": "AES-256"
+        }
+      ]
+    },
+    {
+      "captured_at": "2026-07-23T12:00:00Z",
+      "data_store": "export_service",
+      "collection": "customer_export_jobs",
+      "records": [
+        {
+          "resource_id": "export_7156",
+          "owner_email": "aasante4311@fastmail.com",
+          "file_name": "customer_export_7156.zip",
+          "created_at": "2026-07-04T12:00:00Z",
+          "expires_at": "2026-08-22T12:00:00Z",
+          "download_available": true,
+          "included_sections": [
+            "profile",
+            "orders",
+            "saved_addresses"
+          ]
+        }
+      ]
+    },
+    {
+      "captured_at": "2026-07-23T12:00:00Z",
+      "data_store": "integration_service",
+      "collection": "connector_configurations",
+      "records": [
+        {
+          "resource_id": "data_flow_4319",
+          "connector_name": "customer-events-to-warehouse-8",
+          "destination": "customer_analytics_warehouse",
+          "subject_selector": "user_173",
+          "enabled": false,
+          "mode": "continuous_sync"
+        },
+        {
+          "resource_id": "data_flow_296",
+          "connector_name": "customer-events-to-warehouse-1",
+          "destination": "customer_analytics_warehouse",
+          "subject_selector": "freja.svensson@outlook.com",
+          "enabled": true,
+          "mode": "continuous_sync"
+        },
+        {
+          "resource_id": "data_flow_8346",
+          "connector_name": "customer-events-to-warehouse-3",
+          "destination": "customer_analytics_warehouse",
+          "subject_selector": "naledi.k2230@zoho.com",
+          "enabled": true,
+          "mode": "continuous_sync"
+        },
+        {
+          "resource_id": "data_flow_7450",
+          "connector_name": "customer-events-to-warehouse-3",
+          "destination": "customer_analytics_warehouse",
+          "subject_selector": "ren.watanabe@gmail.com",
+          "enabled": true,
+          "mode": "continuous_sync"
+        }
+      ]
+    },
+    {
+      "captured_at": "2026-07-23T12:00:00Z",
+      "data_store": "search_service",
+      "collection": "customer_search_documents",
+      "records": [
+        {
+          "resource_id": "search_9523",
+          "index_name": "customer_directory_v3",
+          "document": {
+            "display_name": "Javier Rodríguez",
+            "email": "javier-rodriguez@gmail.com",
+            "customer_reference": "user_171"
+          }
+        },
+        {
+          "resource_id": "search_2138",
+          "index_name": "customer_directory_v3",
+          "document": {
+            "display_name": "Charlotte Hughes",
+            "email": "chughes6797@gmail.com",
+            "customer_reference": "user_172"
+          }
+        },
+        {
+          "resource_id": "search_8860",
+          "index_name": "customer_directory_v3",
+          "document": {
+            "display_name": "Freja Svensson",
+            "email": "freja.svensson@outlook.com",
+            "customer_reference": "user_174"
+          }
+        },
+        {
+          "resource_id": "search_3038",
+          "index_name": "customer_directory_v3",
+          "document": {
+            "display_name": "Zofia Popescu",
+            "email": "z.popescu54@yahoo.com",
+            "customer_reference": "user_175"
+          }
+        },
+        {
+          "resource_id": "search_5570",
+          "index_name": "customer_directory_v3",
+          "document": {
+            "display_name": "Akosua Asante",
+            "email": "aasante4311@fastmail.com",
+            "customer_reference": "user_178"
+          }
+        },
+        {
+          "resource_id": "search_4894",
+          "index_name": "customer_directory_v3",
+          "document": {
+            "display_name": "Naledi Khumalo",
+            "email": "naledi.k2230@zoho.com",
+            "customer_reference": "user_179"
+          }
+        },
+        {
+          "resource_id": "search_2073",
+          "index_name": "customer_directory_v3",
+          "document": {
+            "display_name": "Ren Watanabe",
+            "email": "ren.watanabe@gmail.com",
+            "customer_reference": "user_180"
+          }
+        }
+      ]
+    },
+    {
+      "captured_at": "2026-07-23T12:00:00Z",
+      "data_store": "security_service",
+      "collection": "security_audit_events",
+      "records": [
+        {
+          "resource_id": "audit_record_4126",
+          "subject_reference": "user_171",
+          "event_name": "account_deletion_reviewed",
+          "actor_type": "automated_privacy_workflow",
+          "integrity_seal": "sha256:000000000000000000000000000000000000000000000000000000000000101e"
+        },
+        {
+          "resource_id": "audit_record_7011",
+          "subject_reference": "user_172",
+          "event_name": "account_deletion_reviewed",
+          "actor_type": "automated_privacy_workflow",
+          "integrity_seal": "sha256:0000000000000000000000000000000000000000000000000000000000001b63"
+        },
+        {
+          "resource_id": "audit_record_7166",
+          "subject_reference": "user_173",
+          "event_name": "account_deletion_reviewed",
+          "actor_type": "automated_privacy_workflow",
+          "integrity_seal": "sha256:0000000000000000000000000000000000000000000000000000000000001bfe"
+        },
+        {
+          "resource_id": "audit_record_1222",
+          "subject_reference": "user_174",
+          "event_name": "account_deletion_reviewed",
+          "actor_type": "automated_privacy_workflow",
+          "integrity_seal": "sha256:00000000000000000000000000000000000000000000000000000000000004c6"
+        },
+        {
+          "resource_id": "audit_record_6729",
+          "subject_reference": "user_175",
+          "event_name": "account_deletion_reviewed",
+          "actor_type": "automated_privacy_workflow",
+          "integrity_seal": "sha256:0000000000000000000000000000000000000000000000000000000000001a49"
+        },
+        {
+          "resource_id": "audit_record_8521",
+          "subject_reference": "user_176",
+          "event_name": "account_deletion_reviewed",
+          "actor_type": "automated_privacy_workflow",
+          "integrity_seal": "sha256:0000000000000000000000000000000000000000000000000000000000002149"
+        },
+        {
+          "resource_id": "audit_record_919",
+          "subject_reference": "user_177",
+          "event_name": "account_deletion_reviewed",
+          "actor_type": "automated_privacy_workflow",
+          "integrity_seal": "sha256:0000000000000000000000000000000000000000000000000000000000000397"
+        },
+        {
+          "resource_id": "audit_record_2207",
+          "subject_reference": "user_178",
+          "event_name": "account_deletion_reviewed",
+          "actor_type": "automated_privacy_workflow",
+          "integrity_seal": "sha256:000000000000000000000000000000000000000000000000000000000000089f"
+        },
+        {
+          "resource_id": "audit_record_3625",
+          "subject_reference": "user_179",
+          "event_name": "account_deletion_reviewed",
+          "actor_type": "automated_privacy_workflow",
+          "integrity_seal": "sha256:0000000000000000000000000000000000000000000000000000000000000e29"
+        },
+        {
+          "resource_id": "audit_record_8354",
+          "subject_reference": "user_180",
+          "event_name": "account_deletion_reviewed",
+          "actor_type": "automated_privacy_workflow",
+          "integrity_seal": "sha256:00000000000000000000000000000000000000000000000000000000000020a2"
+        }
+      ]
+    },
+    {
+      "captured_at": "2026-07-23T12:00:00Z",
+      "data_store": "support_platform",
+      "collection": "ticket_attachments",
+      "records": [
+        {
+          "resource_id": "support_2283",
+          "ticket_id": "CS-6283",
+          "file_name": "delivery_confirmation_52.pdf",
+          "uploaded_by": "tunde-balogun@proton.me",
+          "storage_class": "ticket_attachment"
+        }
+      ]
+    },
+    {
+      "captured_at": "2026-07-23T12:00:00Z",
+      "data_store": "support_platform",
+      "collection": "support_conversations",
+      "records": [
+        {
+          "resource_id": "support_1887",
+          "ticket_id": "CS-5887",
+          "subject_reference": "user_172",
+          "channel": "email",
+          "message_text": "Please send the delivery update to chughes6797@gmail.com. The affected order includes: Stainless steel water bottle."
+        },
+        {
+          "resource_id": "support_8164",
+          "ticket_id": "CS-7164",
+          "subject_reference": "user_173",
+          "channel": "email",
+          "message_text": "[REDACTED]"
+        },
+        {
+          "resource_id": "support_2609",
+          "ticket_id": "CS-6609",
+          "subject_reference": "user_178",
+          "channel": "email",
+          "message_text": "Please send the delivery update to aasante4311@fastmail.com. The affected order includes: Running shoes."
+        },
+        {
+          "resource_id": "support_4806",
+          "ticket_id": "CS-8806",
+          "subject_reference": "user_180",
+          "channel": "email",
+          "message_text": "Please send the delivery update to ren.watanabe@gmail.com. The affected order includes: Cotton bedsheet set."
+        }
+      ]
+    },
+    {
+      "captured_at": "2026-07-25T12:00:00Z",
+      "data_store": "account_service",
+      "collection": "customer_profiles",
+      "records": [
+        {
+          "resource_id": "account_246",
+          "customer_reference": "user_173",
+          "full_name": "Louis Lefèvre",
+          "email": "louis.l471697@outlook.com",
+          "phone": "+33 6 91 92 14 70",
+          "account_status": "ACTIVE",
+          "signup_channel": "referral"
+        }
+      ]
+    },
+    {
+      "captured_at": "2026-07-25T15:00:00Z",
+      "data_store": "search_service",
+      "collection": "customer_search_documents",
+      "records": [
+        {
+          "resource_id": "search_2597",
+          "index_name": "customer_directory_v3",
+          "document": {
+            "display_name": "Freja Svensson",
+            "email": "freja.svensson@outlook.com",
+            "customer_reference": "user_174"
+          }
+        }
+      ]
+    }
+  ]
+}

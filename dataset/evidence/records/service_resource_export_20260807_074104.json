@@ -1,0 +1,273 @@
+{
+  "exported_at": "2026-08-07T07:41:04Z",
+  "region": "global",
+  "service_exports": {
+    "account_service": {
+      "profile_lookups": [
+        {
+          "observed_at": "2026-08-07T05:55:37Z",
+          "profile": null,
+          "resource_id": "account_3897",
+          "status_code": 404
+        },
+        {
+          "observed_at": "2026-08-07T05:59:32Z",
+          "profile": null,
+          "resource_id": "account_874",
+          "status_code": 404
+        },
+        {
+          "observed_at": "2026-08-07T07:39:36Z",
+          "profile": null,
+          "resource_id": "account_8854",
+          "status_code": 404
+        }
+      ]
+    },
+    "analytics_platform": {
+      "profiles": [
+        {
+          "audience_cohort": "mobile_browser",
+          "customer_reference": null,
+          "email": null,
+          "email_hash": null,
+          "observed_at": "2026-08-07T07:41:04Z",
+          "phone": null,
+          "resource_id": "analytics_1626"
+        },
+        {
+          "audience_cohort": "general_shopper",
+          "customer_reference": null,
+          "email": "leonie-moreau@gmail.com",
+          "email_hash": null,
+          "observed_at": "2026-08-07T04:45:16Z",
+          "phone": null,
+          "resource_id": "analytics_5886"
+        },
+        {
+          "audience_cohort": "home_lifestyle",
+          "customer_reference": null,
+          "email": null,
+          "email_hash": null,
+          "observed_at": "2026-08-07T06:25:11Z",
+          "phone": null,
+          "resource_id": "analytics_7254"
+        }
+      ]
+    },
+    "backup_service": {
+      "restore_entries": [
+        {
+          "archive_key": "archive/customer-data/backup_4244.tar.zst",
+          "customer_email": "l.fernandez84@gmail.com",
+          "customer_reference": null,
+          "observed_at": "2026-08-07T07:35:24Z",
+          "resource_id": "backup_4244",
+          "restore_allowed": true
+        },
+        {
+          "archive_key": "archive/customer-data/backup_9557.tar.zst",
+          "customer_email": null,
+          "customer_reference": "user_149",
+          "observed_at": "2026-08-07T06:27:21Z",
+          "resource_id": "backup_9557",
+          "restore_allowed": false
+        }
+      ]
+    },
+    "export_service": {
+      "exports": [
+        {
+          "customer_reference": null,
+          "object_key": "exports/export_7992/customer_data.zip",
+          "observed_at": "2026-08-07T06:10:31Z",
+          "owner_email": "mkang9227@fastmail.com",
+          "owner_phone": null,
+          "resource_id": "export_7992"
+        }
+      ]
+    },
+    "integration_service": {
+      "connectors": [
+        {
+          "connector_name": "support_profile_sync",
+          "customer_email": null,
+          "customer_reference": "user_149",
+          "enabled": false,
+          "last_delivery_status": "stopped",
+          "observed_at": "2026-08-07T06:10:12Z",
+          "resource_id": "data_flow_2437"
+        },
+        {
+          "connector_name": "customer_events_connector",
+          "customer_email": "aditi.patel@gmail.com",
+          "customer_reference": null,
+          "enabled": true,
+          "last_delivery_status": "delivered",
+          "observed_at": "2026-08-07T05:17:19Z",
+          "resource_id": "data_flow_4889"
+        },
+        {
+          "connector_name": "search_profile_indexer",
+          "customer_email": "gabriel.c7146@zoho.com",
+          "customer_reference": null,
+          "enabled": true,
+          "last_delivery_status": "delivered",
+          "observed_at": "2026-08-07T06:49:45Z",
+          "resource_id": "data_flow_7253"
+        }
+      ]
+    },
+    "search_service": {
+      "index_queries": [
+        {
+          "hits": {
+            "documents": [
+              {
+                "customer_reference": null,
+                "display_name": null,
+                "email": "gabriel.c7146@zoho.com",
+                "email_hash": null,
+                "phone": null,
+                "resource_id": "search_1725"
+              }
+            ],
+            "total": 1
+          },
+          "observed_at": "2026-08-07T04:49:16Z",
+          "query": "gabriel.c7146@zoho.com",
+          "resource_id": "search_1725"
+        },
+        {
+          "hits": {
+            "documents": [
+              {
+                "customer_reference": null,
+                "display_name": null,
+                "email": "aditi.patel@gmail.com",
+                "email_hash": null,
+                "phone": null,
+                "resource_id": "search_2262"
+              }
+            ],
+            "total": 1
+          },
+          "observed_at": "2026-08-07T05:50:33Z",
+          "query": "aditi.patel@gmail.com",
+          "resource_id": "search_2262"
+        },
+        {
+          "hits": {
+            "documents": [
+              {
+                "customer_reference": null,
+                "display_name": null,
+                "email": "haruka-ito87@proton.me",
+                "email_hash": null,
+                "phone": null,
+                "resource_id": "search_6137"
+              }
+            ],
+            "total": 1
+          },
+          "observed_at": "2026-08-07T06:07:38Z",
+          "query": "haruka-ito87@proton.me",
+          "resource_id": "search_6137"
+        },
+        {
+          "hits": {
+            "documents": [
+              {
+                "customer_reference": null,
+                "display_name": null,
+                "email": "CARTER.AMELIA92@GMAIL.COM",
+                "email_hash": null,
+                "phone": null,
+                "resource_id": "search_7239"
+              }
+            ],
+            "total": 1
+          },
+          "observed_at": "2026-08-07T05:53:09Z",
+          "query": "CARTER.AMELIA92@GMAIL.COM",
+          "resource_id": "search_7239"
+        },
+        {
+          "hits": {
+            "documents": [
+              {
+                "customer_reference": null,
+                "display_name": null,
+                "email": "leonie-moreau@gmail.com",
+                "email_hash": null,
+                "phone": null,
+                "resource_id": "search_7672"
+              }
+            ],
+            "total": 1
+          },
+          "observed_at": "2026-08-07T06:09:49Z",
+          "query": "leonie-moreau@gmail.com",
+          "resource_id": "search_7672"
+        }
+      ]
+    },
+    "security_service": {
+      "audit_records": [
+        {
+          "event_code": "SUBJECT_REQUEST_AUDITED",
+          "observed_at": "2026-08-07T07:19:45Z",
+          "resource_id": "audit_record_1584",
+          "retention_until": "2033-12-31T23:59:59Z",
+          "subject_reference": "user_148"
+        },
+        {
+          "event_code": "IDENTITY_CHANGE_RECORDED",
+          "observed_at": "2026-08-07T05:22:56Z",
+          "resource_id": "audit_record_3579",
+          "retention_until": "2034-09-30T23:59:59Z",
+          "subject_reference": "user_150"
+        },
+        {
+          "event_code": "PRIVACY_REQUEST_ACCEPTED",
+          "observed_at": "2026-08-07T04:48:17Z",
+          "resource_id": "audit_record_8905",
+          "retention_until": "2032-06-30T23:59:59Z",
+          "subject_reference": "user_149"
+        }
+      ]
+    },
+    "support_platform": {
+      "tickets": [
+        {
+          "customer_reference": "user_149",
+          "message_excerpt": "Customer followed up about an order update.",
+          "observed_at": "2026-08-07T06:50:56Z",
+          "requester_email": null,
+          "requester_name": null,
+          "requester_phone": null,
+          "resource_id": "support_5400"
+        },
+        {
+          "customer_reference": null,
+          "message_excerpt": "Customer contacted support about account access.",
+          "observed_at": "2026-08-07T07:11:08Z",
+          "requester_email": "CARTER.AMELIA92@GMAIL.COM",
+          "requester_name": null,
+          "requester_phone": null,
+          "resource_id": "support_5716"
+        },
+        {
+          "customer_reference": null,
+          "message_excerpt": "Customer contacted support about account access.",
+          "observed_at": "2026-08-07T07:06:13Z",
+          "requester_email": "haruka-ito87@proton.me",
+          "requester_name": null,
+          "requester_phone": null,
+          "resource_id": "support_6560"
+        }
+      ]
+    }
+  },
+  "source": "records_assurance_gateway"
+}

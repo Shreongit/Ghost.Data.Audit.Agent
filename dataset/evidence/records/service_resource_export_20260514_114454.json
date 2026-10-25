@@ -1,0 +1,284 @@
+{
+  "exported_at": "2026-05-14T11:44:54Z",
+  "region": "global",
+  "service_exports": {
+    "account_service": {
+      "profile_lookups": [
+        {
+          "observed_at": "2026-05-14T10:01:23Z",
+          "profile": null,
+          "resource_id": "account_2088",
+          "status_code": 404
+        },
+        {
+          "observed_at": "2026-05-14T09:36:10Z",
+          "profile": null,
+          "resource_id": "account_591",
+          "status_code": 404
+        },
+        {
+          "observed_at": "2026-05-14T10:31:23Z",
+          "profile": null,
+          "resource_id": "account_8264",
+          "status_code": 404
+        },
+        {
+          "observed_at": "2026-05-14T10:29:05Z",
+          "profile": null,
+          "resource_id": "account_9354",
+          "status_code": 404
+        }
+      ]
+    },
+    "analytics_platform": {
+      "profiles": [
+        {
+          "audience_cohort": "general_shopper",
+          "customer_reference": null,
+          "email": "ethan-morgan@gmail.com",
+          "email_hash": null,
+          "observed_at": "2026-05-14T10:48:13Z",
+          "phone": null,
+          "resource_id": "analytics_1488"
+        },
+        {
+          "audience_cohort": "returning_customer",
+          "customer_reference": null,
+          "email": null,
+          "email_hash": null,
+          "observed_at": "2026-05-14T11:34:09Z",
+          "phone": null,
+          "resource_id": "analytics_2601"
+        },
+        {
+          "audience_cohort": "returning_customer",
+          "customer_reference": null,
+          "email": null,
+          "email_hash": null,
+          "observed_at": "2026-05-14T10:49:33Z",
+          "phone": null,
+          "resource_id": "analytics_4229"
+        },
+        {
+          "audience_cohort": "home_lifestyle",
+          "customer_reference": null,
+          "email": null,
+          "email_hash": null,
+          "observed_at": "2026-05-14T11:18:49Z",
+          "phone": null,
+          "resource_id": "analytics_5532"
+        },
+        {
+          "audience_cohort": "mobile_browser",
+          "customer_reference": null,
+          "email": null,
+          "email_hash": null,
+          "observed_at": "2026-05-14T09:36:31Z",
+          "phone": null,
+          "resource_id": "analytics_6099"
+        }
+      ]
+    },
+    "backup_service": {
+      "restore_entries": [
+        {
+          "archive_key": "archive/customer-data/backup_7421.tar.zst",
+          "customer_email": "d.mehta76@gmail.com",
+          "customer_reference": null,
+          "observed_at": "2026-05-14T11:07:53Z",
+          "resource_id": "backup_7421",
+          "restore_allowed": true
+        }
+      ]
+    },
+    "integration_service": {
+      "connectors": [
+        {
+          "connector_name": "support_profile_sync",
+          "customer_email": "ethan-morgan@gmail.com",
+          "customer_reference": null,
+          "enabled": true,
+          "last_delivery_status": "delivered",
+          "observed_at": "2026-05-14T10:03:19Z",
+          "resource_id": "data_flow_3064"
+        },
+        {
+          "connector_name": "customer_events_connector",
+          "customer_email": "k.nasser9089@yahoo.com",
+          "customer_reference": null,
+          "enabled": true,
+          "last_delivery_status": "delivered",
+          "observed_at": "2026-05-14T11:44:54Z",
+          "resource_id": "data_flow_4964"
+        },
+        {
+          "connector_name": "customer_events_connector",
+          "customer_email": "andrei.horvat@outlook.com",
+          "customer_reference": null,
+          "enabled": true,
+          "last_delivery_status": "delivered",
+          "observed_at": "2026-05-14T09:44:28Z",
+          "resource_id": "data_flow_8828"
+        }
+      ]
+    },
+    "search_service": {
+      "index_queries": [
+        {
+          "hits": {
+            "documents": [
+              {
+                "customer_reference": null,
+                "display_name": null,
+                "email": "andrei.horvat@outlook.com",
+                "email_hash": null,
+                "phone": null,
+                "resource_id": "search_2256"
+              }
+            ],
+            "total": 1
+          },
+          "observed_at": "2026-05-14T09:58:02Z",
+          "query": "andrei.horvat@outlook.com",
+          "resource_id": "search_2256"
+        },
+        {
+          "hits": {
+            "documents": [
+              {
+                "customer_reference": null,
+                "display_name": null,
+                "email": "k.nasser9089@yahoo.com",
+                "email_hash": null,
+                "phone": null,
+                "resource_id": "search_3667"
+              }
+            ],
+            "total": 1
+          },
+          "observed_at": "2026-05-14T10:53:25Z",
+          "query": "k.nasser9089@yahoo.com",
+          "resource_id": "search_3667"
+        },
+        {
+          "hits": {
+            "documents": [
+              {
+                "customer_reference": null,
+                "display_name": null,
+                "email": "mrousseau7133@gmail.com",
+                "email_hash": null,
+                "phone": null,
+                "resource_id": "search_5472"
+              }
+            ],
+            "total": 1
+          },
+          "observed_at": "2026-05-14T10:43:56Z",
+          "query": "mrousseau7133@gmail.com",
+          "resource_id": "search_5472"
+        },
+        {
+          "hits": {
+            "documents": [
+              {
+                "customer_reference": null,
+                "display_name": null,
+                "email": "alvarez.elena@gmail.com",
+                "email_hash": null,
+                "phone": null,
+                "resource_id": "search_8583"
+              }
+            ],
+            "total": 1
+          },
+          "observed_at": "2026-05-14T11:43:12Z",
+          "query": "alvarez.elena@gmail.com",
+          "resource_id": "search_8583"
+        },
+        {
+          "hits": {
+            "documents": [
+              {
+                "customer_reference": null,
+                "display_name": null,
+                "email": "ethan-morgan@gmail.com",
+                "email_hash": null,
+                "phone": null,
+                "resource_id": "search_8665"
+              }
+            ],
+            "total": 1
+          },
+          "observed_at": "2026-05-14T11:22:16Z",
+          "query": "ethan-morgan@gmail.com",
+          "resource_id": "search_8665"
+        }
+      ]
+    },
+    "security_service": {
+      "audit_records": [
+        {
+          "event_code": "SUBJECT_REQUEST_AUDITED",
+          "observed_at": "2026-05-14T11:35:50Z",
+          "resource_id": "audit_record_3201",
+          "retention_until": "2033-12-31T23:59:59Z",
+          "subject_reference": "user_320"
+        },
+        {
+          "event_code": "IDENTITY_CHANGE_RECORDED",
+          "observed_at": "2026-05-14T09:59:53Z",
+          "resource_id": "audit_record_7020",
+          "retention_until": "2034-09-30T23:59:59Z",
+          "subject_reference": "user_311"
+        },
+        {
+          "event_code": "IDENTITY_CHANGE_RECORDED",
+          "observed_at": "2026-05-14T11:02:53Z",
+          "resource_id": "audit_record_7337",
+          "retention_until": "2034-09-30T23:59:59Z",
+          "subject_reference": "user_317"
+        },
+        {
+          "event_code": "SUBJECT_REQUEST_AUDITED",
+          "observed_at": "2026-05-14T11:33:14Z",
+          "resource_id": "audit_record_7893",
+          "retention_until": "2033-12-31T23:59:59Z",
+          "subject_reference": "user_312"
+        }
+      ]
+    },
+    "support_platform": {
+      "tickets": [
+        {
+          "customer_reference": null,
+          "message_excerpt": "Customer asked support to correct delivery details.",
+          "observed_at": "2026-05-14T10:34:13Z",
+          "requester_email": "alvarez.elena@gmail.com",
+          "requester_name": null,
+          "requester_phone": null,
+          "resource_id": "support_1176"
+        },
+        {
+          "customer_reference": null,
+          "message_excerpt": "Customer followed up about an order update.",
+          "observed_at": "2026-05-14T09:52:02Z",
+          "requester_email": "ethan-morgan@gmail.com",
+          "requester_name": null,
+          "requester_phone": null,
+          "resource_id": "support_4439"
+        },
+        {
+          "customer_reference": null,
+          "message_excerpt": "Customer asked support to correct delivery details.",
+          "observed_at": "2026-05-14T10:50:39Z",
+          "requester_email": "mrousseau7133@gmail.com",
+          "requester_name": null,
+          "requester_phone": null,
+          "resource_id": "support_7995"
+        }
+      ]
+    }
+  },
+  "source": "records_assurance_gateway"
+}

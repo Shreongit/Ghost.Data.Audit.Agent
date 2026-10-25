@@ -1,0 +1,753 @@
+{
+  "exported_at": "2026-05-11T11:00:00Z",
+  "source": "records_assurance_service",
+  "snapshots": [
+    {
+      "captured_at": "2026-05-03T11:00:00Z",
+      "data_store": "account_service",
+      "collection": "customer_profiles",
+      "records": [
+        {
+          "resource_id": "account_3785",
+          "customer_reference": "user_324",
+          "full_name": "Hyun-woo Kang",
+          "email": "HYUNWOO.KANG94@GMAIL.COM",
+          "phone": "+82 10 2411 4559",
+          "account_status": "ACTIVE",
+          "signup_channel": "mobile_app"
+        }
+      ]
+    },
+    {
+      "captured_at": "2026-05-09T11:00:00Z",
+      "data_store": "account_service",
+      "collection": "customer_profiles",
+      "records": []
+    },
+    {
+      "captured_at": "2026-05-09T11:00:00Z",
+      "data_store": "analytics_platform",
+      "collection": "customer_analytics_reports",
+      "records": [
+        {
+          "resource_id": "analytics_136",
+          "user_id": null,
+          "email": null,
+          "phone": null,
+          "email_hash": null,
+          "reporting_window": "last_90_days",
+          "metrics": {
+            "sessions_30d": 12,
+            "products_viewed_30d": 16,
+            "orders_completed_90d": 1,
+            "revenue_90d_usd": 99.53
+          },
+          "recent_activity": [
+            {
+              "event": "product_viewed",
+              "product": "Noise-cancelling headphones"
+            },
+            {
+              "event": "added_to_cart",
+              "product": "Noise-cancelling headphones"
+            },
+            {
+              "event": "purchase_completed",
+              "product": "Noise-cancelling headphones",
+              "quantity": 1
+            }
+          ]
+        },
+        {
+          "resource_id": "analytics_2072",
+          "user_id": null,
+          "email": null,
+          "phone": null,
+          "email_hash": null,
+          "reporting_window": "last_90_days",
+          "metrics": {
+            "sessions_30d": 4,
+            "products_viewed_30d": 30,
+            "orders_completed_90d": 2,
+            "revenue_90d_usd": 144.82
+          },
+          "recent_activity": [
+            {
+              "event": "product_viewed",
+              "product": "Noise-cancelling headphones"
+            },
+            {
+              "event": "added_to_cart",
+              "product": "Noise-cancelling headphones"
+            },
+            {
+              "event": "purchase_completed",
+              "product": "Noise-cancelling headphones",
+              "quantity": 1
+            }
+          ]
+        },
+        {
+          "resource_id": "analytics_9681",
+          "user_id": null,
+          "email": null,
+          "phone": null,
+          "email_hash": null,
+          "reporting_window": "last_90_days",
+          "metrics": {
+            "sessions_30d": 17,
+            "products_viewed_30d": 13,
+            "orders_completed_90d": 1,
+            "revenue_90d_usd": 48.68
+          },
+          "recent_activity": [
+            {
+              "event": "product_viewed",
+              "product": "Running shoes"
+            },
+            {
+              "event": "purchase_completed",
+              "product": "Running shoes",
+              "quantity": 2
+            }
+          ]
+        },
+        {
+          "resource_id": "analytics_671",
+          "user_id": "user_327",
+          "email": "diego-fernandez@gmail.com",
+          "phone": "+34 658 383 577",
+          "email_hash": "dd126b271a19209d6d22ff27d3c06171ebcf53284ca4d3287258041e78f2905d",
+          "reporting_window": "last_90_days",
+          "metrics": {
+            "sessions_30d": 7,
+            "products_viewed_30d": 24,
+            "orders_completed_90d": 1,
+            "revenue_90d_usd": 71.28
+          },
+          "recent_activity": [
+            {
+              "event": "product_viewed",
+              "product": "Stainless steel water bottle"
+            },
+            {
+              "event": "added_to_cart",
+              "product": "Stainless steel water bottle"
+            },
+            {
+              "event": "purchase_completed",
+              "product": "Stainless steel water bottle",
+              "quantity": 2
+            }
+          ]
+        },
+        {
+          "resource_id": "analytics_2022",
+          "user_id": null,
+          "email": null,
+          "phone": null,
+          "email_hash": null,
+          "reporting_window": "last_90_days",
+          "metrics": {
+            "sessions_30d": 8,
+            "products_viewed_30d": 11,
+            "orders_completed_90d": 2,
+            "revenue_90d_usd": 190.02
+          },
+          "recent_activity": [
+            {
+              "event": "product_viewed",
+              "product": "Cotton bedsheet set"
+            },
+            {
+              "event": "purchase_completed",
+              "product": "Cotton bedsheet set",
+              "quantity": 1
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "captured_at": "2026-05-09T11:00:00Z",
+      "data_store": "backup_service",
+      "collection": "backup_catalog",
+      "records": [
+        {
+          "resource_id": "backup_6458",
+          "archive_path": "s3://customer-backups/weekly/segment-26.tar.zst",
+          "subject_reference": "user_322",
+          "restore_allowed": false,
+          "encryption": "AES-256"
+        },
+        {
+          "resource_id": "backup_2894",
+          "archive_path": "s3://customer-backups/weekly/segment-14.tar.zst",
+          "subject_reference": "user_324",
+          "restore_allowed": false,
+          "encryption": "AES-256"
+        },
+        {
+          "resource_id": "backup_9376",
+          "archive_path": "s3://customer-backups/weekly/segment-00.tar.zst",
+          "subject_reference": "user_329",
+          "restore_allowed": false,
+          "encryption": "AES-256"
+        }
+      ]
+    },
+    {
+      "captured_at": "2026-05-09T11:00:00Z",
+      "data_store": "integration_service",
+      "collection": "connector_configurations",
+      "records": [
+        {
+          "resource_id": "data_flow_4769",
+          "connector_name": "customer-events-to-warehouse-2",
+          "destination": "customer_analytics_warehouse",
+          "subject_selector": "user_322",
+          "enabled": false,
+          "mode": "continuous_sync"
+        },
+        {
+          "resource_id": "data_flow_9962",
+          "connector_name": "customer-events-to-warehouse-3",
+          "destination": "customer_analytics_warehouse",
+          "subject_selector": "aoi.i256693@zoho.com",
+          "enabled": true,
+          "mode": "continuous_sync"
+        },
+        {
+          "resource_id": "data_flow_2468",
+          "connector_name": "customer-events-to-warehouse-5",
+          "destination": "customer_analytics_warehouse",
+          "subject_selector": "user_324",
+          "enabled": false,
+          "mode": "continuous_sync"
+        },
+        {
+          "resource_id": "data_flow_8534",
+          "connector_name": "customer-events-to-warehouse-7",
+          "destination": "customer_analytics_warehouse",
+          "subject_selector": "user_329",
+          "enabled": false,
+          "mode": "continuous_sync"
+        },
+        {
+          "resource_id": "data_flow_4392",
+          "connector_name": "customer-events-to-warehouse-1",
+          "destination": "customer_analytics_warehouse",
+          "subject_selector": "astrid.andersson@outlook.com",
+          "enabled": true,
+          "mode": "continuous_sync"
+        }
+      ]
+    },
+    {
+      "captured_at": "2026-05-09T11:00:00Z",
+      "data_store": "search_service",
+      "collection": "customer_search_documents",
+      "records": [
+        {
+          "resource_id": "search_4054",
+          "index_name": "customer_directory_v3",
+          "document": {
+            "display_name": "Aoi Ito",
+            "email": "aoi.i256693@zoho.com",
+            "customer_reference": "user_323"
+          }
+        },
+        {
+          "resource_id": "search_9107",
+          "index_name": "customer_directory_v3",
+          "document": {
+            "display_name": "Ishaan Patel",
+            "email": "patel.ishaan@gmail.com",
+            "customer_reference": "user_326"
+          }
+        },
+        {
+          "resource_id": "search_5226",
+          "index_name": "customer_directory_v3",
+          "document": {
+            "display_name": "Diego Fernández",
+            "email": "diego-fernandez@gmail.com",
+            "customer_reference": "user_327"
+          }
+        },
+        {
+          "resource_id": "search_4560",
+          "index_name": "customer_directory_v3",
+          "document": {
+            "display_name": "Grace Carter",
+            "email": "gcarter216198@gmail.com",
+            "customer_reference": "user_328"
+          }
+        },
+        {
+          "resource_id": "search_049",
+          "index_name": "customer_directory_v3",
+          "document": {
+            "display_name": "Astrid Andersson",
+            "email": "astrid.andersson@outlook.com",
+            "customer_reference": "user_330"
+          }
+        }
+      ]
+    },
+    {
+      "captured_at": "2026-05-09T11:00:00Z",
+      "data_store": "security_service",
+      "collection": "security_audit_events",
+      "records": [
+        {
+          "resource_id": "audit_record_3338",
+          "subject_reference": "user_321",
+          "event_name": "account_deletion_reviewed",
+          "actor_type": "automated_privacy_workflow",
+          "integrity_seal": "sha256:0000000000000000000000000000000000000000000000000000000000000d0a"
+        },
+        {
+          "resource_id": "audit_record_4466",
+          "subject_reference": "user_322",
+          "event_name": "account_deletion_reviewed",
+          "actor_type": "automated_privacy_workflow",
+          "integrity_seal": "sha256:0000000000000000000000000000000000000000000000000000000000001172"
+        },
+        {
+          "resource_id": "audit_record_2236",
+          "subject_reference": "user_323",
+          "event_name": "account_deletion_reviewed",
+          "actor_type": "automated_privacy_workflow",
+          "integrity_seal": "sha256:00000000000000000000000000000000000000000000000000000000000008bc"
+        },
+        {
+          "resource_id": "audit_record_1219",
+          "subject_reference": "user_324",
+          "event_name": "account_deletion_reviewed",
+          "actor_type": "automated_privacy_workflow",
+          "integrity_seal": "sha256:00000000000000000000000000000000000000000000000000000000000004c3"
+        },
+        {
+          "resource_id": "audit_record_461",
+          "subject_reference": "user_325",
+          "event_name": "account_deletion_reviewed",
+          "actor_type": "automated_privacy_workflow",
+          "integrity_seal": "sha256:00000000000000000000000000000000000000000000000000000000000001cd"
+        },
+        {
+          "resource_id": "audit_record_5012",
+          "subject_reference": "user_326",
+          "event_name": "account_deletion_reviewed",
+          "actor_type": "automated_privacy_workflow",
+          "integrity_seal": "sha256:0000000000000000000000000000000000000000000000000000000000001394"
+        },
+        {
+          "resource_id": "audit_record_3525",
+          "subject_reference": "user_327",
+          "event_name": "account_deletion_reviewed",
+          "actor_type": "automated_privacy_workflow",
+          "integrity_seal": "sha256:0000000000000000000000000000000000000000000000000000000000000dc5"
+        },
+        {
+          "resource_id": "audit_record_6629",
+          "subject_reference": "user_328",
+          "event_name": "account_deletion_reviewed",
+          "actor_type": "automated_privacy_workflow",
+          "integrity_seal": "sha256:00000000000000000000000000000000000000000000000000000000000019e5"
+        },
+        {
+          "resource_id": "audit_record_6731",
+          "subject_reference": "user_329",
+          "event_name": "account_deletion_reviewed",
+          "actor_type": "automated_privacy_workflow",
+          "integrity_seal": "sha256:0000000000000000000000000000000000000000000000000000000000001a4b"
+        },
+        {
+          "resource_id": "audit_record_8914",
+          "subject_reference": "user_330",
+          "event_name": "account_deletion_reviewed",
+          "actor_type": "automated_privacy_workflow",
+          "integrity_seal": "sha256:00000000000000000000000000000000000000000000000000000000000022d2"
+        }
+      ]
+    },
+    {
+      "captured_at": "2026-05-09T11:00:00Z",
+      "data_store": "support_platform",
+      "collection": "support_conversations",
+      "records": [
+        {
+          "resource_id": "support_7249",
+          "ticket_id": "CS-6249",
+          "subject_reference": "user_322",
+          "channel": "email",
+          "message_text": "[REDACTED]"
+        },
+        {
+          "resource_id": "support_305",
+          "ticket_id": "CS-4305",
+          "subject_reference": "user_324",
+          "channel": "email",
+          "message_text": "[REDACTED]"
+        },
+        {
+          "resource_id": "support_7926",
+          "ticket_id": "CS-6926",
+          "subject_reference": "user_326",
+          "channel": "email",
+          "message_text": "Please send the delivery update to patel.ishaan@gmail.com. The affected order includes: Cotton bedsheet set."
+        },
+        {
+          "resource_id": "support_4851",
+          "ticket_id": "CS-8851",
+          "subject_reference": "user_328",
+          "channel": "email",
+          "message_text": "Please send the delivery update to gcarter216198@gmail.com. The affected order includes: Mechanical keyboard."
+        },
+        {
+          "resource_id": "support_1403",
+          "ticket_id": "CS-5403",
+          "subject_reference": "user_329",
+          "channel": "email",
+          "message_text": "[REDACTED]"
+        }
+      ]
+    },
+    {
+      "captured_at": "2026-05-11T11:00:00Z",
+      "data_store": "account_service",
+      "collection": "customer_profiles",
+      "records": [
+        {
+          "resource_id": "account_4606",
+          "customer_reference": "user_325",
+          "full_name": "Rafael Costa",
+          "email": "R.COSTA04@GMAIL.COM",
+          "phone": "+55 11 92379-9963",
+          "account_status": "ACTIVE",
+          "signup_channel": "referral"
+        }
+      ]
+    },
+    {
+      "captured_at": "2026-05-11T11:00:00Z",
+      "data_store": "support_storage_service",
+      "collection": "operational_record_history",
+      "records": [
+        {
+          "recorded_at": "2026-05-04T07:00:00Z",
+          "system": "search_service",
+          "resource_id": "search_9252",
+          "record_type": "SEARCH_INDEX_ENTRY",
+          "result": "FOUND",
+          "lookup_value": "aboateng9675.jr@fastmail.com"
+        },
+        {
+          "recorded_at": "2026-05-04T10:00:00Z",
+          "system": "account_service",
+          "resource_id": "account_1015",
+          "record_type": "USER_PROFILE",
+          "result": "NOT_FOUND",
+          "lookup_value": "santos.isabela@gmail.com"
+        },
+        {
+          "recorded_at": "2026-05-04T10:00:00Z",
+          "system": "account_service",
+          "resource_id": "account_1340",
+          "record_type": "USER_PROFILE",
+          "result": "NOT_FOUND",
+          "lookup_value": "j.lee32@gmail.com"
+        },
+        {
+          "recorded_at": "2026-05-04T10:00:00Z",
+          "system": "account_service",
+          "resource_id": "account_2255",
+          "record_type": "USER_PROFILE",
+          "result": "NOT_FOUND",
+          "lookup_value": "elsayed.salma@icloud.com"
+        },
+        {
+          "recorded_at": "2026-05-04T10:00:00Z",
+          "system": "account_service",
+          "resource_id": "account_2282",
+          "record_type": "USER_PROFILE",
+          "result": "NOT_FOUND",
+          "lookup_value": "aboateng9675@fastmail.com"
+        },
+        {
+          "recorded_at": "2026-05-04T10:00:00Z",
+          "system": "account_service",
+          "resource_id": "account_2475",
+          "record_type": "USER_PROFILE",
+          "result": "FOUND",
+          "lookup_value": "a.ionescu1879@yahoo.com"
+        },
+        {
+          "recorded_at": "2026-05-04T10:00:00Z",
+          "system": "account_service",
+          "resource_id": "account_4231",
+          "record_type": "USER_PROFILE",
+          "result": "NOT_FOUND",
+          "lookup_value": "sota.suzuki@gmail.com"
+        },
+        {
+          "recorded_at": "2026-05-04T10:00:00Z",
+          "system": "account_service",
+          "resource_id": "account_4377",
+          "record_type": "USER_PROFILE",
+          "result": "NOT_FOUND",
+          "lookup_value": "kavya-basu@gmail.com"
+        },
+        {
+          "recorded_at": "2026-05-04T10:00:00Z",
+          "system": "account_service",
+          "resource_id": "account_614",
+          "record_type": "USER_PROFILE",
+          "result": "NOT_FOUND",
+          "lookup_value": "cnavarro7189@gmail.com"
+        },
+        {
+          "recorded_at": "2026-05-04T10:00:00Z",
+          "system": "account_service",
+          "resource_id": "account_767",
+          "record_type": "USER_PROFILE",
+          "result": "NOT_FOUND",
+          "lookup_value": "kabelo.d759483@zoho.com"
+        },
+        {
+          "recorded_at": "2026-05-04T10:00:00Z",
+          "system": "account_service",
+          "resource_id": "account_8892",
+          "record_type": "USER_PROFILE",
+          "result": "NOT_FOUND",
+          "lookup_value": "nneka-adeyemi81@proton.me"
+        },
+        {
+          "recorded_at": "2026-05-04T10:00:00Z",
+          "system": "analytics_platform",
+          "resource_id": "analytics_183",
+          "record_type": "ANALYTICS_PROFILE",
+          "result": "IDENTIFIABLE",
+          "lookup_value": "kavya-basu@gmail.com"
+        },
+        {
+          "recorded_at": "2026-05-04T10:00:00Z",
+          "system": "analytics_platform",
+          "resource_id": "analytics_2079",
+          "record_type": "ANALYTICS_PROFILE",
+          "result": "ANONYMIZED",
+          "lookup_value": ""
+        },
+        {
+          "recorded_at": "2026-05-04T10:00:00Z",
+          "system": "analytics_platform",
+          "resource_id": "analytics_3108",
+          "record_type": "ANALYTICS_PROFILE",
+          "result": "ANONYMIZED",
+          "lookup_value": ""
+        },
+        {
+          "recorded_at": "2026-05-04T10:00:00Z",
+          "system": "backup_service",
+          "resource_id": "backup_3136",
+          "record_type": "BACKUP_ARCHIVE",
+          "result": "BLOCKED",
+          "lookup_value": "user_333"
+        },
+        {
+          "recorded_at": "2026-05-04T10:00:00Z",
+          "system": "integration_service",
+          "resource_id": "data_flow_5200",
+          "record_type": "DATA_FLOW",
+          "result": "ACTIVE",
+          "lookup_value": "kabelo.d759483@zoho.com"
+        },
+        {
+          "recorded_at": "2026-05-04T10:00:00Z",
+          "system": "integration_service",
+          "resource_id": "data_flow_5916",
+          "record_type": "DATA_FLOW",
+          "result": "ACTIVE",
+          "lookup_value": "santos.isabela@gmail.com"
+        },
+        {
+          "recorded_at": "2026-05-04T10:00:00Z",
+          "system": "integration_service",
+          "resource_id": "data_flow_7452",
+          "record_type": "DATA_FLOW",
+          "result": "DISABLED",
+          "lookup_value": "user_333"
+        },
+        {
+          "recorded_at": "2026-05-04T10:00:00Z",
+          "system": "integration_service",
+          "resource_id": "data_flow_9392",
+          "record_type": "DATA_FLOW",
+          "result": "ACTIVE",
+          "lookup_value": "sota.suzuki@gmail.com"
+        },
+        {
+          "recorded_at": "2026-05-04T10:00:00Z",
+          "system": "search_service",
+          "resource_id": "search_1392",
+          "record_type": "SEARCH_INDEX_ENTRY",
+          "result": "FOUND",
+          "lookup_value": "sota.suzuki@gmail.com"
+        },
+        {
+          "recorded_at": "2026-05-04T10:00:00Z",
+          "system": "search_service",
+          "resource_id": "search_3773",
+          "record_type": "SEARCH_INDEX_ENTRY",
+          "result": "FOUND",
+          "lookup_value": "kabelo.d759483@zoho.com"
+        },
+        {
+          "recorded_at": "2026-05-04T10:00:00Z",
+          "system": "search_service",
+          "resource_id": "search_5411",
+          "record_type": "SEARCH_INDEX_ENTRY",
+          "result": "FOUND",
+          "lookup_value": "santos.isabela@gmail.com"
+        },
+        {
+          "recorded_at": "2026-05-04T10:00:00Z",
+          "system": "search_service",
+          "resource_id": "search_5970",
+          "record_type": "SEARCH_INDEX_ENTRY",
+          "result": "FOUND",
+          "lookup_value": "a.ionescu1879@yahoo.com"
+        },
+        {
+          "recorded_at": "2026-05-04T10:00:00Z",
+          "system": "search_service",
+          "resource_id": "search_7348",
+          "record_type": "SEARCH_INDEX_ENTRY",
+          "result": "FOUND",
+          "lookup_value": "elsayed.salma@icloud.com"
+        },
+        {
+          "recorded_at": "2026-05-04T10:00:00Z",
+          "system": "search_service",
+          "resource_id": "search_7367",
+          "record_type": "SEARCH_INDEX_ENTRY",
+          "result": "FOUND",
+          "lookup_value": "kavya-basu@gmail.com"
+        },
+        {
+          "recorded_at": "2026-05-04T10:00:00Z",
+          "system": "security_service",
+          "resource_id": "audit_record_1961",
+          "record_type": "SECURITY_AUDIT_LOG",
+          "result": "FOUND",
+          "lookup_value": "user_335"
+        },
+        {
+          "recorded_at": "2026-05-04T10:00:00Z",
+          "system": "security_service",
+          "resource_id": "audit_record_2862",
+          "record_type": "SECURITY_AUDIT_LOG",
+          "result": "FOUND",
+          "lookup_value": "user_339"
+        },
+        {
+          "recorded_at": "2026-05-04T10:00:00Z",
+          "system": "security_service",
+          "resource_id": "audit_record_2922",
+          "record_type": "SECURITY_AUDIT_LOG",
+          "result": "FOUND",
+          "lookup_value": "user_337"
+        },
+        {
+          "recorded_at": "2026-05-04T10:00:00Z",
+          "system": "security_service",
+          "resource_id": "audit_record_3872",
+          "record_type": "SECURITY_AUDIT_LOG",
+          "result": "FOUND",
+          "lookup_value": "user_338"
+        },
+        {
+          "recorded_at": "2026-05-04T10:00:00Z",
+          "system": "security_service",
+          "resource_id": "audit_record_4058",
+          "record_type": "SECURITY_AUDIT_LOG",
+          "result": "FOUND",
+          "lookup_value": "user_340"
+        },
+        {
+          "recorded_at": "2026-05-04T10:00:00Z",
+          "system": "security_service",
+          "resource_id": "audit_record_4647",
+          "record_type": "SECURITY_AUDIT_LOG",
+          "result": "FOUND",
+          "lookup_value": "user_331"
+        },
+        {
+          "recorded_at": "2026-05-04T10:00:00Z",
+          "system": "security_service",
+          "resource_id": "audit_record_5022",
+          "record_type": "SECURITY_AUDIT_LOG",
+          "result": "FOUND",
+          "lookup_value": "user_334"
+        },
+        {
+          "recorded_at": "2026-05-04T10:00:00Z",
+          "system": "security_service",
+          "resource_id": "audit_record_711",
+          "record_type": "SECURITY_AUDIT_LOG",
+          "result": "FOUND",
+          "lookup_value": "user_333"
+        },
+        {
+          "recorded_at": "2026-05-04T10:00:00Z",
+          "system": "security_service",
+          "resource_id": "audit_record_8558",
+          "record_type": "SECURITY_AUDIT_LOG",
+          "result": "FOUND",
+          "lookup_value": "user_332"
+        },
+        {
+          "recorded_at": "2026-05-04T10:00:00Z",
+          "system": "security_service",
+          "resource_id": "audit_record_9226",
+          "record_type": "SECURITY_AUDIT_LOG",
+          "result": "FOUND",
+          "lookup_value": "user_336"
+        },
+        {
+          "recorded_at": "2026-05-04T10:00:00Z",
+          "system": "support_platform",
+          "resource_id": "support_214",
+          "record_type": "SUPPORT_MESSAGE",
+          "result": "IDENTIFIABLE",
+          "lookup_value": "elsayed.salma@icloud.com"
+        },
+        {
+          "recorded_at": "2026-05-04T10:00:00Z",
+          "system": "support_platform",
+          "resource_id": "support_3399",
+          "record_type": "SUPPORT_MESSAGE",
+          "result": "IDENTIFIABLE",
+          "lookup_value": "cnavarro7189@gmail.com"
+        },
+        {
+          "recorded_at": "2026-05-04T10:00:00Z",
+          "system": "support_platform",
+          "resource_id": "support_4712",
+          "record_type": "SUPPORT_MESSAGE",
+          "result": "REDACTED",
+          "lookup_value": "user_333"
+        },
+        {
+          "recorded_at": "2026-05-06T10:00:00Z",
+          "system": "account_service",
+          "resource_id": "account_8892",
+          "record_type": "USER_PROFILE",
+          "result": "FOUND",
+          "lookup_value": "nneka-adeyemi81@proton.me"
+        }
+      ]
+    }
+  ]
+}

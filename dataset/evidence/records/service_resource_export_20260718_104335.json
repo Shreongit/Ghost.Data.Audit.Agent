@@ -1,0 +1,352 @@
+{
+  "exported_at": "2026-07-18T10:43:35Z",
+  "region": "global",
+  "service_exports": {
+    "account_service": {
+      "profile_lookups": [
+        {
+          "observed_at": "2026-07-18T09:33:26Z",
+          "profile": null,
+          "resource_id": "account_4854",
+          "status_code": 404
+        },
+        {
+          "observed_at": "2026-07-18T10:24:53Z",
+          "profile": {
+            "customer_reference": null,
+            "email": "ethan.b9744@outlook.com",
+            "email_hash": null,
+            "full_name": null,
+            "phone": null
+          },
+          "resource_id": "account_5375",
+          "status_code": 200
+        },
+        {
+          "observed_at": "2026-07-18T08:26:21Z",
+          "profile": {
+            "customer_reference": null,
+            "email": "l.berg82@yahoo.com",
+            "email_hash": null,
+            "full_name": null,
+            "phone": null
+          },
+          "resource_id": "account_5848",
+          "status_code": 200
+        },
+        {
+          "observed_at": "2026-07-18T10:12:32Z",
+          "profile": null,
+          "resource_id": "account_7063",
+          "status_code": 404
+        },
+        {
+          "observed_at": "2026-07-18T10:02:15Z",
+          "profile": null,
+          "resource_id": "account_9317",
+          "status_code": 404
+        }
+      ]
+    },
+    "analytics_platform": {
+      "profiles": [
+        {
+          "audience_cohort": "mobile_browser",
+          "customer_reference": null,
+          "email": "l.berg82@yahoo.com",
+          "email_hash": null,
+          "observed_at": "2026-07-18T08:18:22Z",
+          "phone": null,
+          "resource_id": "analytics_1120"
+        },
+        {
+          "audience_cohort": "returning_customer",
+          "customer_reference": null,
+          "email": "diya-sharma85@gmail.com",
+          "email_hash": null,
+          "observed_at": "2026-07-18T08:42:46Z",
+          "phone": null,
+          "resource_id": "analytics_1950"
+        },
+        {
+          "audience_cohort": "general_shopper",
+          "customer_reference": null,
+          "email": "eokafor9339@fastmail.com",
+          "email_hash": null,
+          "observed_at": "2026-07-18T10:03:39Z",
+          "phone": null,
+          "resource_id": "analytics_4472"
+        },
+        {
+          "audience_cohort": "returning_customer",
+          "customer_reference": null,
+          "email": null,
+          "email_hash": null,
+          "observed_at": "2026-07-18T08:44:27Z",
+          "phone": null,
+          "resource_id": "analytics_5614"
+        },
+        {
+          "audience_cohort": "returning_customer",
+          "customer_reference": null,
+          "email": null,
+          "email_hash": null,
+          "observed_at": "2026-07-18T09:25:51Z",
+          "phone": null,
+          "resource_id": "analytics_8767"
+        }
+      ]
+    },
+    "backup_service": {
+      "restore_entries": [
+        {
+          "archive_key": "archive/customer-data/backup_3010.tar.zst",
+          "customer_email": null,
+          "customer_reference": "user_189",
+          "observed_at": "2026-07-18T09:01:16Z",
+          "resource_id": "backup_3010",
+          "restore_allowed": false
+        }
+      ]
+    },
+    "export_service": {
+      "exports": [
+        {
+          "customer_reference": null,
+          "object_key": "exports/export_2705/customer_data.zip",
+          "observed_at": "2026-07-18T07:49:26Z",
+          "owner_email": "eokafor9339@fastmail.com",
+          "owner_phone": null,
+          "resource_id": "export_2705"
+        }
+      ]
+    },
+    "integration_service": {
+      "connectors": [
+        {
+          "connector_name": "customer_events_connector",
+          "customer_email": null,
+          "customer_reference": "user_189",
+          "enabled": false,
+          "last_delivery_status": "stopped",
+          "observed_at": "2026-07-18T09:03:09Z",
+          "resource_id": "data_flow_1611"
+        },
+        {
+          "connector_name": "search_profile_indexer",
+          "customer_email": "manon.dubois88@outlook.com",
+          "customer_reference": null,
+          "enabled": true,
+          "last_delivery_status": "delivered",
+          "observed_at": "2026-07-18T10:25:35Z",
+          "resource_id": "data_flow_707"
+        },
+        {
+          "connector_name": "support_profile_sync",
+          "customer_email": "egarcia1825@gmail.com",
+          "customer_reference": null,
+          "enabled": true,
+          "last_delivery_status": "delivered",
+          "observed_at": "2026-07-18T09:57:31Z",
+          "resource_id": "data_flow_7428"
+        }
+      ]
+    },
+    "search_service": {
+      "index_queries": [
+        {
+          "hits": {
+            "documents": [
+              {
+                "customer_reference": null,
+                "display_name": null,
+                "email": "manon.dubois88@outlook.com",
+                "email_hash": null,
+                "phone": null,
+                "resource_id": "search_3223"
+              }
+            ],
+            "total": 1
+          },
+          "observed_at": "2026-07-18T09:40:08Z",
+          "query": "manon.dubois88@outlook.com",
+          "resource_id": "search_3223"
+        },
+        {
+          "hits": {
+            "documents": [
+              {
+                "customer_reference": null,
+                "display_name": null,
+                "email": "egarcia1825@gmail.com",
+                "email_hash": null,
+                "phone": null,
+                "resource_id": "search_4062"
+              }
+            ],
+            "total": 1
+          },
+          "observed_at": "2026-07-18T08:22:10Z",
+          "query": "egarcia1825@gmail.com",
+          "resource_id": "search_4062"
+        },
+        {
+          "hits": {
+            "documents": [
+              {
+                "customer_reference": null,
+                "display_name": null,
+                "email": "l.berg82@yahoo.com",
+                "email_hash": null,
+                "phone": null,
+                "resource_id": "search_4334"
+              }
+            ],
+            "total": 1
+          },
+          "observed_at": "2026-07-18T08:47:12Z",
+          "query": "l.berg82@yahoo.com",
+          "resource_id": "search_4334"
+        },
+        {
+          "hits": {
+            "documents": [
+              {
+                "customer_reference": null,
+                "display_name": null,
+                "email": "eokafor9339@fastmail.com",
+                "email_hash": null,
+                "phone": null,
+                "resource_id": "search_6680"
+              }
+            ],
+            "total": 1
+          },
+          "observed_at": "2026-07-18T08:42:44Z",
+          "query": "eokafor9339@fastmail.com",
+          "resource_id": "search_6680"
+        },
+        {
+          "hits": {
+            "documents": [
+              {
+                "customer_reference": null,
+                "display_name": null,
+                "email": "diya-sharma85@gmail.com",
+                "email_hash": null,
+                "phone": null,
+                "resource_id": "search_8463"
+              }
+            ],
+            "total": 1
+          },
+          "observed_at": "2026-07-18T08:38:52Z",
+          "query": "diya-sharma85@gmail.com",
+          "resource_id": "search_8463"
+        },
+        {
+          "hits": {
+            "documents": [
+              {
+                "customer_reference": null,
+                "display_name": null,
+                "email": "pereira.beatriz@gmail.com",
+                "email_hash": null,
+                "phone": null,
+                "resource_id": "search_8680"
+              }
+            ],
+            "total": 1
+          },
+          "observed_at": "2026-07-18T08:15:33Z",
+          "query": "pereira.beatriz@gmail.com",
+          "resource_id": "search_8680"
+        },
+        {
+          "hits": {
+            "documents": [
+              {
+                "customer_reference": null,
+                "display_name": null,
+                "email": "ethan.b9744@outlook.com",
+                "email_hash": null,
+                "phone": null,
+                "resource_id": "search_9921"
+              }
+            ],
+            "total": 1
+          },
+          "observed_at": "2026-07-18T09:54:37Z",
+          "query": "ethan.b9744@outlook.com",
+          "resource_id": "search_9921"
+        }
+      ]
+    },
+    "security_service": {
+      "audit_records": [
+        {
+          "event_code": "IDENTITY_CHANGE_RECORDED",
+          "observed_at": "2026-07-18T08:12:52Z",
+          "resource_id": "audit_record_3262",
+          "retention_until": "2034-09-30T23:59:59Z",
+          "subject_reference": "user_181"
+        },
+        {
+          "event_code": "ACCOUNT_DELETION_RECORDED",
+          "observed_at": "2026-07-18T08:21:37Z",
+          "resource_id": "audit_record_4417",
+          "retention_until": "2031-12-31T23:59:59Z",
+          "subject_reference": "user_188"
+        },
+        {
+          "event_code": "SUBJECT_REQUEST_AUDITED",
+          "observed_at": "2026-07-18T09:12:12Z",
+          "resource_id": "audit_record_7493",
+          "retention_until": "2033-12-31T23:59:59Z",
+          "subject_reference": "user_189"
+        }
+      ]
+    },
+    "support_platform": {
+      "tickets": [
+        {
+          "customer_reference": null,
+          "message_excerpt": "Customer asked support to correct delivery details.",
+          "observed_at": "2026-07-18T10:24:35Z",
+          "requester_email": "pereira.beatriz@gmail.com",
+          "requester_name": null,
+          "requester_phone": null,
+          "resource_id": "support_1892"
+        },
+        {
+          "customer_reference": "user_189",
+          "message_excerpt": "Customer followed up about an order update.",
+          "observed_at": "2026-07-18T10:43:35Z",
+          "requester_email": null,
+          "requester_name": null,
+          "requester_phone": null,
+          "resource_id": "support_5049"
+        },
+        {
+          "customer_reference": null,
+          "message_excerpt": "Customer asked support to correct delivery details.",
+          "observed_at": "2026-07-18T09:57:11Z",
+          "requester_email": "eokafor9339@fastmail.com",
+          "requester_name": null,
+          "requester_phone": null,
+          "resource_id": "support_5493"
+        },
+        {
+          "customer_reference": null,
+          "message_excerpt": "Customer asked support to correct delivery details.",
+          "observed_at": "2026-07-18T09:10:21Z",
+          "requester_email": "l.berg82@yahoo.com",
+          "requester_name": null,
+          "requester_phone": null,
+          "resource_id": "support_8447"
+        }
+      ]
+    }
+  },
+  "source": "records_assurance_gateway"
+}

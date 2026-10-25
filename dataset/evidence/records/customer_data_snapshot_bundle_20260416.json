@@ -1,0 +1,396 @@
+{
+  "exported_at": "2026-04-16T06:00:00Z",
+  "source": "records_assurance_service",
+  "snapshots": [
+    {
+      "captured_at": "2026-04-08T06:00:00Z",
+      "data_store": "account_service",
+      "collection": "customer_profiles",
+      "records": [
+        {
+          "resource_id": "account_8598",
+          "customer_reference": "user_372",
+          "full_name": "Obinna Okafor",
+          "email": "obinna.okafor@gmail.com",
+          "phone": "+234 803 888 8709",
+          "account_status": "ACTIVE",
+          "signup_channel": "referral"
+        }
+      ]
+    },
+    {
+      "captured_at": "2026-04-14T06:00:00Z",
+      "data_store": "account_service",
+      "collection": "customer_profiles",
+      "records": [
+        {
+          "resource_id": "account_6246",
+          "customer_reference": "user_377",
+          "full_name": "João Silva",
+          "email": "joao.s192@outlook.com",
+          "phone": "+55 51 93633-0841",
+          "account_status": "ACTIVE",
+          "signup_channel": "referral"
+        },
+        {
+          "resource_id": "account_6784",
+          "customer_reference": "user_379",
+          "full_name": "Nicolás Torres",
+          "email": "n.torres30@yahoo.com",
+          "phone": "+34 788 985 692",
+          "account_status": "ACTIVE",
+          "signup_channel": "organic_search"
+        }
+      ]
+    },
+    {
+      "captured_at": "2026-04-14T06:00:00Z",
+      "data_store": "analytics_platform",
+      "collection": "customer_analytics_reports",
+      "records": [
+        {
+          "resource_id": "analytics_9394",
+          "user_id": null,
+          "email": null,
+          "phone": null,
+          "email_hash": null,
+          "reporting_window": "last_90_days",
+          "metrics": {
+            "sessions_30d": 18,
+            "products_viewed_30d": 5,
+            "orders_completed_90d": 4,
+            "revenue_90d_usd": 163.08
+          },
+          "recent_activity": [
+            {
+              "event": "product_viewed",
+              "product": "Ceramic coffee set"
+            },
+            {
+              "event": "added_to_cart",
+              "product": "Ceramic coffee set"
+            },
+            {
+              "event": "purchase_completed",
+              "product": "Ceramic coffee set",
+              "quantity": 1
+            }
+          ]
+        },
+        {
+          "resource_id": "analytics_5779",
+          "user_id": null,
+          "email": null,
+          "phone": null,
+          "email_hash": null,
+          "reporting_window": "last_90_days",
+          "metrics": {
+            "sessions_30d": 3,
+            "products_viewed_30d": 17,
+            "orders_completed_90d": 4,
+            "revenue_90d_usd": 276.08
+          },
+          "recent_activity": [
+            {
+              "event": "product_viewed",
+              "product": "Mechanical keyboard"
+            },
+            {
+              "event": "added_to_cart",
+              "product": "Mechanical keyboard"
+            },
+            {
+              "event": "purchase_completed",
+              "product": "Mechanical keyboard",
+              "quantity": 2
+            }
+          ]
+        },
+        {
+          "resource_id": "analytics_3651",
+          "user_id": "user_375",
+          "email": "rina-sato@gmail.com",
+          "phone": "+81 90 6542 5325",
+          "email_hash": "10b096b817b742db5fe102d212f403b668460d13b6830ec15a40e9cac662989a",
+          "reporting_window": "last_90_days",
+          "metrics": {
+            "sessions_30d": 17,
+            "products_viewed_30d": 28,
+            "orders_completed_90d": 1,
+            "revenue_90d_usd": 37.38
+          },
+          "recent_activity": [
+            {
+              "event": "product_viewed",
+              "product": "Mechanical keyboard"
+            },
+            {
+              "event": "purchase_completed",
+              "product": "Mechanical keyboard",
+              "quantity": 2
+            }
+          ]
+        },
+        {
+          "resource_id": "analytics_3234",
+          "user_id": null,
+          "email": null,
+          "phone": null,
+          "email_hash": null,
+          "reporting_window": "last_90_days",
+          "metrics": {
+            "sessions_30d": 14,
+            "products_viewed_30d": 14,
+            "orders_completed_90d": 4,
+            "revenue_90d_usd": 163.08
+          },
+          "recent_activity": [
+            {
+              "event": "product_viewed",
+              "product": "Ceramic coffee set"
+            },
+            {
+              "event": "purchase_completed",
+              "product": "Ceramic coffee set",
+              "quantity": 1
+            }
+          ]
+        },
+        {
+          "resource_id": "analytics_9326",
+          "user_id": null,
+          "email": null,
+          "phone": null,
+          "email_hash": null,
+          "reporting_window": "last_90_days",
+          "metrics": {
+            "sessions_30d": 4,
+            "products_viewed_30d": 30,
+            "orders_completed_90d": 1,
+            "revenue_90d_usd": 43.03
+          },
+          "recent_activity": [
+            {
+              "event": "product_viewed",
+              "product": "Cotton bedsheet set"
+            },
+            {
+              "event": "added_to_cart",
+              "product": "Cotton bedsheet set"
+            },
+            {
+              "event": "purchase_completed",
+              "product": "Cotton bedsheet set",
+              "quantity": 1
+            }
+          ]
+        },
+        {
+          "resource_id": "analytics_9918",
+          "user_id": "user_380",
+          "email": "reed.hannah@icloud.com",
+          "phone": "+44 7700 900380",
+          "email_hash": "28e05ee015126f27b700672fc332242a2efdada962b2672c4f3f734322b802de",
+          "reporting_window": "last_90_days",
+          "metrics": {
+            "sessions_30d": 2,
+            "products_viewed_30d": 33,
+            "orders_completed_90d": 3,
+            "revenue_90d_usd": 237.57
+          },
+          "recent_activity": [
+            {
+              "event": "product_viewed",
+              "product": "Cotton bedsheet set"
+            },
+            {
+              "event": "purchase_completed",
+              "product": "Cotton bedsheet set",
+              "quantity": 1
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "captured_at": "2026-04-14T06:00:00Z",
+      "data_store": "integration_service",
+      "collection": "connector_configurations",
+      "records": [
+        {
+          "resource_id": "data_flow_2984",
+          "connector_name": "customer-events-to-warehouse-1",
+          "destination": "customer_analytics_warehouse",
+          "subject_selector": "sami.h267897@zoho.com",
+          "enabled": true,
+          "mode": "continuous_sync"
+        },
+        {
+          "resource_id": "data_flow_6090",
+          "connector_name": "customer-events-to-warehouse-3",
+          "destination": "customer_analytics_warehouse",
+          "subject_selector": "reed.hannah@icloud.com",
+          "enabled": true,
+          "mode": "continuous_sync"
+        }
+      ]
+    },
+    {
+      "captured_at": "2026-04-14T06:00:00Z",
+      "data_store": "search_service",
+      "collection": "customer_search_documents",
+      "records": [
+        {
+          "resource_id": "search_7859",
+          "index_name": "customer_directory_v3",
+          "document": {
+            "display_name": "Sami Haddad",
+            "email": "sami.h267897@zoho.com",
+            "customer_reference": "user_371"
+          }
+        },
+        {
+          "resource_id": "search_3126",
+          "index_name": "customer_directory_v3",
+          "document": {
+            "display_name": "Ayanda Ndlovu",
+            "email": "ndlovu.ayanda78@gmail.com",
+            "customer_reference": "user_374"
+          }
+        },
+        {
+          "resource_id": "search_9124",
+          "index_name": "customer_directory_v3",
+          "document": {
+            "display_name": "João Silva",
+            "email": "joao.s192@outlook.com",
+            "customer_reference": "user_377"
+          }
+        },
+        {
+          "resource_id": "search_8171",
+          "index_name": "customer_directory_v3",
+          "document": {
+            "display_name": "Hannah Reed",
+            "email": "reed.hannah@icloud.com",
+            "customer_reference": "user_380"
+          }
+        }
+      ]
+    },
+    {
+      "captured_at": "2026-04-14T06:00:00Z",
+      "data_store": "security_service",
+      "collection": "security_audit_events",
+      "records": [
+        {
+          "resource_id": "audit_record_9163",
+          "subject_reference": "user_371",
+          "event_name": "account_deletion_reviewed",
+          "actor_type": "automated_privacy_workflow",
+          "integrity_seal": "sha256:00000000000000000000000000000000000000000000000000000000000023cb"
+        },
+        {
+          "resource_id": "audit_record_5137",
+          "subject_reference": "user_372",
+          "event_name": "account_deletion_reviewed",
+          "actor_type": "automated_privacy_workflow",
+          "integrity_seal": "sha256:0000000000000000000000000000000000000000000000000000000000001411"
+        },
+        {
+          "resource_id": "audit_record_6359",
+          "subject_reference": "user_373",
+          "event_name": "account_deletion_reviewed",
+          "actor_type": "automated_privacy_workflow",
+          "integrity_seal": "sha256:00000000000000000000000000000000000000000000000000000000000018d7"
+        },
+        {
+          "resource_id": "audit_record_4137",
+          "subject_reference": "user_374",
+          "event_name": "account_deletion_reviewed",
+          "actor_type": "automated_privacy_workflow",
+          "integrity_seal": "sha256:0000000000000000000000000000000000000000000000000000000000001029"
+        },
+        {
+          "resource_id": "audit_record_3685",
+          "subject_reference": "user_375",
+          "event_name": "account_deletion_reviewed",
+          "actor_type": "automated_privacy_workflow",
+          "integrity_seal": "sha256:0000000000000000000000000000000000000000000000000000000000000e65"
+        },
+        {
+          "resource_id": "audit_record_7312",
+          "subject_reference": "user_376",
+          "event_name": "account_deletion_reviewed",
+          "actor_type": "automated_privacy_workflow",
+          "integrity_seal": "sha256:0000000000000000000000000000000000000000000000000000000000001c90"
+        },
+        {
+          "resource_id": "audit_record_8830",
+          "subject_reference": "user_377",
+          "event_name": "account_deletion_reviewed",
+          "actor_type": "automated_privacy_workflow",
+          "integrity_seal": "sha256:000000000000000000000000000000000000000000000000000000000000227e"
+        },
+        {
+          "resource_id": "audit_record_4489",
+          "subject_reference": "user_378",
+          "event_name": "account_deletion_reviewed",
+          "actor_type": "automated_privacy_workflow",
+          "integrity_seal": "sha256:0000000000000000000000000000000000000000000000000000000000001189"
+        },
+        {
+          "resource_id": "audit_record_6833",
+          "subject_reference": "user_379",
+          "event_name": "account_deletion_reviewed",
+          "actor_type": "automated_privacy_workflow",
+          "integrity_seal": "sha256:0000000000000000000000000000000000000000000000000000000000001ab1"
+        },
+        {
+          "resource_id": "audit_record_6238",
+          "subject_reference": "user_380",
+          "event_name": "account_deletion_reviewed",
+          "actor_type": "automated_privacy_workflow",
+          "integrity_seal": "sha256:000000000000000000000000000000000000000000000000000000000000185e"
+        }
+      ]
+    },
+    {
+      "captured_at": "2026-04-14T06:00:00Z",
+      "data_store": "support_platform",
+      "collection": "support_conversations",
+      "records": [
+        {
+          "resource_id": "support_475",
+          "ticket_id": "CS-4475",
+          "subject_reference": "user_374",
+          "channel": "email",
+          "message_text": "Please send the delivery update to ndlovu.ayanda78@gmail.com. The affected order includes: Mechanical keyboard."
+        },
+        {
+          "resource_id": "support_5071",
+          "ticket_id": "CS-4071",
+          "subject_reference": "user_380",
+          "channel": "email",
+          "message_text": "Please send the delivery update to reed.hannah@icloud.com. The affected order includes: Stainless steel water bottle."
+        }
+      ]
+    },
+    {
+      "captured_at": "2026-04-16T06:00:00Z",
+      "data_store": "account_service",
+      "collection": "customer_profiles",
+      "records": [
+        {
+          "resource_id": "account_2854",
+          "customer_reference": "user_373",
+          "full_name": "Nana Mensah",
+          "email": "n.mensah16@gmail.com",
+          "phone": "+233 24 163 2855",
+          "account_status": "ACTIVE",
+          "signup_channel": "referral"
+        }
+      ]
+    }
+  ]
+}

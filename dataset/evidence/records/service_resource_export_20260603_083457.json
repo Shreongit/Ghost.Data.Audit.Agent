@@ -1,0 +1,300 @@
+{
+  "exported_at": "2026-06-03T08:34:57Z",
+  "region": "global",
+  "service_exports": {
+    "account_service": {
+      "profile_lookups": [
+        {
+          "observed_at": "2026-06-03T08:02:40Z",
+          "profile": null,
+          "resource_id": "account_4853",
+          "status_code": 404
+        },
+        {
+          "observed_at": "2026-06-03T08:09:19Z",
+          "profile": null,
+          "resource_id": "account_6575",
+          "status_code": 404
+        },
+        {
+          "observed_at": "2026-06-03T06:44:31Z",
+          "profile": null,
+          "resource_id": "account_731",
+          "status_code": 404
+        },
+        {
+          "observed_at": "2026-06-03T07:22:52Z",
+          "profile": {
+            "customer_reference": null,
+            "email": "h.mori78@yahoo.com",
+            "email_hash": null,
+            "full_name": null,
+            "phone": null
+          },
+          "resource_id": "account_8689",
+          "status_code": 200
+        }
+      ]
+    },
+    "analytics_platform": {
+      "profiles": [
+        {
+          "audience_cohort": "general_shopper",
+          "customer_reference": null,
+          "email": null,
+          "email_hash": null,
+          "observed_at": "2026-06-03T07:36:21Z",
+          "phone": null,
+          "resource_id": "analytics_4051"
+        },
+        {
+          "audience_cohort": "general_shopper",
+          "customer_reference": null,
+          "email": null,
+          "email_hash": null,
+          "observed_at": "2026-06-03T07:36:55Z",
+          "phone": null,
+          "resource_id": "analytics_5923"
+        },
+        {
+          "audience_cohort": "home_lifestyle",
+          "customer_reference": null,
+          "email": "amelia.parker@gmail.com",
+          "email_hash": null,
+          "observed_at": "2026-06-03T08:12:50Z",
+          "phone": null,
+          "resource_id": "analytics_5959"
+        },
+        {
+          "audience_cohort": "mobile_browser",
+          "customer_reference": null,
+          "email": null,
+          "email_hash": null,
+          "observed_at": "2026-06-03T07:22:10Z",
+          "phone": null,
+          "resource_id": "analytics_6191"
+        },
+        {
+          "audience_cohort": "home_lifestyle",
+          "customer_reference": null,
+          "email": "elena-nowak@gmail.com",
+          "email_hash": null,
+          "observed_at": "2026-06-03T08:17:51Z",
+          "phone": null,
+          "resource_id": "analytics_6265"
+        }
+      ]
+    },
+    "backup_service": {
+      "restore_entries": [
+        {
+          "archive_key": "archive/customer-data/backup_8588.tar.zst",
+          "customer_email": "l.fournier92@gmail.com",
+          "customer_reference": null,
+          "observed_at": "2026-06-03T08:22:19Z",
+          "resource_id": "backup_8588",
+          "restore_allowed": true
+        },
+        {
+          "archive_key": "archive/customer-data/backup_9728.tar.zst",
+          "customer_email": null,
+          "customer_reference": "user_275",
+          "observed_at": "2026-06-03T08:23:14Z",
+          "resource_id": "backup_9728",
+          "restore_allowed": false
+        }
+      ]
+    },
+    "integration_service": {
+      "connectors": [
+        {
+          "connector_name": "support_profile_sync",
+          "customer_email": null,
+          "customer_reference": "user_275",
+          "enabled": false,
+          "last_delivery_status": "stopped",
+          "observed_at": "2026-06-03T07:47:13Z",
+          "resource_id": "data_flow_2439"
+        },
+        {
+          "connector_name": "search_profile_indexer",
+          "customer_email": "amelia.parker@gmail.com",
+          "customer_reference": null,
+          "enabled": true,
+          "last_delivery_status": "delivered",
+          "observed_at": "2026-06-03T08:32:24Z",
+          "resource_id": "data_flow_4629"
+        },
+        {
+          "connector_name": "support_profile_sync",
+          "customer_email": "elena-nowak@gmail.com",
+          "customer_reference": null,
+          "enabled": true,
+          "last_delivery_status": "delivered",
+          "observed_at": "2026-06-03T06:20:21Z",
+          "resource_id": "data_flow_9008"
+        }
+      ]
+    },
+    "search_service": {
+      "index_queries": [
+        {
+          "hits": {
+            "documents": [
+              {
+                "customer_reference": null,
+                "display_name": null,
+                "email": "elena-nowak@gmail.com",
+                "email_hash": null,
+                "phone": null,
+                "resource_id": "search_3364"
+              }
+            ],
+            "total": 1
+          },
+          "observed_at": "2026-06-03T07:20:08Z",
+          "query": "elena-nowak@gmail.com",
+          "resource_id": "search_3364"
+        },
+        {
+          "hits": {
+            "documents": [
+              {
+                "customer_reference": null,
+                "display_name": null,
+                "email": "gabriel-carvalho87@proton.me",
+                "email_hash": null,
+                "phone": null,
+                "resource_id": "search_5264"
+              }
+            ],
+            "total": 1
+          },
+          "observed_at": "2026-06-03T07:15:41Z",
+          "query": "gabriel-carvalho87@proton.me",
+          "resource_id": "search_5264"
+        },
+        {
+          "hits": {
+            "documents": [
+              {
+                "customer_reference": null,
+                "display_name": null,
+                "email": "h.mori78@yahoo.com",
+                "email_hash": null,
+                "phone": null,
+                "resource_id": "search_5454"
+              }
+            ],
+            "total": 1
+          },
+          "observed_at": "2026-06-03T08:00:05Z",
+          "query": "h.mori78@yahoo.com",
+          "resource_id": "search_5454"
+        },
+        {
+          "hits": {
+            "documents": [
+              {
+                "customer_reference": null,
+                "display_name": null,
+                "email": "amelia.parker@gmail.com",
+                "email_hash": null,
+                "phone": null,
+                "resource_id": "search_8082"
+              }
+            ],
+            "total": 1
+          },
+          "observed_at": "2026-06-03T06:18:52Z",
+          "query": "amelia.parker@gmail.com",
+          "resource_id": "search_8082"
+        }
+      ]
+    },
+    "security_service": {
+      "audit_records": [
+        {
+          "event_code": "SUBJECT_REQUEST_AUDITED",
+          "observed_at": "2026-06-03T07:19:10Z",
+          "resource_id": "audit_record_6398",
+          "retention_until": "2033-12-31T23:59:59Z",
+          "subject_reference": "user_272"
+        },
+        {
+          "event_code": "IDENTITY_CHANGE_RECORDED",
+          "observed_at": "2026-06-03T06:23:47Z",
+          "resource_id": "audit_record_8228",
+          "retention_until": "2034-09-30T23:59:59Z",
+          "subject_reference": "user_275"
+        },
+        {
+          "event_code": "PRIVACY_REQUEST_ACCEPTED",
+          "observed_at": "2026-06-03T08:34:57Z",
+          "resource_id": "audit_record_8323",
+          "retention_until": "2032-06-30T23:59:59Z",
+          "subject_reference": "user_274"
+        }
+      ]
+    },
+    "support_platform": {
+      "tickets": [
+        {
+          "customer_reference": "user_275",
+          "message_excerpt": "Customer supplied contact details for a delivery query.",
+          "observed_at": "2026-06-03T06:38:46Z",
+          "requester_email": null,
+          "requester_name": null,
+          "requester_phone": null,
+          "resource_id": "support_2036"
+        },
+        {
+          "customer_reference": null,
+          "message_excerpt": "Customer supplied contact details for a delivery query.",
+          "observed_at": "2026-06-03T07:55:47Z",
+          "requester_email": "elena-nowak@gmail.com",
+          "requester_name": null,
+          "requester_phone": null,
+          "resource_id": "support_2757"
+        },
+        {
+          "customer_reference": null,
+          "message_excerpt": "Customer supplied contact details for a delivery query.",
+          "observed_at": "2026-06-03T08:13:22Z",
+          "requester_email": "gabriel-carvalho87@proton.me",
+          "requester_name": null,
+          "requester_phone": null,
+          "resource_id": "support_3684"
+        },
+        {
+          "customer_reference": null,
+          "message_excerpt": "Customer followed up about an order update.",
+          "observed_at": "2026-06-03T07:29:39Z",
+          "requester_email": "amelia.parker@gmail.com",
+          "requester_name": null,
+          "requester_phone": null,
+          "resource_id": "support_6333"
+        },
+        {
+          "customer_reference": null,
+          "message_excerpt": "Customer asked support to correct delivery details.",
+          "observed_at": "2026-06-03T07:43:50Z",
+          "requester_email": "nielsen.ingrid@gmail.com",
+          "requester_name": null,
+          "requester_phone": null,
+          "resource_id": "support_7073"
+        },
+        {
+          "customer_reference": null,
+          "message_excerpt": "Customer supplied contact details for a delivery query.",
+          "observed_at": "2026-06-03T07:50:33Z",
+          "requester_email": "ohamdan2049@gmail.com",
+          "requester_name": null,
+          "requester_phone": null,
+          "resource_id": "support_8370"
+        }
+      ]
+    }
+  },
+  "source": "records_assurance_gateway"
+}

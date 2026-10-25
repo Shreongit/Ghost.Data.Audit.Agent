@@ -1,0 +1,10 @@
+2026-09-17T22:00:00Z level=DEBUG service=support_replica instance=support-eu-03 pod=replica-7c9f event=batch_started batch=rp-7718 source=legacy_contact_index cursor=884019
+2026-09-17T22:00:02Z level=DEBUG service=support_replica instance=support-eu-03 pod=replica-7c9f trace_id=tr-rp-4104 event=contact_query_started lookup_key=customer4104@yahoo.com
+2026-09-17T22:00:03Z level=INFO service=support_replica instance=support-eu-03 pod=replica-7c9f trace_id=tr-rp-4104 event=contact_query_completed resource_id=support_4104 rows=1 latency_ms=18
+2026-09-17T22:00:04Z level=DEBUG service=support_replica instance=support-eu-03 pod=replica-7c9f trace_id=tr-rp-002 event=contact_query_started lookup_key=nadia.ionescu@yahoo.com source=legacy_contact_index
+2026-09-17T22:00:05Z level=INFO service=support_replica instance=support-eu-03 pod=replica-7c9f trace_id=tr-rp-002 event=contact_query_completed resource_id=support_002 rows=1 latency_ms=23
+2026-09-17T22:00:06Z level=WARN service=support_replica instance=support-eu-03 pod=replica-7c9f trace_id=tr-rp-002 event=deletion_marker_check resource_id=support_002 marker_found=false last_write=2026-09-07T10:01:00Z
+2026-09-17T22:00:08Z level=ERROR service=attachment_preview instance=preview-eu-02 pod=preview-14ad event=thumbnail_failed resource_id=support_7731 reason=unsupported_media retry=false
+2026-09-17T22:00:11Z level=INFO service=support_replica instance=support-eu-03 pod=replica-7c9f event=contact_query_completed resource_id=support_5914 lookup_key=nadia.popescu@yahoo.com rows=1 source=case_archive latency_ms=31
+2026-09-17T22:00:15Z level=WARN service=queue_consumer instance=replica-eu-03 pod=replica-7c9f event=consumer_lag partition=2 lag=63
+2026-09-17T22:00:19Z level=INFO service=support_replica instance=support-eu-03 pod=replica-7c9f event=checkpoint_saved batch=rp-7718 cursor=884022 rows_read=3

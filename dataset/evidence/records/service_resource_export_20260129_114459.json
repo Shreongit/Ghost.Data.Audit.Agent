@@ -1,0 +1,333 @@
+{
+  "exported_at": "2026-01-29T11:44:59Z",
+  "region": "global",
+  "service_exports": {
+    "account_service": {
+      "profile_lookups": [
+        {
+          "observed_at": "2026-01-29T09:08:49Z",
+          "profile": {
+            "customer_reference": null,
+            "email": "aarav.r528@outlook.com",
+            "email_hash": null,
+            "full_name": null,
+            "phone": null
+          },
+          "resource_id": "account_2424",
+          "status_code": 200
+        },
+        {
+          "observed_at": "2026-01-29T11:44:14Z",
+          "profile": null,
+          "resource_id": "account_470",
+          "status_code": 404
+        },
+        {
+          "observed_at": "2026-01-29T09:56:58Z",
+          "profile": {
+            "customer_reference": null,
+            "email": "o.walker6695@yahoo.com",
+            "email_hash": null,
+            "full_name": null,
+            "phone": null
+          },
+          "resource_id": "account_4974",
+          "status_code": 200
+        },
+        {
+          "observed_at": "2026-01-29T09:12:03Z",
+          "profile": null,
+          "resource_id": "account_6169",
+          "status_code": 404
+        },
+        {
+          "observed_at": "2026-01-29T09:38:08Z",
+          "profile": null,
+          "resource_id": "account_704",
+          "status_code": 404
+        }
+      ]
+    },
+    "analytics_platform": {
+      "profiles": [
+        {
+          "audience_cohort": "returning_customer",
+          "customer_reference": null,
+          "email": "chevalier.hugo@icloud.com",
+          "email_hash": null,
+          "observed_at": "2026-01-29T09:19:08Z",
+          "phone": null,
+          "resource_id": "analytics_131"
+        },
+        {
+          "audience_cohort": "mobile_browser",
+          "customer_reference": null,
+          "email": null,
+          "email_hash": null,
+          "observed_at": "2026-01-29T10:47:23Z",
+          "phone": null,
+          "resource_id": "analytics_3744"
+        },
+        {
+          "audience_cohort": "general_shopper",
+          "customer_reference": null,
+          "email": "jonas-lund@proton.me",
+          "email_hash": null,
+          "observed_at": "2026-01-29T09:23:27Z",
+          "phone": null,
+          "resource_id": "analytics_7468"
+        },
+        {
+          "audience_cohort": "general_shopper",
+          "customer_reference": null,
+          "email": "nzielinski0123@fastmail.com",
+          "email_hash": null,
+          "observed_at": "2026-01-29T11:19:19Z",
+          "phone": null,
+          "resource_id": "analytics_8476"
+        },
+        {
+          "audience_cohort": "general_shopper",
+          "customer_reference": null,
+          "email": null,
+          "email_hash": null,
+          "observed_at": "2026-01-29T10:22:15Z",
+          "phone": null,
+          "resource_id": "analytics_893"
+        }
+      ]
+    },
+    "backup_service": {
+      "restore_entries": [
+        {
+          "archive_key": "archive/customer-data/backup_3382.tar.zst",
+          "customer_email": "k.amponsah80@gmail.com",
+          "customer_reference": null,
+          "observed_at": "2026-01-29T11:39:19Z",
+          "resource_id": "backup_3382",
+          "restore_allowed": true
+        },
+        {
+          "archive_key": "archive/customer-data/backup_6344.tar.zst",
+          "customer_email": null,
+          "customer_reference": "user_530",
+          "observed_at": "2026-01-29T11:44:59Z",
+          "resource_id": "backup_6344",
+          "restore_allowed": false
+        }
+      ]
+    },
+    "export_service": {
+      "exports": [
+        {
+          "customer_reference": null,
+          "object_key": "exports/export_9388/customer_data.zip",
+          "observed_at": "2026-01-29T10:50:38Z",
+          "owner_email": "nzielinski0123@fastmail.com",
+          "owner_phone": null,
+          "resource_id": "export_9388"
+        }
+      ]
+    },
+    "integration_service": {
+      "connectors": [
+        {
+          "connector_name": "customer_events_connector",
+          "customer_email": "chevalier.hugo@icloud.com",
+          "customer_reference": null,
+          "enabled": true,
+          "last_delivery_status": "delivered",
+          "observed_at": "2026-01-29T09:02:41Z",
+          "resource_id": "data_flow_2263"
+        },
+        {
+          "connector_name": "customer_events_connector",
+          "customer_email": "farah.s8042@zoho.com",
+          "customer_reference": null,
+          "enabled": true,
+          "last_delivery_status": "delivered",
+          "observed_at": "2026-01-29T08:52:37Z",
+          "resource_id": "data_flow_6588"
+        },
+        {
+          "connector_name": "search_profile_indexer",
+          "customer_email": null,
+          "customer_reference": "user_530",
+          "enabled": false,
+          "last_delivery_status": "stopped",
+          "observed_at": "2026-01-29T11:28:13Z",
+          "resource_id": "data_flow_6987"
+        }
+      ]
+    },
+    "search_service": {
+      "index_queries": [
+        {
+          "hits": {
+            "documents": [
+              {
+                "customer_reference": null,
+                "display_name": null,
+                "email": "jonas-lund@proton.me",
+                "email_hash": null,
+                "phone": null,
+                "resource_id": "search_1091"
+              }
+            ],
+            "total": 1
+          },
+          "observed_at": "2026-01-29T11:40:30Z",
+          "query": "jonas-lund@proton.me",
+          "resource_id": "search_1091"
+        },
+        {
+          "hits": {
+            "documents": [
+              {
+                "customer_reference": null,
+                "display_name": null,
+                "email": "nzielinski0123@fastmail.com",
+                "email_hash": null,
+                "phone": null,
+                "resource_id": "search_1429"
+              }
+            ],
+            "total": 1
+          },
+          "observed_at": "2026-01-29T09:30:59Z",
+          "query": "nzielinski0123@fastmail.com",
+          "resource_id": "search_1429"
+        },
+        {
+          "hits": {
+            "documents": [
+              {
+                "customer_reference": null,
+                "display_name": null,
+                "email": "farah.s8042@zoho.com",
+                "email_hash": null,
+                "phone": null,
+                "resource_id": "search_3382"
+              }
+            ],
+            "total": 1
+          },
+          "observed_at": "2026-01-29T09:46:25Z",
+          "query": "farah.s8042@zoho.com",
+          "resource_id": "search_3382"
+        },
+        {
+          "hits": {
+            "documents": [
+              {
+                "customer_reference": null,
+                "display_name": null,
+                "email": "chevalier.hugo@icloud.com",
+                "email_hash": null,
+                "phone": null,
+                "resource_id": "search_3879"
+              }
+            ],
+            "total": 1
+          },
+          "observed_at": "2026-01-29T09:27:58Z",
+          "query": "chevalier.hugo@icloud.com",
+          "resource_id": "search_3879"
+        },
+        {
+          "hits": {
+            "documents": [
+              {
+                "customer_reference": null,
+                "display_name": null,
+                "email": "aarav.r528@outlook.com",
+                "email_hash": null,
+                "phone": null,
+                "resource_id": "search_9075"
+              }
+            ],
+            "total": 1
+          },
+          "observed_at": "2026-01-29T09:31:19Z",
+          "query": "aarav.r528@outlook.com",
+          "resource_id": "search_9075"
+        }
+      ]
+    },
+    "security_service": {
+      "audit_records": [
+        {
+          "event_code": "SUBJECT_REQUEST_AUDITED",
+          "observed_at": "2026-01-29T11:09:44Z",
+          "resource_id": "audit_record_2152",
+          "retention_until": "2033-12-31T23:59:59Z",
+          "subject_reference": "user_528"
+        },
+        {
+          "event_code": "PRIVACY_REQUEST_ACCEPTED",
+          "observed_at": "2026-01-29T10:21:46Z",
+          "resource_id": "audit_record_4828",
+          "retention_until": "2032-06-30T23:59:59Z",
+          "subject_reference": "user_530"
+        },
+        {
+          "event_code": "ACCOUNT_DELETION_RECORDED",
+          "observed_at": "2026-01-29T08:49:08Z",
+          "resource_id": "audit_record_5429",
+          "retention_until": "2031-12-31T23:59:59Z",
+          "subject_reference": "user_522"
+        }
+      ]
+    },
+    "support_platform": {
+      "tickets": [
+        {
+          "customer_reference": null,
+          "message_excerpt": "Customer contacted support about account access.",
+          "observed_at": "2026-01-29T10:19:28Z",
+          "requester_email": "chevalier.hugo@icloud.com",
+          "requester_name": null,
+          "requester_phone": null,
+          "resource_id": "support_1191"
+        },
+        {
+          "customer_reference": null,
+          "message_excerpt": "Customer asked support to correct delivery details.",
+          "observed_at": "2026-01-29T09:02:47Z",
+          "requester_email": "nzielinski0123@fastmail.com",
+          "requester_name": null,
+          "requester_phone": null,
+          "resource_id": "support_193"
+        },
+        {
+          "customer_reference": null,
+          "message_excerpt": "Customer contacted support about account access.",
+          "observed_at": "2026-01-29T10:39:21Z",
+          "requester_email": "jonas-lund@proton.me",
+          "requester_name": null,
+          "requester_phone": null,
+          "resource_id": "support_3896"
+        },
+        {
+          "customer_reference": "user_530",
+          "message_excerpt": "Customer supplied contact details for a delivery query.",
+          "observed_at": "2026-01-29T10:42:12Z",
+          "requester_email": null,
+          "requester_name": null,
+          "requester_phone": null,
+          "resource_id": "support_7724"
+        },
+        {
+          "customer_reference": null,
+          "message_excerpt": "Customer contacted support about account access.",
+          "observed_at": "2026-01-29T09:39:11Z",
+          "requester_email": "jonas-lund@proton.me",
+          "requester_name": null,
+          "requester_phone": null,
+          "resource_id": "support_9832"
+        }
+      ]
+    }
+  },
+  "source": "records_assurance_gateway"
+}

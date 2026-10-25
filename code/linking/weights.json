@@ -1,0 +1,10 @@
+{
+  "same_record_identity_resource": 0.98,
+  "trace_group_identity_resource": 0.99,
+  "subject_reference_user_id": 0.98,
+  "identity_link_activity": 0.95,
+  "weak_activity_window": 0.20,
+  "weak_probe_after_activity": 0.30,
+  "minimum_assignment_score": 0.70,
+  "ambiguity_margin": 0.05
+}

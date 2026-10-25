@@ -1,0 +1,58 @@
+{
+  "exported_at": "2026-09-15T12:00:00Z",
+  "source": "records_assurance_service",
+  "snapshots": [
+    {
+      "captured_at": "2026-09-15T12:00:00Z",
+      "data_store": "account_service",
+      "collection": "customer_profiles",
+      "records": []
+    },
+    {
+      "captured_at": "2026-09-15T12:00:00Z",
+      "data_store": "identity_service",
+      "collection": "deleted_customer_references",
+      "records": [
+        {
+          "resource_id": "tombstone_440",
+          "subject_reference": "user_541",
+          "name": null,
+          "email": null,
+          "phone": null,
+          "email_hash": null,
+          "account_status": "DELETED"
+        },
+        {
+          "resource_id": "tombstone_9178",
+          "subject_reference": "user_542",
+          "name": "Kofi Addo",
+          "email": "addo.kofi@gmail.com",
+          "phone": "+233 24 991 1328",
+          "email_hash": "4f4b9c98a05a2dad20e52313cce7809d18c3da544754dcd46d728b0173174b26",
+          "account_status": "DELETED"
+        }
+      ]
+    },
+    {
+      "captured_at": "2026-09-15T12:00:00Z",
+      "data_store": "security_service",
+      "collection": "security_audit_events",
+      "records": [
+        {
+          "resource_id": "audit_record_6909",
+          "subject_reference": "user_541",
+          "event_name": "account_deletion_reviewed",
+          "actor_type": "automated_privacy_workflow",
+          "integrity_seal": "sha256:0000000000000000000000000000000000000000000000000000000000001afd"
+        },
+        {
+          "resource_id": "audit_record_7068",
+          "subject_reference": "user_542",
+          "event_name": "account_deletion_reviewed",
+          "actor_type": "automated_privacy_workflow",
+          "integrity_seal": "sha256:0000000000000000000000000000000000000000000000000000000000001b9c"
+        }
+      ]
+    }
+  ]
+}

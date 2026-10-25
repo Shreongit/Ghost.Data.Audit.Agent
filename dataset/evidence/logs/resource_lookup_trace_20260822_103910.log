@@ -1,0 +1,46 @@
+2026-08-22T07:45:59Z level=INFO service=readback_collector event=export_started target_count=22 mode=point_in_time
+2026-08-22T07:45:59Z level=DEBUG service=integration_service trace_id=rb-074559-001 event=connector_config_read_started resource_id=data_flow_3199 lookup_key=hannah.sullivan@gmail.com
+2026-08-22T07:45:59Z level=INFO service=integration_service trace_id=rb-074559-001 event=connector_config_read_completed resource_id=data_flow_3199 enabled=true last_delivery_status=delivered connector_name=search_profile_indexer customer_email=hannah.sullivan@gmail.com customer_reference=null
+2026-08-22T07:46:55Z level=DEBUG service=search_service trace_id=rb-074655-002 event=index_query_started resource_id=search_1752 lookup_key=hannah.sullivan@gmail.com
+2026-08-22T07:46:55Z level=INFO service=search_service trace_id=rb-074655-002 event=index_query_completed resource_id=search_1752 result=hit total_hits=1 index=customer_directory_v3 email=hannah.sullivan@gmail.com customer_reference=null
+2026-08-22T08:03:57Z level=DEBUG service=search_service trace_id=rb-080357-003 event=index_query_started resource_id=search_5696 lookup_key=oadeyemi1657@gmail.com
+2026-08-22T08:03:57Z level=INFO service=search_service trace_id=rb-080357-003 event=index_query_completed resource_id=search_5696 result=hit total_hits=1 index=customer_directory_v3 email=oadeyemi1657@gmail.com customer_reference=null
+2026-08-22T08:13:32Z level=DEBUG service=support_platform trace_id=rb-081332-004 event=support_ticket_read_started resource_id=support_3786 lookup_key=oadeyemi1657@gmail.com
+2026-08-22T08:13:32Z level=INFO service=support_platform trace_id=rb-081332-004 event=support_ticket_read_completed resource_id=support_3786 customer_reference=null requester_name=null requester_email=oadeyemi1657@gmail.com requester_phone=null
+2026-08-22T08:15:24Z level=DEBUG service=account_service trace_id=rb-081524-005 event=profile_lookup_started resource_id=account_1785 lookup_key=nana.b9576@outlook.com
+2026-08-22T08:15:24Z level=INFO service=account_service trace_id=rb-081524-005 event=profile_lookup_completed resource_id=account_1785 rows=1 http_status=200 customer_reference=null email=nana.b9576@outlook.com phone=null
+2026-08-22T08:29:55Z level=DEBUG service=security_service trace_id=rb-082955-006 event=audit_record_read_started resource_id=audit_record_1598 lookup_key=user_115
+2026-08-22T08:29:55Z level=INFO service=security_service trace_id=rb-082955-006 event=audit_record_read_completed resource_id=audit_record_1598 rows=1 subject_reference=user_115 event_code=SUBJECT_REQUEST_AUDITED retention_until=2033-12-31T23:59:59Z
+2026-08-22T08:39:55Z level=DEBUG service=security_service trace_id=rb-083955-007 event=audit_record_read_started resource_id=audit_record_1127 lookup_key=user_111
+2026-08-22T08:39:55Z level=INFO service=security_service trace_id=rb-083955-007 event=audit_record_read_completed resource_id=audit_record_1127 rows=1 subject_reference=user_111 event_code=PRIVACY_REQUEST_ACCEPTED retention_until=2032-06-30T23:59:59Z
+2026-08-22T08:41:31Z level=DEBUG service=account_service trace_id=rb-084131-008 event=profile_lookup_started resource_id=account_6697 lookup_key=sami-elsayed@gmail.com
+2026-08-22T08:41:31Z level=INFO service=account_service trace_id=rb-084131-008 event=profile_lookup_completed resource_id=account_6697 rows=0 http_status=404
+2026-08-22T09:04:17Z level=DEBUG service=search_service trace_id=rb-090417-009 event=index_query_started resource_id=search_696 lookup_key=ayanda.dlamini@outlook.com
+2026-08-22T09:04:17Z level=INFO service=search_service trace_id=rb-090417-009 event=index_query_completed resource_id=search_696 result=hit total_hits=1 index=customer_directory_v3 email=ayanda.dlamini@outlook.com customer_reference=null
+2026-08-22T09:09:12Z level=DEBUG service=integration_service trace_id=rb-090912-010 event=connector_config_read_started resource_id=data_flow_6699 lookup_key=ayanda.dlamini@outlook.com
+2026-08-22T09:09:12Z level=INFO service=integration_service trace_id=rb-090912-010 event=connector_config_read_completed resource_id=data_flow_6699 enabled=true last_delivery_status=delivered connector_name=analytics_identity_bridge customer_email=ayanda.dlamini@outlook.com customer_reference=null
+2026-08-22T09:16:26Z level=DEBUG service=account_service trace_id=rb-091626-011 event=profile_lookup_started resource_id=account_1220 lookup_key=r.suzuki14@yahoo.com
+2026-08-22T09:16:26Z level=INFO service=account_service trace_id=rb-091626-011 event=profile_lookup_completed resource_id=account_1220 rows=0 http_status=404
+2026-08-22T09:25:21Z level=DEBUG service=export_service trace_id=rb-092521-012 event=export_metadata_read_started resource_id=export_4289 lookup_key=rbasu9171@fastmail.com
+2026-08-22T09:25:21Z level=INFO service=export_service trace_id=rb-092521-012 event=export_metadata_read_completed resource_id=export_4289 available=true owner_email=rbasu9171@fastmail.com object_key=exports/export_4289/customer_data.zip
+2026-08-22T09:34:12Z level=DEBUG service=support_platform trace_id=rb-093412-013 event=support_ticket_read_started resource_id=support_036 lookup_key=lee.junseo84@icloud.com
+2026-08-22T09:34:12Z level=INFO service=support_platform trace_id=rb-093412-013 event=support_ticket_read_completed resource_id=support_036 customer_reference=null requester_name=null requester_email=lee.junseo84@icloud.com requester_phone=null
+2026-08-22T09:34:43Z level=DEBUG service=search_service trace_id=rb-093443-014 event=index_query_started resource_id=search_9556 lookup_key=lee.junseo84@icloud.com
+2026-08-22T09:34:43Z level=INFO service=search_service trace_id=rb-093443-014 event=index_query_completed resource_id=search_9556 result=hit total_hits=1 index=customer_directory_v3 email=lee.junseo84@icloud.com customer_reference=null
+2026-08-22T09:43:58Z level=DEBUG service=security_service trace_id=rb-094358-015 event=audit_record_read_started resource_id=audit_record_2103 lookup_key=user_119
+2026-08-22T09:43:58Z level=INFO service=security_service trace_id=rb-094358-015 event=audit_record_read_completed resource_id=audit_record_2103 rows=1 subject_reference=user_119 event_code=IDENTITY_CHANGE_RECORDED retention_until=2034-09-30T23:59:59Z
+2026-08-22T09:48:25Z level=DEBUG service=analytics_platform trace_id=rb-094825-016 event=analytics_profile_read_started resource_id=analytics_8698 lookup_key=null
+2026-08-22T09:48:25Z level=INFO service=analytics_platform trace_id=rb-094825-016 event=analytics_profile_read_completed resource_id=analytics_8698 customer_reference=null email=null phone=null email_hash=null audience_cohort=mobile_browser
+2026-08-22T10:06:29Z level=DEBUG service=analytics_platform trace_id=rb-100629-017 event=analytics_profile_read_started resource_id=analytics_4800 lookup_key=null
+2026-08-22T10:06:29Z level=INFO service=analytics_platform trace_id=rb-100629-017 event=analytics_profile_read_completed resource_id=analytics_4800 customer_reference=null email=null phone=null email_hash=null audience_cohort=returning_customer
+2026-08-22T10:14:38Z level=DEBUG service=search_service trace_id=rb-101438-018 event=index_query_started resource_id=search_943 lookup_key=rbasu9171@fastmail.com
+2026-08-22T10:14:38Z level=INFO service=search_service trace_id=rb-101438-018 event=index_query_completed resource_id=search_943 result=hit total_hits=1 index=customer_directory_v3 email=rbasu9171@fastmail.com customer_reference=null
+2026-08-22T10:21:13Z level=DEBUG service=account_service trace_id=rb-102113-019 event=profile_lookup_started resource_id=account_081 lookup_key=nicolas.n7090@zoho.com
+2026-08-22T10:21:13Z level=INFO service=account_service trace_id=rb-102113-019 event=profile_lookup_completed resource_id=account_081 rows=0 http_status=404
+2026-08-22T10:35:13Z level=DEBUG service=search_service trace_id=rb-103513-020 event=index_query_started resource_id=search_4417 lookup_key=nana.b9576@outlook.com
+2026-08-22T10:35:13Z level=INFO service=search_service trace_id=rb-103513-020 event=index_query_completed resource_id=search_4417 result=hit total_hits=1 index=customer_directory_v3 email=nana.b9576@outlook.com customer_reference=null
+2026-08-22T10:39:09Z level=DEBUG service=search_service trace_id=rb-103909-021 event=index_query_started resource_id=search_5259 lookup_key=joao-santos@proton.me
+2026-08-22T10:39:09Z level=INFO service=search_service trace_id=rb-103909-021 event=index_query_completed resource_id=search_5259 result=hit total_hits=1 index=customer_directory_v3 email=joao-santos@proton.me customer_reference=null
+2026-08-22T10:39:10Z level=DEBUG service=support_platform trace_id=rb-103910-022 event=support_ticket_read_started resource_id=support_9309 lookup_key=joao-santos@proton.me
+2026-08-22T10:39:10Z level=INFO service=support_platform trace_id=rb-103910-022 event=support_ticket_read_completed resource_id=support_9309 customer_reference=null requester_name=null requester_email=joao-santos@proton.me requester_phone=null
+2026-08-22T10:39:10Z level=INFO service=readback_collector event=export_completed queries=22 dropped=0

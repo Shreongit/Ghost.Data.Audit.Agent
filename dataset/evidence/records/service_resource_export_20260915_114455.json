@@ -1,0 +1,373 @@
+{
+  "exported_at": "2026-09-15T11:44:55Z",
+  "region": "global",
+  "service_exports": {
+    "account_service": {
+      "profile_lookups": [
+        {
+          "observed_at": "2026-09-15T09:31:40Z",
+          "profile": null,
+          "resource_id": "account_3136",
+          "status_code": 404
+        },
+        {
+          "observed_at": "2026-09-15T09:59:48Z",
+          "profile": null,
+          "resource_id": "account_3866",
+          "status_code": 404
+        },
+        {
+          "observed_at": "2026-09-15T09:41:33Z",
+          "profile": {
+            "customer_reference": null,
+            "email": "keiko.nakamura@gmail.com",
+            "email_hash": null,
+            "full_name": null,
+            "phone": null
+          },
+          "resource_id": "account_5334",
+          "status_code": 200
+        },
+        {
+          "observed_at": "2026-09-15T11:07:16Z",
+          "profile": null,
+          "resource_id": "account_5482",
+          "status_code": 404
+        },
+        {
+          "observed_at": "2026-09-15T09:01:48Z",
+          "profile": null,
+          "resource_id": "account_5684",
+          "status_code": 404
+        },
+        {
+          "observed_at": "2026-09-15T09:31:19Z",
+          "profile": null,
+          "resource_id": "account_6440",
+          "status_code": 404
+        }
+      ]
+    },
+    "analytics_platform": {
+      "profiles": [
+        {
+          "audience_cohort": "home_lifestyle",
+          "customer_reference": null,
+          "email": null,
+          "email_hash": null,
+          "observed_at": "2026-09-15T09:58:44Z",
+          "phone": null,
+          "resource_id": "analytics_1895"
+        },
+        {
+          "audience_cohort": "returning_customer",
+          "customer_reference": null,
+          "email": "camille.bernard86@outlook.com",
+          "email_hash": null,
+          "observed_at": "2026-09-15T10:36:41Z",
+          "phone": null,
+          "resource_id": "analytics_3697"
+        },
+        {
+          "audience_cohort": "home_lifestyle",
+          "customer_reference": null,
+          "email": null,
+          "email_hash": null,
+          "observed_at": "2026-09-15T11:29:16Z",
+          "phone": null,
+          "resource_id": "analytics_4566"
+        },
+        {
+          "audience_cohort": "general_shopper",
+          "customer_reference": null,
+          "email": null,
+          "email_hash": null,
+          "observed_at": "2026-09-15T10:07:38Z",
+          "phone": null,
+          "resource_id": "analytics_4574"
+        },
+        {
+          "audience_cohort": "general_shopper",
+          "customer_reference": null,
+          "email": "noah.f438085@outlook.com",
+          "email_hash": null,
+          "observed_at": "2026-09-15T11:38:32Z",
+          "phone": null,
+          "resource_id": "analytics_5208"
+        },
+        {
+          "audience_cohort": "returning_customer",
+          "customer_reference": null,
+          "email": null,
+          "email_hash": null,
+          "observed_at": "2026-09-15T09:34:42Z",
+          "phone": null,
+          "resource_id": "analytics_5335"
+        },
+        {
+          "audience_cohort": "general_shopper",
+          "customer_reference": null,
+          "email": null,
+          "email_hash": null,
+          "observed_at": "2026-09-15T11:44:55Z",
+          "phone": null,
+          "resource_id": "analytics_6077"
+        }
+      ]
+    },
+    "backup_service": {
+      "restore_entries": [
+        {
+          "archive_key": "archive/customer-data/backup_3120.tar.zst",
+          "customer_email": null,
+          "customer_reference": "user_26",
+          "observed_at": "2026-09-15T10:58:35Z",
+          "resource_id": "backup_3120",
+          "restore_allowed": false
+        },
+        {
+          "archive_key": "archive/customer-data/backup_5970.tar.zst",
+          "customer_email": null,
+          "customer_reference": "user_27",
+          "observed_at": "2026-09-15T10:39:37Z",
+          "resource_id": "backup_5970",
+          "restore_allowed": false
+        },
+        {
+          "archive_key": "archive/customer-data/backup_838.tar.zst",
+          "customer_email": null,
+          "customer_reference": "user_28",
+          "observed_at": "2026-09-15T09:04:41Z",
+          "resource_id": "backup_838",
+          "restore_allowed": false
+        }
+      ]
+    },
+    "export_service": {
+      "exports": [
+        {
+          "customer_reference": null,
+          "object_key": "exports/export_7364/customer_data.zip",
+          "observed_at": "2026-09-15T09:39:19Z",
+          "owner_email": "thandiwe.m6866@zoho.com",
+          "owner_phone": null,
+          "resource_id": "export_7364"
+        }
+      ]
+    },
+    "integration_service": {
+      "connectors": [
+        {
+          "connector_name": "analytics_identity_bridge",
+          "customer_email": null,
+          "customer_reference": "user_27",
+          "enabled": false,
+          "last_delivery_status": "stopped",
+          "observed_at": "2026-09-15T08:48:09Z",
+          "resource_id": "data_flow_2295"
+        },
+        {
+          "connector_name": "support_profile_sync",
+          "customer_email": null,
+          "customer_reference": "user_28",
+          "enabled": false,
+          "last_delivery_status": "stopped",
+          "observed_at": "2026-09-15T09:35:32Z",
+          "resource_id": "data_flow_2337"
+        },
+        {
+          "connector_name": "analytics_identity_bridge",
+          "customer_email": "noah.f438085@outlook.com",
+          "customer_reference": null,
+          "enabled": true,
+          "last_delivery_status": "delivered",
+          "observed_at": "2026-09-15T08:56:38Z",
+          "resource_id": "data_flow_3827"
+        },
+        {
+          "connector_name": "customer_events_connector",
+          "customer_email": null,
+          "customer_reference": "user_26",
+          "enabled": false,
+          "last_delivery_status": "stopped",
+          "observed_at": "2026-09-15T10:15:29Z",
+          "resource_id": "data_flow_6244"
+        },
+        {
+          "connector_name": "customer_events_connector",
+          "customer_email": "camille.bernard86@outlook.com",
+          "customer_reference": null,
+          "enabled": true,
+          "last_delivery_status": "delivered",
+          "observed_at": "2026-09-15T09:38:44Z",
+          "resource_id": "data_flow_8524"
+        }
+      ]
+    },
+    "search_service": {
+      "index_queries": [
+        {
+          "hits": {
+            "documents": [
+              {
+                "customer_reference": null,
+                "display_name": null,
+                "email": "noah.f438085@outlook.com",
+                "email_hash": null,
+                "phone": null,
+                "resource_id": "search_1993"
+              }
+            ],
+            "total": 1
+          },
+          "observed_at": "2026-09-15T09:14:18Z",
+          "query": "noah.f438085@outlook.com",
+          "resource_id": "search_1993"
+        },
+        {
+          "hits": {
+            "documents": [
+              {
+                "customer_reference": null,
+                "display_name": null,
+                "email": "keiko.nakamura@gmail.com",
+                "email_hash": null,
+                "phone": null,
+                "resource_id": "search_5577"
+              }
+            ],
+            "total": 1
+          },
+          "observed_at": "2026-09-15T10:01:51Z",
+          "query": "keiko.nakamura@gmail.com",
+          "resource_id": "search_5577"
+        },
+        {
+          "hits": {
+            "documents": [
+              {
+                "customer_reference": null,
+                "display_name": null,
+                "email": "thandiwe.m6866@zoho.com",
+                "email_hash": null,
+                "phone": null,
+                "resource_id": "search_898"
+              }
+            ],
+            "total": 1
+          },
+          "observed_at": "2026-09-15T10:08:28Z",
+          "query": "thandiwe.m6866@zoho.com",
+          "resource_id": "search_898"
+        },
+        {
+          "hits": {
+            "documents": [
+              {
+                "customer_reference": null,
+                "display_name": null,
+                "email": "camille.bernard86@outlook.com",
+                "email_hash": null,
+                "phone": null,
+                "resource_id": "search_9359"
+              }
+            ],
+            "total": 1
+          },
+          "observed_at": "2026-09-15T11:43:39Z",
+          "query": "camille.bernard86@outlook.com",
+          "resource_id": "search_9359"
+        }
+      ]
+    },
+    "security_service": {
+      "audit_records": [
+        {
+          "event_code": "IDENTITY_CHANGE_RECORDED",
+          "observed_at": "2026-09-15T09:59:10Z",
+          "resource_id": "audit_record_3737",
+          "retention_until": "2034-09-30T23:59:59Z",
+          "subject_reference": "user_21"
+        },
+        {
+          "event_code": "IDENTITY_CHANGE_RECORDED",
+          "observed_at": "2026-09-15T09:31:23Z",
+          "resource_id": "audit_record_3830",
+          "retention_until": "2034-09-30T23:59:59Z",
+          "subject_reference": "user_27"
+        },
+        {
+          "event_code": "ACCOUNT_DELETION_RECORDED",
+          "observed_at": "2026-09-15T10:07:33Z",
+          "resource_id": "audit_record_451",
+          "retention_until": "2031-12-31T23:59:59Z",
+          "subject_reference": "user_25"
+        },
+        {
+          "event_code": "PRIVACY_REQUEST_ACCEPTED",
+          "observed_at": "2026-09-15T10:56:58Z",
+          "resource_id": "audit_record_5416",
+          "retention_until": "2032-06-30T23:59:59Z",
+          "subject_reference": "user_26"
+        },
+        {
+          "event_code": "SUBJECT_REQUEST_AUDITED",
+          "observed_at": "2026-09-15T09:52:37Z",
+          "resource_id": "audit_record_9265",
+          "retention_until": "2033-12-31T23:59:59Z",
+          "subject_reference": "user_28"
+        }
+      ]
+    },
+    "support_platform": {
+      "tickets": [
+        {
+          "customer_reference": "user_28",
+          "message_excerpt": "Customer supplied contact details for a delivery query.",
+          "observed_at": "2026-09-15T10:51:49Z",
+          "requester_email": null,
+          "requester_name": null,
+          "requester_phone": null,
+          "resource_id": "support_2351"
+        },
+        {
+          "customer_reference": "user_27",
+          "message_excerpt": "Customer contacted support about account access.",
+          "observed_at": "2026-09-15T10:48:30Z",
+          "requester_email": null,
+          "requester_name": null,
+          "requester_phone": null,
+          "resource_id": "support_4707"
+        },
+        {
+          "customer_reference": "user_26",
+          "message_excerpt": "Customer followed up about an order update.",
+          "observed_at": "2026-09-15T10:00:05Z",
+          "requester_email": null,
+          "requester_name": null,
+          "requester_phone": null,
+          "resource_id": "support_4715"
+        },
+        {
+          "customer_reference": null,
+          "message_excerpt": "Customer followed up about an order update.",
+          "observed_at": "2026-09-15T10:48:45Z",
+          "requester_email": "noah.f438085@outlook.com",
+          "requester_name": null,
+          "requester_phone": null,
+          "resource_id": "support_5281"
+        },
+        {
+          "customer_reference": null,
+          "message_excerpt": "Customer supplied contact details for a delivery query.",
+          "observed_at": "2026-09-15T09:03:40Z",
+          "requester_email": "camille.bernard86@outlook.com",
+          "requester_name": null,
+          "requester_phone": null,
+          "resource_id": "support_6477"
+        }
+      ]
+    }
+  },
+  "source": "records_assurance_gateway"
+}

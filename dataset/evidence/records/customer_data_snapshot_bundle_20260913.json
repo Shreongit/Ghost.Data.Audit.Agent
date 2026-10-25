@@ -1,0 +1,368 @@
+{
+  "exported_at": "2026-09-13T08:00:00Z",
+  "source": "records_assurance_service",
+  "snapshots": [
+    {
+      "captured_at": "2026-09-11T05:00:00Z",
+      "data_store": "search_service",
+      "collection": "customer_search_documents",
+      "records": [
+        {
+          "resource_id": "search_5349",
+          "index_name": "customer_directory_v3",
+          "document": {
+            "display_name": null,
+            "email": "isabela.oliveira.jr@outlook.com",
+            "customer_reference": null
+          }
+        }
+      ]
+    },
+    {
+      "captured_at": "2026-09-11T08:00:00Z",
+      "data_store": "account_service",
+      "collection": "customer_profiles",
+      "records": []
+    },
+    {
+      "captured_at": "2026-09-11T08:00:00Z",
+      "data_store": "analytics_platform",
+      "collection": "customer_analytics_reports",
+      "records": [
+        {
+          "resource_id": "analytics_1161",
+          "user_id": null,
+          "email": null,
+          "phone": null,
+          "email_hash": null,
+          "reporting_window": "last_90_days",
+          "metrics": {
+            "sessions_30d": 11,
+            "products_viewed_30d": 18,
+            "orders_completed_90d": 1,
+            "revenue_90d_usd": 71.28
+          },
+          "recent_activity": [
+            {
+              "event": "product_viewed",
+              "product": "Running shoes"
+            },
+            {
+              "event": "purchase_completed",
+              "product": "Running shoes",
+              "quantity": 2
+            }
+          ]
+        },
+        {
+          "resource_id": "analytics_5859",
+          "user_id": null,
+          "email": null,
+          "phone": null,
+          "email_hash": null,
+          "reporting_window": "last_90_days",
+          "metrics": {
+            "sessions_30d": 11,
+            "products_viewed_30d": 4,
+            "orders_completed_90d": 4,
+            "revenue_90d_usd": 321.28
+          },
+          "recent_activity": [
+            {
+              "event": "product_viewed",
+              "product": "Mechanical keyboard"
+            },
+            {
+              "event": "purchase_completed",
+              "product": "Mechanical keyboard",
+              "quantity": 2
+            }
+          ]
+        },
+        {
+          "resource_id": "analytics_5059",
+          "user_id": null,
+          "email": null,
+          "phone": null,
+          "email_hash": null,
+          "reporting_window": "last_90_days",
+          "metrics": {
+            "sessions_30d": 3,
+            "products_viewed_30d": 10,
+            "orders_completed_90d": 4,
+            "revenue_90d_usd": 185.68
+          },
+          "recent_activity": [
+            {
+              "event": "product_viewed",
+              "product": "Mechanical keyboard"
+            },
+            {
+              "event": "added_to_cart",
+              "product": "Mechanical keyboard"
+            },
+            {
+              "event": "purchase_completed",
+              "product": "Mechanical keyboard",
+              "quantity": 2
+            }
+          ]
+        },
+        {
+          "resource_id": "analytics_2176",
+          "user_id": null,
+          "email": null,
+          "phone": null,
+          "email_hash": null,
+          "reporting_window": "last_90_days",
+          "metrics": {
+            "sessions_30d": 18,
+            "products_viewed_30d": 10,
+            "orders_completed_90d": 1,
+            "revenue_90d_usd": 31.73
+          },
+          "recent_activity": [
+            {
+              "event": "product_viewed",
+              "product": "Noise-cancelling headphones"
+            },
+            {
+              "event": "added_to_cart",
+              "product": "Noise-cancelling headphones"
+            },
+            {
+              "event": "purchase_completed",
+              "product": "Noise-cancelling headphones",
+              "quantity": 1
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "captured_at": "2026-09-11T08:00:00Z",
+      "data_store": "backup_service",
+      "collection": "backup_catalog",
+      "records": [
+        {
+          "resource_id": "backup_8673",
+          "archive_path": "s3://customer-backups/weekly/segment-01.tar.zst",
+          "subject_reference": "n.nwosu16@gmail.com",
+          "restore_allowed": true,
+          "encryption": "AES-256"
+        },
+        {
+          "resource_id": "backup_7303",
+          "archive_path": "s3://customer-backups/weekly/segment-07.tar.zst",
+          "subject_reference": "user_75",
+          "restore_allowed": false,
+          "encryption": "AES-256"
+        },
+        {
+          "resource_id": "backup_3332",
+          "archive_path": "s3://customer-backups/weekly/segment-04.tar.zst",
+          "subject_reference": "user_79",
+          "restore_allowed": false,
+          "encryption": "AES-256"
+        },
+        {
+          "resource_id": "backup_317",
+          "archive_path": "s3://customer-backups/weekly/segment-29.tar.zst",
+          "subject_reference": "user_80",
+          "restore_allowed": false,
+          "encryption": "AES-256"
+        }
+      ]
+    },
+    {
+      "captured_at": "2026-09-11T08:00:00Z",
+      "data_store": "integration_service",
+      "collection": "connector_configurations",
+      "records": [
+        {
+          "resource_id": "data_flow_4595",
+          "connector_name": "customer-events-to-warehouse-4",
+          "destination": "customer_analytics_warehouse",
+          "subject_selector": "salma.mansour@gmail.com",
+          "enabled": true,
+          "mode": "continuous_sync"
+        },
+        {
+          "resource_id": "data_flow_7773",
+          "connector_name": "customer-events-to-warehouse-6",
+          "destination": "customer_analytics_warehouse",
+          "subject_selector": "user_75",
+          "enabled": false,
+          "mode": "continuous_sync"
+        },
+        {
+          "resource_id": "data_flow_3255",
+          "connector_name": "customer-events-to-warehouse-8",
+          "destination": "customer_analytics_warehouse",
+          "subject_selector": "user_79",
+          "enabled": false,
+          "mode": "continuous_sync"
+        },
+        {
+          "resource_id": "data_flow_9666",
+          "connector_name": "customer-events-to-warehouse-3",
+          "destination": "customer_analytics_warehouse",
+          "subject_selector": "user_80",
+          "enabled": false,
+          "mode": "continuous_sync"
+        }
+      ]
+    },
+    {
+      "captured_at": "2026-09-11T08:00:00Z",
+      "data_store": "search_service",
+      "collection": "customer_search_documents",
+      "records": [
+        {
+          "resource_id": "search_8295",
+          "index_name": "customer_directory_v3",
+          "document": {
+            "display_name": "Sota Takahashi",
+            "email": "stakahashi6573@gmail.com",
+            "customer_reference": "user_76"
+          }
+        }
+      ]
+    },
+    {
+      "captured_at": "2026-09-11T08:00:00Z",
+      "data_store": "security_service",
+      "collection": "security_audit_events",
+      "records": [
+        {
+          "resource_id": "audit_record_5710",
+          "subject_reference": "user_71",
+          "event_name": "account_deletion_reviewed",
+          "actor_type": "automated_privacy_workflow",
+          "integrity_seal": "sha256:000000000000000000000000000000000000000000000000000000000000164e"
+        },
+        {
+          "resource_id": "audit_record_7778",
+          "subject_reference": "user_72",
+          "event_name": "account_deletion_reviewed",
+          "actor_type": "automated_privacy_workflow",
+          "integrity_seal": "sha256:0000000000000000000000000000000000000000000000000000000000001e62"
+        },
+        {
+          "resource_id": "audit_record_7491",
+          "subject_reference": "user_73",
+          "event_name": "account_deletion_reviewed",
+          "actor_type": "automated_privacy_workflow",
+          "integrity_seal": "sha256:0000000000000000000000000000000000000000000000000000000000001d43"
+        },
+        {
+          "resource_id": "audit_record_6766",
+          "subject_reference": "user_74",
+          "event_name": "account_deletion_reviewed",
+          "actor_type": "automated_privacy_workflow",
+          "integrity_seal": "sha256:0000000000000000000000000000000000000000000000000000000000001a6e"
+        },
+        {
+          "resource_id": "audit_record_5425",
+          "subject_reference": "user_75",
+          "event_name": "account_deletion_reviewed",
+          "actor_type": "automated_privacy_workflow",
+          "integrity_seal": "sha256:0000000000000000000000000000000000000000000000000000000000001531"
+        },
+        {
+          "resource_id": "audit_record_6593",
+          "subject_reference": "user_76",
+          "event_name": "account_deletion_reviewed",
+          "actor_type": "automated_privacy_workflow",
+          "integrity_seal": "sha256:00000000000000000000000000000000000000000000000000000000000019c1"
+        },
+        {
+          "resource_id": "audit_record_1734",
+          "subject_reference": "user_77",
+          "event_name": "account_deletion_reviewed",
+          "actor_type": "automated_privacy_workflow",
+          "integrity_seal": "sha256:00000000000000000000000000000000000000000000000000000000000006c6"
+        },
+        {
+          "resource_id": "audit_record_5681",
+          "subject_reference": "user_78",
+          "event_name": "account_deletion_reviewed",
+          "actor_type": "automated_privacy_workflow",
+          "integrity_seal": "sha256:0000000000000000000000000000000000000000000000000000000000001631"
+        },
+        {
+          "resource_id": "audit_record_9645",
+          "subject_reference": "user_79",
+          "event_name": "account_deletion_reviewed",
+          "actor_type": "automated_privacy_workflow",
+          "integrity_seal": "sha256:00000000000000000000000000000000000000000000000000000000000025ad"
+        },
+        {
+          "resource_id": "audit_record_3747",
+          "subject_reference": "user_80",
+          "event_name": "account_deletion_reviewed",
+          "actor_type": "automated_privacy_workflow",
+          "integrity_seal": "sha256:0000000000000000000000000000000000000000000000000000000000000ea3"
+        }
+      ]
+    },
+    {
+      "captured_at": "2026-09-11T08:00:00Z",
+      "data_store": "support_platform",
+      "collection": "support_conversations",
+      "records": [
+        {
+          "resource_id": "support_9746",
+          "ticket_id": "CS-8746",
+          "subject_reference": "user_74",
+          "channel": "email",
+          "message_text": "Please send the delivery update to osei.ama@gmail.com. The affected order includes: Ceramic coffee set."
+        },
+        {
+          "resource_id": "support_008",
+          "ticket_id": "CS-4008",
+          "subject_reference": "user_75",
+          "channel": "email",
+          "message_text": "[REDACTED]"
+        },
+        {
+          "resource_id": "support_9652",
+          "ticket_id": "CS-8652",
+          "subject_reference": "user_76",
+          "channel": "email",
+          "message_text": "Please send the delivery update to stakahashi6573@gmail.com. The affected order includes: Travel backpack."
+        },
+        {
+          "resource_id": "support_5953",
+          "ticket_id": "CS-4953",
+          "subject_reference": "user_79",
+          "channel": "email",
+          "message_text": "[REDACTED]"
+        },
+        {
+          "resource_id": "support_9166",
+          "ticket_id": "CS-8166",
+          "subject_reference": "user_80",
+          "channel": "email",
+          "message_text": "[REDACTED]"
+        }
+      ]
+    },
+    {
+      "captured_at": "2026-09-13T08:00:00Z",
+      "data_store": "account_service",
+      "collection": "customer_profiles",
+      "records": [
+        {
+          "resource_id": "account_5186",
+          "customer_reference": "user_77",
+          "full_name": "Ji-eun Park",
+          "email": "jieun.p449289@outlook.com",
+          "phone": "+82 10 6308 8310",
+          "account_status": "ACTIVE",
+          "signup_channel": "referral"
+        }
+      ]
+    }
+  ]
+}

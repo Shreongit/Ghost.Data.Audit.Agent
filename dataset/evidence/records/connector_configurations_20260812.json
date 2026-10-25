@@ -1,0 +1,319 @@
+{
+  "exported_at": "2026-08-12T09:00:00Z",
+  "origin": "integration_management_service",
+  "record_count": 39,
+  "records": [
+    {
+      "recorded_at": "2026-08-12T09:00:00Z",
+      "system": "account_service",
+      "resource_id": "account_1084",
+      "record_type": "USER_PROFILE",
+      "result": "NOT_FOUND",
+      "subject_reference": "mateo.alvarez@gmail.com"
+    },
+    {
+      "recorded_at": "2026-08-12T09:00:00Z",
+      "system": "account_service",
+      "resource_id": "account_1417",
+      "record_type": "USER_PROFILE",
+      "result": "NOT_FOUND",
+      "subject_reference": "o.morgan56@gmail.com"
+    },
+    {
+      "recorded_at": "2026-08-12T09:00:00Z",
+      "system": "account_service",
+      "resource_id": "account_2434",
+      "record_type": "USER_PROFILE",
+      "result": "NOT_FOUND",
+      "subject_reference": "molefe.thabo@icloud.com"
+    },
+    {
+      "recorded_at": "2026-08-12T09:00:00Z",
+      "system": "account_service",
+      "resource_id": "account_3734",
+      "record_type": "USER_PROFILE",
+      "result": "NOT_FOUND",
+      "subject_reference": "jonas-eriksen@gmail.com"
+    },
+    {
+      "recorded_at": "2026-08-12T09:00:00Z",
+      "system": "account_service",
+      "resource_id": "account_4079",
+      "record_type": "USER_PROFILE",
+      "result": "NOT_FOUND",
+      "subject_reference": "rousseau.hugo80@gmail.com"
+    },
+    {
+      "recorded_at": "2026-08-12T09:00:00Z",
+      "system": "account_service",
+      "resource_id": "account_6372",
+      "record_type": "USER_PROFILE",
+      "result": "NOT_FOUND",
+      "subject_reference": "chidi.eze@outlook.com"
+    },
+    {
+      "recorded_at": "2026-08-12T09:00:00Z",
+      "system": "account_service",
+      "resource_id": "account_6452",
+      "record_type": "USER_PROFILE",
+      "result": "NOT_FOUND",
+      "subject_reference": "nhorvat1713@gmail.com"
+    },
+    {
+      "recorded_at": "2026-08-12T09:00:00Z",
+      "system": "account_service",
+      "resource_id": "account_907",
+      "record_type": "USER_PROFILE",
+      "result": "FOUND",
+      "subject_reference": "farah.n963283@outlook.com"
+    },
+    {
+      "recorded_at": "2026-08-12T09:00:00Z",
+      "system": "account_service",
+      "resource_id": "account_9191",
+      "record_type": "USER_PROFILE",
+      "result": "NOT_FOUND",
+      "subject_reference": "aarav.m2118@zoho.com"
+    },
+    {
+      "recorded_at": "2026-08-12T09:00:00Z",
+      "system": "account_service",
+      "resource_id": "account_923",
+      "record_type": "USER_PROFILE",
+      "result": "FOUND",
+      "subject_reference": "k.addo7085@yahoo.com"
+    },
+    {
+      "recorded_at": "2026-08-12T09:00:00Z",
+      "system": "analytics_platform",
+      "resource_id": "analytics_3006",
+      "record_type": "ANALYTICS_PROFILE",
+      "result": "IDENTIFIABLE",
+      "subject_reference": "chidi.eze@outlook.com"
+    },
+    {
+      "recorded_at": "2026-08-12T09:00:00Z",
+      "system": "analytics_platform",
+      "resource_id": "analytics_7772",
+      "record_type": "ANALYTICS_PROFILE",
+      "result": "IDENTIFIABLE",
+      "subject_reference": "mateo.alvarez@gmail.com"
+    },
+    {
+      "recorded_at": "2026-08-12T09:00:00Z",
+      "system": "integration_service",
+      "resource_id": "data_flow_4227",
+      "record_type": "DATA_FLOW",
+      "result": "ACTIVE",
+      "subject_reference": "aarav.m2118@zoho.com"
+    },
+    {
+      "recorded_at": "2026-08-12T09:00:00Z",
+      "system": "integration_service",
+      "resource_id": "data_flow_7812",
+      "record_type": "DATA_FLOW",
+      "result": "ACTIVE",
+      "subject_reference": "mateo.alvarez@gmail.com"
+    },
+    {
+      "recorded_at": "2026-08-12T09:00:00Z",
+      "system": "integration_service",
+      "resource_id": "data_flow_9030",
+      "record_type": "DATA_FLOW",
+      "result": "ACTIVE",
+      "subject_reference": "chidi.eze@outlook.com"
+    },
+    {
+      "recorded_at": "2026-08-12T09:00:00Z",
+      "system": "search_service",
+      "resource_id": "search_1110",
+      "record_type": "SEARCH_INDEX_ENTRY",
+      "result": "FOUND",
+      "subject_reference": "rousseau.hugo80@gmail.com"
+    },
+    {
+      "recorded_at": "2026-08-12T09:00:00Z",
+      "system": "search_service",
+      "resource_id": "search_1474",
+      "record_type": "SEARCH_INDEX_ENTRY",
+      "result": "FOUND",
+      "subject_reference": "aarav.m2118@zoho.com"
+    },
+    {
+      "recorded_at": "2026-08-12T09:00:00Z",
+      "system": "search_service",
+      "resource_id": "search_2024",
+      "record_type": "SEARCH_INDEX_ENTRY",
+      "result": "FOUND",
+      "subject_reference": "molefe.thabo@icloud.com"
+    },
+    {
+      "recorded_at": "2026-08-12T09:00:00Z",
+      "system": "search_service",
+      "resource_id": "search_4464",
+      "record_type": "SEARCH_INDEX_ENTRY",
+      "result": "FOUND",
+      "subject_reference": "nhorvat1713@gmail.com"
+    },
+    {
+      "recorded_at": "2026-08-12T09:00:00Z",
+      "system": "search_service",
+      "resource_id": "search_460",
+      "record_type": "SEARCH_INDEX_ENTRY",
+      "result": "FOUND",
+      "subject_reference": "k.addo7085@yahoo.com"
+    },
+    {
+      "recorded_at": "2026-08-12T09:00:00Z",
+      "system": "search_service",
+      "resource_id": "search_6677",
+      "record_type": "SEARCH_INDEX_ENTRY",
+      "result": "FOUND",
+      "subject_reference": "farah.n963283@outlook.com"
+    },
+    {
+      "recorded_at": "2026-08-12T09:00:00Z",
+      "system": "search_service",
+      "resource_id": "search_7363",
+      "record_type": "SEARCH_INDEX_ENTRY",
+      "result": "FOUND",
+      "subject_reference": "chidi.eze@outlook.com"
+    },
+    {
+      "recorded_at": "2026-08-12T09:00:00Z",
+      "system": "search_service",
+      "resource_id": "search_7941",
+      "record_type": "SEARCH_INDEX_ENTRY",
+      "result": "FOUND",
+      "subject_reference": "mateo.alvarez@gmail.com"
+    },
+    {
+      "recorded_at": "2026-08-12T09:00:00Z",
+      "system": "security_service",
+      "resource_id": "audit_record_122",
+      "record_type": "SECURITY_AUDIT_LOG",
+      "result": "FOUND",
+      "subject_reference": "user_136"
+    },
+    {
+      "recorded_at": "2026-08-12T09:00:00Z",
+      "system": "security_service",
+      "resource_id": "audit_record_280",
+      "record_type": "SECURITY_AUDIT_LOG",
+      "result": "FOUND",
+      "subject_reference": "user_140"
+    },
+    {
+      "recorded_at": "2026-08-12T09:00:00Z",
+      "system": "security_service",
+      "resource_id": "audit_record_3130",
+      "record_type": "SECURITY_AUDIT_LOG",
+      "result": "FOUND",
+      "subject_reference": "user_131"
+    },
+    {
+      "recorded_at": "2026-08-12T09:00:00Z",
+      "system": "security_service",
+      "resource_id": "audit_record_4064",
+      "record_type": "SECURITY_AUDIT_LOG",
+      "result": "FOUND",
+      "subject_reference": "user_132"
+    },
+    {
+      "recorded_at": "2026-08-12T09:00:00Z",
+      "system": "security_service",
+      "resource_id": "audit_record_5140",
+      "record_type": "SECURITY_AUDIT_LOG",
+      "result": "FOUND",
+      "subject_reference": "user_133"
+    },
+    {
+      "recorded_at": "2026-08-12T09:00:00Z",
+      "system": "security_service",
+      "resource_id": "audit_record_5497",
+      "record_type": "SECURITY_AUDIT_LOG",
+      "result": "FOUND",
+      "subject_reference": "user_139"
+    },
+    {
+      "recorded_at": "2026-08-12T09:00:00Z",
+      "system": "security_service",
+      "resource_id": "audit_record_6779",
+      "record_type": "SECURITY_AUDIT_LOG",
+      "result": "FOUND",
+      "subject_reference": "user_135"
+    },
+    {
+      "recorded_at": "2026-08-12T09:00:00Z",
+      "system": "security_service",
+      "resource_id": "audit_record_7689",
+      "record_type": "SECURITY_AUDIT_LOG",
+      "result": "FOUND",
+      "subject_reference": "user_137"
+    },
+    {
+      "recorded_at": "2026-08-12T09:00:00Z",
+      "system": "security_service",
+      "resource_id": "audit_record_7931",
+      "record_type": "SECURITY_AUDIT_LOG",
+      "result": "FOUND",
+      "subject_reference": "user_134"
+    },
+    {
+      "recorded_at": "2026-08-12T09:00:00Z",
+      "system": "security_service",
+      "resource_id": "audit_record_8086",
+      "record_type": "SECURITY_AUDIT_LOG",
+      "result": "FOUND",
+      "subject_reference": "user_138"
+    },
+    {
+      "recorded_at": "2026-08-12T09:00:00Z",
+      "system": "support_platform",
+      "resource_id": "support_2716",
+      "record_type": "SUPPORT_MESSAGE",
+      "result": "IDENTIFIABLE",
+      "subject_reference": "nhorvat1713@gmail.com"
+    },
+    {
+      "recorded_at": "2026-08-12T09:00:00Z",
+      "system": "support_platform",
+      "resource_id": "support_4410",
+      "record_type": "SUPPORT_MESSAGE",
+      "result": "IDENTIFIABLE",
+      "subject_reference": "mateo.alvarez@gmail.com"
+    },
+    {
+      "recorded_at": "2026-08-12T09:00:00Z",
+      "system": "support_platform",
+      "resource_id": "support_4442",
+      "record_type": "SUPPORT_MESSAGE",
+      "result": "IDENTIFIABLE",
+      "subject_reference": "rousseau.hugo80@gmail.com"
+    },
+    {
+      "recorded_at": "2026-08-12T09:00:00Z",
+      "system": "support_platform",
+      "resource_id": "support_5323",
+      "record_type": "SUPPORT_MESSAGE",
+      "result": "IDENTIFIABLE",
+      "subject_reference": "chidi.eze@outlook.com"
+    },
+    {
+      "recorded_at": "2026-08-12T09:00:00Z",
+      "system": "support_platform",
+      "resource_id": "support_771",
+      "record_type": "SUPPORT_MESSAGE",
+      "result": "IDENTIFIABLE",
+      "subject_reference": "molefe.thabo@icloud.com"
+    },
+    {
+      "recorded_at": "2026-08-14T09:00:00Z",
+      "system": "account_service",
+      "resource_id": "account_1417",
+      "record_type": "USER_PROFILE",
+      "result": "FOUND",
+      "subject_reference": "o.morgan56@gmail.com"
+    }
+  ]
+}
